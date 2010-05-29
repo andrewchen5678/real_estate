@@ -1,0 +1,209 @@
+<% form_for @residential_realty,:html => { :multipart => true } do |f| %>
+  <%= error_messages_for(:residential_realty,:address) %>
+
+  <%= render :partial => "addresses/addresspart", :locals => {:addressvar=>@address } %>
+  <p>
+    <%= f.label :square_feet %><br />
+    <%= f.text_field :square_feet %>
+  </p>
+  <p>
+    <%= f.label :building_year %><br />
+    <%= f.text_field :building_year %>
+  </p>
+  <p>
+    <%= f.label :num_room %><br />
+    <%= f.text_field :num_room %>
+  </p>
+  <p>
+    <%= f.label :num_bath %><br />
+    <%= f.text_field :num_bath %>
+  </p>
+  <p>
+    <%= f.label :num_partial_bath %><br />
+    <%= f.text_field :num_partial_bath %>
+  </p>
+  <p>
+    <%= f.label :zoning %><br />
+    <%= f.text_field :zoning %>
+  </p>
+  <p>
+    <%= f.label :lot_size %><br />
+    <%= f.text_field :lot_size %>
+  </p>
+
+  <p>
+    <%= f.label :num_of_beds %><br />
+    <%= f.text_field :num_of_beds %>
+  </p>
+  
+  <p>
+    <%= f.label :realty_type %><br />
+    <%= f.select :realty_type, ResidentialRealty::REALTY_TYPE_DESC+['--other--'], :include_blank=>true %>
+  </p>
+
+  <p>
+    <%= label_tag :realty_type_other, 'if other, specify:' %><br />
+    <%= text_field_tag :realty_type_other %>
+  </p>
+
+  <p>
+    <%= f.label :hoa_fee %><br />
+    <%= f.text_field :hoa_fee %>
+  </p>
+  
+  <p>
+    <%= f.label :school_district %><br />
+    <%= f.text_field :school_district %>
+  </p>
+  
+  <p>
+    <%= f.label :elementary_school %><br />
+    <%= f.text_field :elementary_school %>
+  </p>
+  
+  <p>
+    <%= f.label :middle_school %><br />
+    <%= f.text_field :middle_school %>
+  </p>
+  
+  <p>
+    <%= f.label :high_school %><br />
+    <%= f.text_field :high_school %>
+  </p>
+  
+  <p>
+    <%= f.label :story_description %><br />
+    <%= f.text_area :story_description %>
+  </p>
+  
+  <p>
+    <%= f.label :bedroom %><br />
+    <%= f.text_field :bedroom %>
+  </p>
+  
+  <p>
+    <%= f.label :floor_covering %><br />
+    <%= f.text_field :floor_covering %>
+  </p>
+  
+  <p>
+    <%= f.label :kitchen %><br />
+    <%= f.text_field :kitchen %>
+  </p>
+  
+  <p>
+    <%= f.label :dinning %><br />
+    <%= f.text_field :dinning %>
+  </p>
+  
+  <p>
+    <%= f.label :laundry %><br />
+    <%= f.text_field :laundry %>
+  </p>
+  
+  <p>
+    <%= f.label :fire_place %><br />
+    <%= f.text_field :fire_place %>
+  </p>
+  
+  <p>
+    <%= f.label :interior_others %><br />
+    <%= f.text_field :interior_others %>
+  </p>
+  
+  <p>
+    <%= f.label :num_of_stories %><br />
+    <%= f.text_field :num_of_stories %>
+  </p>
+  
+  <p>
+    <%= f.label :main_access %><br />
+    <%= f.text_field :main_access %>
+  </p>
+  
+  <p>
+    <%= f.label :roof %><br />
+    <%= f.text_field :roof %>
+  </p>
+  
+  <p>
+    <%= f.label :parking %><br />
+    <%= f.text_field :parking %>
+  </p>
+
+  <p>
+    <%= f.label :view_types %><br />
+    <%= f.text_field :view_types %>
+  </p>
+
+  <p>
+    <%= f.label :lot_description %><br />
+    <%= f.text_field :lot_description %>
+  </p>
+
+  <p>
+    <%= f.label :exterior_others %><br />
+    <%= f.text_field :exterior_others %>
+  </p>
+
+  <p>
+    <%= f.label :num_of_units %><br />
+    <%= f.text_field :num_of_units %>
+  </p>
+
+  <p>
+    <%= f.label :community_others %><br />
+    <%= f.text_field :community_others %>
+  </p>
+
+  <p>
+    <%= f.label :heating %><br />
+    <%= f.text_field :heating %>
+  </p>
+
+  <p>
+    <%= f.label :cooling %><br />
+    <%= f.text_field :cooling %>
+  </p>
+
+  <p>
+    <%= f.label :water %><br />
+    <%= f.text_field :water %>
+  </p>
+
+  <p>
+    <%= f.label :sewer %><br />
+    <%= f.text_field :sewer %>
+  </p>
+
+  <p>
+    <%= f.label :cross_street %><br />
+    <%= f.text_field :cross_street %>
+  </p>
+
+  <p>
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </p>
+
+  <p>
+    <%= f.label :assessment %><br />
+    <%= f.text_field :assessment %>
+  </p>
+
+  <p>
+    <%= f.label :handicap_features %><br />
+    <%= f.text_field :handicap_features %>
+  </p>
+
+  <p>
+    <%= f.label :hoa_frequency %><br />
+    <%= f.text_field :hoa_frequency %>
+  </p>
+    <%= render :partial=>'widgets/delete_coverpic', :locals => {:obj=>@residential_realty } %>
+    logo:<%= f.file_field :coverpic %>
+    <%= render :partial=>'videos/fields', :locals => {:obj=>@residential_realty,:f=>f } %>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

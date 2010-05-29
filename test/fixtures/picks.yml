@@ -1,0 +1,15 @@
+--- 
+pick_00002: 
+  pickable_id: 2
+  created_at: 2010-05-06 01:50:21 Z
+  updated_at: 2010-05-06 02:20:57 Z
+  id: 2
+  user_id: 23
+  pickable_type: Company
+pick_00001: 
+  pickable_id: 2
+  created_at: 2010-04-19 23:33:03 Z
+  updated_at: 2010-04-21 03:58:28 Z
+  id: 1
+  user_id: 1
+  pickable_type: Company

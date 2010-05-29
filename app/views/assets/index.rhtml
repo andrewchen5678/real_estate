@@ -1,0 +1,9 @@
+<h1>Listing pictures</h1>
+<% @pics.each do |a| %>
+<table>
+    <% if(!a.data.dirty?) %>
+    <td><tr><td><%= image_tag(a.url) %></td></tr>
+    <tr><td>Description:<%= a.description %></td></tr></td>
+    <% end %>
+</table>
+<% end %>

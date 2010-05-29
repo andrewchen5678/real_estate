@@ -1,0 +1,62 @@
+--- 
+company_00001: 
+  name: com1
+  created_at: 2010-01-28 20:26:22 Z
+  video_id: 
+  coverpic_file_size: 
+  updated_at: 2010-02-07 00:17:47 Z
+  picks_count: 0
+  coverpic_file_name: joomlafterinstall.jpg
+  id: 1
+  user_id: 8
+  address_id: 44
+  website: http://www.fdfd.com
+  rating_id: 
+  phone: "1234567890"
+  other_language_name: !binary |
+    5L2g5aW9dXA=
+
+  license_number: 1111
+  fax: "6555555555"
+  num_views: 203
+  email: 32432423@fdgd.com
+company_00002: 
+  name: com2
+  created_at: 2010-02-08 23:24:53 Z
+  video_id: 1
+  coverpic_file_size: 
+  updated_at: 2010-02-28 02:12:44 Z
+  picks_count: 2
+  coverpic_file_name: adsensecrash.png
+  id: 2
+  user_id: 1
+  address_id: 45
+  website: http://www.fdfd.com
+  rating_id: 
+  phone: "1234567890"
+  other_language_name: !binary |
+    5L2g5aW9dXA=
+
+  license_number: 1111
+  fax: "5467854343"
+  num_views: 139
+  email: 32432423@fdgd.com
+company_00003: 
+  name: com3
+  created_at: 
+  video_id: 
+  coverpic_file_size: 
+  updated_at: 
+  picks_count: 0
+  coverpic_file_name: 
+  id: 3
+  user_id: 1
+  address_id: 45
+  website: http://www.fdfd.com
+  rating_id: 
+  phone: "5466565465"
+  other_language_name: fdgfdgdf
+  license_number: 133454
+  fax: "4534543534"
+  num_views: 1
+  email: fdgdf@gdfgd.com

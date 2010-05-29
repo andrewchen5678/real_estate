@@ -1,0 +1,9 @@
+<% content_for :title, "主頁" %>
+<%=link_to('agent',{:action=>:showrandom,:controller=>:agents},{ :target=>'showthings' })%> |
+<%=link_to('company',{:action=>:showrandom,:controller=>:companies},{ :target=>'showthings' })%>
+<br/>
+<iframe name="showthings" width="580" src="agents/showrandom"></iframe>
+
+<%= render :partial => 'widgets/selectmenu' %>
+<br/>
+default home

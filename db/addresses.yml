@@ -1,0 +1,436 @@
+--- 
+- !ruby/object:Address 
+  attributes: 
+    city_name: Aguanga
+    created_at: 2010-01-24 04:54:22
+    zip: "91754"
+    updated_at: 2010-01-24 04:54:22
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "1111"
+    id: "2"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Acampo
+    created_at: 2010-01-24 04:59:36
+    zip: "12343"
+    updated_at: 2010-01-24 04:59:36
+    streetRoad: Rd
+    street: Duarte
+    streetWay: S
+    streetNumber: "1111"
+    id: "3"
+    unit: "111"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Alhambra
+    created_at: 2010-01-24 06:04:00
+    zip: "12343"
+    updated_at: 2010-01-24 06:04:00
+    streetRoad: Blvd
+    street: Nose
+    streetWay: ""
+    streetNumber: "1111"
+    id: "4"
+    unit: "123"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Hauula
+    created_at: 2010-01-24 06:07:55
+    zip: "99999"
+    updated_at: 2010-01-24 06:07:55
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "2222"
+    id: "6"
+    unit: ""
+    state_id: HI
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Aliso Viejo
+    created_at: 2010-01-25 09:23:15
+    zip: "12343"
+    updated_at: 2010-01-25 09:23:15
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "2222"
+    id: "7"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Alderpoint
+    created_at: 2010-01-25 09:24:48
+    zip: "12343"
+    updated_at: 2010-01-25 09:24:48
+    streetRoad: Rd
+    street: Duarte
+    streetWay: S
+    streetNumber: "2222"
+    id: "9"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Alhambra
+    created_at: 2010-01-25 19:12:36
+    zip: "12343"
+    updated_at: 2010-01-25 19:12:36
+    streetRoad: St
+    street: Duarte
+    streetWay: ""
+    streetNumber: "2222"
+    id: "11"
+    unit: "111"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Arvada
+    created_at: 2010-01-25 19:13:36
+    zip: "23564"
+    updated_at: 2010-01-25 19:13:36
+    streetRoad: St
+    street: Carson
+    streetWay: E
+    streetNumber: "2222"
+    id: "13"
+    unit: "123"
+    state_id: CO
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Arvada
+    created_at: 2010-01-25 19:14:27
+    zip: "23564"
+    updated_at: 2010-01-25 19:14:27
+    streetRoad: St
+    street: Carson
+    streetWay: E
+    streetNumber: "2222"
+    id: "15"
+    unit: ""
+    state_id: CO
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Americus
+    created_at: 2010-01-25 19:15:10
+    zip: "23564"
+    updated_at: 2010-01-25 19:15:10
+    streetRoad: Ave
+    street: Duarte
+    streetWay: ""
+    streetNumber: "2222"
+    id: "16"
+    unit: "123"
+    state_id: GA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Americus
+    created_at: 2010-01-25 19:15:27
+    zip: "23564"
+    updated_at: 2010-01-25 19:15:27
+    streetRoad: Ave
+    street: Duarte
+    streetWay: E
+    streetNumber: "2222"
+    id: "17"
+    unit: "123"
+    state_id: GA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Acampo
+    created_at: 2010-01-26 00:25:11
+    zip: "12343"
+    updated_at: 2010-01-26 00:25:11
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "1111"
+    id: "23"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Ellendale
+    created_at: 2010-01-28 20:25:18
+    zip: "12343"
+    updated_at: 2010-01-28 20:25:18
+    streetRoad: St
+    street: Carson
+    streetWay: ""
+    streetNumber: "1111"
+    id: "24"
+    unit: ""
+    state_id: DE
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Algona
+    created_at: 2010-01-28 20:25:38
+    zip: "12343"
+    updated_at: 2010-01-28 20:25:38
+    streetRoad: St
+    street: Carson
+    streetWay: ""
+    streetNumber: "1111"
+    id: "25"
+    unit: ""
+    state_id: IA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Algona
+    created_at: 2010-02-01 23:58:07
+    zip: "12343"
+    updated_at: 2010-02-01 23:58:07
+    streetRoad: St
+    street: Carson
+    streetWay: ""
+    streetNumber: "1987"
+    id: "44"
+    unit: ""
+    state_id: IA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Hawaii National Park
+    created_at: 2010-02-08 23:24:26
+    zip: "91754"
+    updated_at: 2010-02-08 23:24:26
+    streetRoad: Rd
+    street: Duarte
+    streetWay: W
+    streetNumber: "834"
+    id: "45"
+    unit: ""
+    state_id: HI
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Ahwahnee
+    created_at: 2010-02-15 21:27:23
+    zip: "23564"
+    updated_at: 2010-02-15 21:27:23
+    streetRoad: St
+    street: Carson
+    streetWay: E
+    streetNumber: "1111"
+    id: "46"
+    unit: "123"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Americus
+    created_at: 2010-02-20 09:26:51
+    zip: "23564"
+    updated_at: 2010-02-20 09:26:51
+    streetRoad: Ave
+    street: Duarte
+    streetWay: E
+    streetNumber: "2222"
+    id: "47"
+    unit: ""
+    state_id: GA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: San Gabriel
+    created_at: 2010-02-20 09:31:28
+    zip: "91776"
+    updated_at: 2010-02-20 09:31:28
+    streetRoad: St
+    street: Ralph
+    streetWay: W
+    streetNumber: "312"
+    id: "48"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: San Gabriel
+    created_at: 2010-02-20 09:33:02
+    zip: "91776"
+    updated_at: 2010-02-20 09:33:02
+    streetRoad: St
+    street: Ralph
+    streetWay: W
+    streetNumber: "312"
+    id: "49"
+    unit: "111"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Aguanga
+    created_at: 2010-03-01 21:31:23
+    zip: "12343"
+    updated_at: 2010-03-01 21:31:23
+    streetRoad: Dr
+    street: Duarte
+    streetWay: S
+    streetNumber: "1111"
+    id: "50"
+    unit: "123"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Alleghany
+    created_at: 2010-03-01 21:39:22
+    zip: "12343"
+    updated_at: 2010-03-01 21:39:22
+    streetRoad: Dr
+    street: Duarte
+    streetWay: S
+    streetNumber: "1111"
+    id: "52"
+    unit: "123"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Monterey park
+    created_at: 2010-03-04 22:58:51
+    zip: "91754"
+    updated_at: 2010-03-04 22:58:51
+    streetRoad: Blvd
+    street: Atlantic
+    streetWay: S
+    streetNumber: "2168"
+    id: "53"
+    unit: "111"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Long Beach
+    created_at: 2010-03-08 19:42:48
+    zip: "90712"
+    updated_at: 2010-03-08 19:42:48
+    streetRoad: Ave
+    street: Atlantic
+    streetWay: E
+    streetNumber: "1111"
+    id: "54"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Hanapepe
+    created_at: 2010-03-08 20:39:49
+    zip: "23564"
+    updated_at: 2010-03-08 20:39:49
+    streetRoad: Ave
+    street: Duarte
+    streetWay: ""
+    streetNumber: "1111"
+    id: "60"
+    unit: ""
+    state_id: HI
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Ballouville
+    created_at: 2010-03-08 21:59:01
+    zip: "23564"
+    updated_at: 2010-03-08 21:59:01
+    streetRoad: Dr
+    street: Carson
+    streetWay: ""
+    streetNumber: "3222"
+    id: "71"
+    unit: ""
+    state_id: CT
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Ahwahnee
+    created_at: 2010-03-08 22:48:08
+    zip: "90712"
+    updated_at: 2010-03-08 22:48:08
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "216"
+    id: "102"
+    unit: "123"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Agoura Hills
+    created_at: 2010-03-08 23:48:44
+    zip: "12343"
+    updated_at: 2010-03-08 23:48:44
+    streetRoad: St
+    street: Nosenada
+    streetWay: ""
+    streetNumber: "216"
+    id: "109"
+    unit: "111"
+    state_id: CA
+  attributes_cache: {}
+
+- !ruby/object:Address 
+  attributes: 
+    city_name: Alhambra
+    created_at: 2010-03-14 03:36:50
+    zip: "91708"
+    updated_at: 2010-03-14 03:36:50
+    streetRoad: Rd
+    street: Duarte
+    streetWay: ""
+    streetNumber: "2222"
+    id: "110"
+    unit: ""
+    state_id: CA
+  attributes_cache: {}
+

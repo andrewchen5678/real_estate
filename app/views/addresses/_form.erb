@@ -1,0 +1,9 @@
+<% form_for(@address) do |address_form| %>
+  <%= address_form.error_messages %>
+
+<%= render :partial => "form2", :locals => { :address_form=>address_form } %>
+
+  <p>
+    <%= address_form.submit update_btn ? 'Update' : 'Save'  %>
+  </p>
+<% end %>

@@ -1,0 +1,159 @@
+    <%= stylesheet_link_tag 'alert' %>
+    <%= stylesheet_link_tag 'default' %>
+    <%= javascript_include_tag 'window'%>
+
+<script type="text/javascript">
+
+  document.observe("dom:loaded", function() {
+    rr_id_read=$('rr_sale_residential_realty_id').value;
+    if(rr_id_read>0){
+      updateRr(rr_id_read);
+    }
+    agent_id_read=$('rr_sale_seller_id').value;
+    if(agent_id_read>0){
+      updateAgent(agent_id_read);
+    }
+  });
+
+/*
+  function showselectedrrsale(){
+    window.open('/residential_realties/'+document.getElementById('rr_sale_residential_realty_id').value);
+    //return false;
+  }
+
+  function showselectedagent(){
+    window.open('/users/'+document.getElementById('rr_sale_seller_id').value);
+    //return false;
+  }
+*/
+  function selectAgentCallback(whichid){
+    $('rr_sale_seller_id').value=whichid;
+    //alert($('rr_sale_seller_id').value);
+    updateAgent(whichid);
+    win.close();
+  }
+
+  function updateRr(whichid){
+    new Ajax.Request('/residential_realties/'+whichid+'.js?formatted_address_only=1', {
+      method:'get',
+      //requestHeaders: {Accept: 'application/json'},
+      onSuccess: function(transport){
+        //alert(point);
+        //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+        //rr_json = transport.responseText.evalJSON(true);
+        $('rr_info').update(transport.responseText);
+      }
+    });
+  }
+
+  function updateAgent(whichid){
+    new Ajax.Request('/agents/getagent?agent_id='+whichid, {
+      method:'get',
+      //requestHeaders: {Accept: 'application/json'},
+      onSuccess: function(transport){
+        //alert(point);
+        //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+        agent_json = transport.responseText.evalJSON(true);
+        //alert(Object.inspect(agent_json));
+        $('seller_info').update(agent_json.first_name+' '+agent_json.last_name);
+      }
+    });
+  }
+
+  function selectRrCallback(whichid){
+    $('rr_sale_residential_realty_id').value=whichid;
+    updateRr(whichid);
+    win.close();
+  }
+
+  function selectrr(){
+    //var win = new Window({className: "dialog", width:350, height:400, zIndex: 100, resizable: true, title: "Sample window", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:false, destroyOnClose: true, recenterAuto:true})
+    //win.getContent().innerHTML= "<div style='padding:10px'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam. Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incom dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda et tam. \ At vver eos et accusam dignissum qui blandit est praesent. Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo immoriatoly, hawrgaxeeis phat eit sakem eit vory gast te Plok peish ba useing phen roxas. Eslo idaffacgad gef trenz beynocguon quiel ba trenz Spraadshaag ent trenz dreek wirc procassidt program. Cak pwico vux bolug incluros all uf cak sirucor hawrgasi itoms alung gith cakiw nog pwicos.\ Lor sum amet, commy nulputat. Duipit lum ipisl eros dolortionsed tin hent aliquis illam volor in ea feum in ut adipsustrud elent ulluptat. Duisl ullan ex et am vulputem augiam doloreet amet enibh eui te dipit acillutat acilis amet, suscil er iuscilla con utat, quisis eu feugait ad dolore commy nullam iuscilisl iureril ilisl del ut pratuer iliquis acipissit accum quis nulluptat. Dui bla faccumsan velis auguero con henis duismolor sumsandrem quat vulluptat alit er iniamcore exeriure vero core te dit ut nulla feummolore commod dipis augiamcommod tem ese dolestrud do odo odiamco eetummy nis aliquamcommy nonse eu feugue del eugiamconsed ming estrud magnis exero eumsandio enisim del dio od tat.sumsan et pratum velit ing etue te consequis alis nullan et, quis am iusci bla feummy.</div>"
+    //win.setStatusBar("Status bar info");
+    win = new Window({className: "dialog", title: "Select rr_sale", top:70, left:100, width:800, height:400, url: '<%=escape_javascript(url_for(:controller=>'residential_realties', :action => "select"))  %>', showEffectOptions: {duration:1.5}, draggable:false, destroyOnClose: true, recenterAuto:false, draggable:true, wiredDrag: true});
+    win.showCenter(true);
+    //selectwin.onclose=null;
+  }
+
+  function selectagent(){
+    //var win = new Window({className: "dialog", width:350, height:400, zIndex: 100, resizable: true, title: "Sample window", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:false, destroyOnClose: true, recenterAuto:true})
+    //win.getContent().innerHTML= "<div style='padding:10px'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam. Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incom dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda et tam. \ At vver eos et accusam dignissum qui blandit est praesent. Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo immoriatoly, hawrgaxeeis phat eit sakem eit vory gast te Plok peish ba useing phen roxas. Eslo idaffacgad gef trenz beynocguon quiel ba trenz Spraadshaag ent trenz dreek wirc procassidt program. Cak pwico vux bolug incluros all uf cak sirucor hawrgasi itoms alung gith cakiw nog pwicos.\ Lor sum amet, commy nulputat. Duipit lum ipisl eros dolortionsed tin hent aliquis illam volor in ea feum in ut adipsustrud elent ulluptat. Duisl ullan ex et am vulputem augiam doloreet amet enibh eui te dipit acillutat acilis amet, suscil er iuscilla con utat, quisis eu feugait ad dolore commy nullam iuscilisl iureril ilisl del ut pratuer iliquis acipissit accum quis nulluptat. Dui bla faccumsan velis auguero con henis duismolor sumsandrem quat vulluptat alit er iniamcore exeriure vero core te dit ut nulla feummolore commod dipis augiamcommod tem ese dolestrud do odo odiamco eetummy nis aliquamcommy nonse eu feugue del eugiamconsed ming estrud magnis exero eumsandio enisim del dio od tat.sumsan et pratum velit ing etue te consequis alis nullan et, quis am iusci bla feummy.</div>"
+    //win.setStatusBar("Status bar info");
+    win = new Window({className: "dialog", title: "Select Agent", top:70, left:100, width:800, height:400, url: '<%=escape_javascript(url_for(:controller=>'agents', :action => "select"))  %>', showEffectOptions: {duration:1.5}, draggable:false, destroyOnClose: true, recenterAuto:false, draggable:true, wiredDrag: true});
+    win.showCenter(true);
+    //selectwin.onclose=null;
+  }
+
+  function toggle_onoff(whichone,turnon){
+    seller_id_field=$(whichone);
+    seller_by_other_div_field=$('seller_by_other_div');
+    if(turnon){
+      seller_id_field.enable();
+      seller_by_other_div_field.show();
+    }else{
+      seller_id_field.disable();
+      seller_by_other_div_field.hide();
+    }
+  }
+</script>
+<% form_for(@rr_sale) do |f| %>
+  <%= f.error_messages %>
+  <% if current_user.instance_of? RegularUser %>
+    <% sell_by_other=(@rr_sale.seller.instance_of?(Agent) || params[:sell_by_other]=='1') %>
+    <script type="text/javascript">
+        document.observe("dom:loaded", function() {
+            //alert($F('sell_by_other_1'));
+            toggle_onoff('rr_sale_seller_id',$F('sell_by_other_1')=='1');
+        });
+    </script>
+    I would like to sell this property by
+    <%= radio_button_tag 'sell_by_other', '0',!sell_by_other,:onclick=>"javascript:toggle_onoff('rr_sale_seller_id',false)" %> Myself
+    <%= radio_button_tag 'sell_by_other', '1',sell_by_other,:onclick=>"javascript:toggle_onoff('rr_sale_seller_id',true)" %> A realtor
+    <div id="seller_by_other_div">
+    <p>
+      <%= f.label :seller_id %><br />
+      <%= f.text_field :seller_id,:disabled=>!sell_by_other,:style=>'width:40px',:readonly=>true %><span id="seller_info"></span><span style="color: red">*</span>
+    <%= link_to "Select", 'javascript:selectagent();'  %>
+    <a href="javascript:showselectedagent();">View selected</a>
+    </p>
+    </div>
+
+  <% end %>
+  <p>
+    <%= f.label :residential_realty_id %>
+    <%= f.text_field :residential_realty_id,:style=>'width:40px',:readonly=>true %><span id="rr_info"></span><span style="color: red">*</span>
+    <%= link_to "Select", 'javascript:selectrr();'  %>
+    <a href="javascript:showselectedrrsale();">View selected</a>
+  </p>
+  <p>
+    <%= f.label :topic %>
+    <%= f.text_field :topic %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= f.label :price %>
+    <%= f.text_field :price %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= f.label :mls_number %>
+    <%= f.text_field :mls_number %>
+  </p>
+  <p>
+    Status:<br/>
+    <% RrSale::STATUS_DESC.each_pair do |k,v| %>
+    <%= f.radio_button :status, k %><%= f.label :status, v %>
+    
+    <% end %><!--  #STATUS_DESC -->
+  </p>
+  <p>
+    Sale type:<br/>
+    <% RrSale::SALE_CATEGORY_DESC.each_pair do |k,v| %>
+    <%= f.radio_button :sale_category, k %><%= f.label :sale_category, v %>
+    
+    <% end %><!-- #SALE_TYPE_DESC -->
+  </p>
+  <p>
+    <%= f.label :description %><br/>
+    <%= f.text_area :description,:style=>'width:500px;height:200px' %>
+  </p>
+  <%= f.submit "Save" %>
+<% end %>

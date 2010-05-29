@@ -1,0 +1,401 @@
+--- 
+residential_realty_00008: 
+  view_types: 
+  num_room: 1
+  laundry: 
+  heating: 
+  num_partial_bath: 
+  hoa_frequency: 
+  created_at: 2010-03-01 21:32:44 Z
+  building_year: 1111
+  video_id: 
+  roof: 
+  realty_type: SFR
+  coverpic_file_size: 
+  water: 
+  updated_at: 2010-03-01 21:40:24 Z
+  school_district: gdfgfd
+  num_of_beds: 
+  num_bath: 
+  main_access: 
+  community_others: 
+  num_of_units: 
+  lot_size: 
+  handicap_features: 
+  coverpic_file_name: 
+  assessment: 
+  lot_description: 
+  id: 8
+  hoa_fee: 
+  county: 
+  cooling: 
+  user_id: 11
+  parking: 
+  num_of_stories: 
+  kitchen: 
+  cross_street: 
+  bedroom: 
+  address_id: 52
+  square_feet: 344
+  sewer: 
+  dinning: 
+  middle_school: 
+  high_school: 
+  fire_place: 
+  exterior_others: 
+  zoning: 
+  story_description: 
+  interior_others: 
+  elementary_school: 
+  num_views: 2
+  floor_covering: 
+residential_realty_00009: 
+  view_types: views
+  num_room: 1
+  laundry: l
+  heating: h
+  num_partial_bath: 3
+  hoa_frequency: hf
+  created_at: 2010-03-04 23:03:43 Z
+  building_year: 1111
+  video_id: "2"
+  roof: r
+  realty_type: Condo
+  coverpic_file_size: 19804
+  water: w
+  updated_at: 2010-03-08 07:49:21 Z
+  school_district: scd
+  num_of_beds: 9
+  num_bath: 5
+  main_access: 6
+  community_others: co
+  num_of_units: 2
+  lot_size: 5
+  handicap_features: hf
+  coverpic_file_name: bach.h1.jpg
+  assessment: a
+  lot_description: ldescriptiongdggdgfg
+  id: 9
+  hoa_fee: 1234556.0
+  county: c
+  cooling: c
+  user_id: 1
+  parking: p
+  num_of_stories: 2
+  kitchen: k
+  cross_street: cs
+  bedroom: "2"
+  address_id: 53
+  square_feet: 345678
+  sewer: sw
+  dinning: d
+  middle_school: m
+  high_school: h
+  fire_place: f
+  exterior_others: eo
+  zoning: zzzz
+  story_description: nosedesc
+  interior_others: io
+  elementary_school: el
+  num_views: 4
+  floor_covering: gggg
+residential_realty_00010: 
+  view_types: ""
+  num_room: 6
+  laundry: ""
+  heating: ""
+  num_partial_bath: 2
+  hoa_frequency: ""
+  created_at: 2010-03-08 20:40:02 Z
+  building_year: 1988
+  video_id: "3"
+  roof: ""
+  realty_type: SFR
+  coverpic_file_size: 
+  water: ""
+  updated_at: 2010-03-08 20:42:07 Z
+  school_district: ""
+  num_of_beds: 2
+  num_bath: 3
+  main_access: 6
+  community_others: ""
+  num_of_units: 1
+  lot_size: 5
+  handicap_features: ""
+  coverpic_file_name: 
+  assessment: ""
+  lot_description: ""
+  id: 10
+  hoa_fee: 
+  county: ""
+  cooling: ""
+  user_id: 1
+  parking: ""
+  num_of_stories: 2
+  kitchen: ""
+  cross_street: ""
+  bedroom: ""
+  address_id: 60
+  square_feet: 345678
+  sewer: ""
+  dinning: ""
+  middle_school: ""
+  high_school: ""
+  fire_place: ""
+  exterior_others: ""
+  zoning: ""
+  story_description: ""
+  interior_others: ""
+  elementary_school: ""
+  num_views: 0
+  floor_covering: ""
+residential_realty_00011: 
+  view_types: ""
+  num_room: 6
+  laundry: ""
+  heating: ""
+  num_partial_bath: 2
+  hoa_frequency: ""
+  created_at: 2010-03-08 21:59:02 Z
+  building_year: 2001
+  video_id: "4"
+  roof: ""
+  realty_type: SFR
+  coverpic_file_size: 
+  water: ""
+  updated_at: 2010-03-08 21:59:02 Z
+  school_district: ""
+  num_of_beds: 4
+  num_bath: 3
+  main_access: 1
+  community_others: ""
+  num_of_units: 1
+  lot_size: 13
+  handicap_features: ""
+  coverpic_file_name: 
+  assessment: ""
+  lot_description: ""
+  id: 11
+  hoa_fee: 
+  county: ""
+  cooling: ""
+  user_id: 1
+  parking: ""
+  num_of_stories: 2
+  kitchen: ""
+  cross_street: ""
+  bedroom: ""
+  address_id: 71
+  square_feet: 345678
+  sewer: ""
+  dinning: ""
+  middle_school: ""
+  high_school: ""
+  fire_place: ""
+  exterior_others: ""
+  zoning: ""
+  story_description: ""
+  interior_others: ""
+  elementary_school: ""
+  num_views: 3
+  floor_covering: ""
+residential_realty_00012: 
+  view_types: ""
+  num_room: 1
+  laundry: ""
+  heating: ""
+  num_partial_bath: 2
+  hoa_frequency: ""
+  created_at: 2010-03-08 22:59:05 Z
+  building_year: 1988
+  video_id: "5"
+  roof: ""
+  realty_type: SFR
+  coverpic_file_size: 
+  water: ""
+  updated_at: 2010-03-08 22:59:49 Z
+  school_district: ""
+  num_of_beds: 2
+  num_bath: 3
+  main_access: 1
+  community_others: ""
+  num_of_units: 1
+  lot_size: 13
+  handicap_features: ""
+  coverpic_file_name: 
+  assessment: ""
+  lot_description: ""
+  id: 12
+  hoa_fee: 
+  county: ""
+  cooling: ""
+  user_id: 1
+  parking: ""
+  num_of_stories: 2
+  kitchen: ""
+  cross_street: ""
+  bedroom: ""
+  address_id: 102
+  square_feet: 344
+  sewer: ""
+  dinning: ""
+  middle_school: ""
+  high_school: ""
+  fire_place: ""
+  exterior_others: ""
+  zoning: ""
+  story_description: ""
+  interior_others: ""
+  elementary_school: ""
+  num_views: 2
+  floor_covering: ""
+residential_realty_00001: 
+  view_types: 
+  num_room: 1
+  laundry: 
+  heating: 
+  num_partial_bath: 
+  hoa_frequency: 
+  created_at: 2010-01-26 00:25:11 Z
+  building_year: 2222
+  video_id: 
+  roof: 
+  realty_type: SFR
+  coverpic_file_size: 
+  water: 
+  updated_at: 2010-01-26 00:25:11 Z
+  school_district: ""
+  num_of_beds: 
+  num_bath: 
+  main_access: 
+  community_others: 
+  num_of_units: 
+  lot_size: 
+  handicap_features: 
+  coverpic_file_name: 
+  assessment: 
+  lot_description: 
+  id: 1
+  hoa_fee: 
+  county: 
+  cooling: 
+  user_id: 1
+  parking: 
+  num_of_stories: 
+  kitchen: 
+  cross_street: 
+  bedroom: 
+  address_id: 23
+  square_feet: 1
+  sewer: 
+  dinning: 
+  middle_school: 
+  high_school: 
+  fire_place: 
+  exterior_others: 
+  zoning: 
+  story_description: 
+  interior_others: 
+  elementary_school: 
+  num_views: 7
+  floor_covering: 
+residential_realty_00013: 
+  view_types: ""
+  num_room: 6
+  laundry: ""
+  heating: ""
+  num_partial_bath: 2
+  hoa_frequency: ""
+  created_at: 2010-03-08 23:49:30 Z
+  building_year: 1988
+  video_id: 
+  roof: ""
+  realty_type: SFR
+  coverpic_file_size: 
+  water: ""
+  updated_at: 2010-03-08 23:49:30 Z
+  school_district: ""
+  num_of_beds: 4
+  num_bath: 3
+  main_access: 1
+  community_others: ""
+  num_of_units: 1
+  lot_size: 13
+  handicap_features: ""
+  coverpic_file_name: 
+  assessment: ""
+  lot_description: ""
+  id: 13
+  hoa_fee: 
+  county: ""
+  cooling: ""
+  user_id: 1
+  parking: ""
+  num_of_stories: 2
+  kitchen: ""
+  cross_street: ""
+  bedroom: ""
+  address_id: 109
+  square_feet: 345678
+  sewer: ""
+  dinning: ""
+  middle_school: ""
+  high_school: ""
+  fire_place: ""
+  exterior_others: ""
+  zoning: ""
+  story_description: ""
+  interior_others: ""
+  elementary_school: ""
+  num_views: 6
+  floor_covering: ""
+residential_realty_00014: 
+  view_types: ""
+  num_room: 6
+  laundry: ""
+  heating: ""
+  num_partial_bath: 2
+  hoa_frequency: ""
+  created_at: 2010-03-14 03:36:50 Z
+  building_year: 1999
+  video_id: 
+  roof: ""
+  realty_type: Condo
+  coverpic_file_size: 
+  water: ""
+  updated_at: 2010-03-28 23:42:04 Z
+  school_district: ""
+  num_of_beds: 4
+  num_bath: 3
+  main_access: 6
+  community_others: ""
+  num_of_units: 1
+  lot_size: 5
+  handicap_features: ""
+  coverpic_file_name: 
+  assessment: ""
+  lot_description: ""
+  id: 14
+  hoa_fee: 
+  county: ""
+  cooling: ""
+  user_id: 1
+  parking: ""
+  num_of_stories: 2
+  kitchen: ""
+  cross_street: ""
+  bedroom: ""
+  address_id: 110
+  square_feet: 345678
+  sewer: ""
+  dinning: ""
+  middle_school: ""
+  high_school: ""
+  fire_place: ""
+  exterior_others: ""
+  zoning: ""
+  story_description: ""
+  interior_others: ""
+  elementary_school: ""
+  num_views: 46
+  floor_covering: ""

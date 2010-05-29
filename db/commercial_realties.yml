@@ -1,0 +1,29 @@
+--- 
+- !ruby/object:CommercialRealty 
+  attributes: 
+    num_room: "4"
+    created_at: 2010-01-10 22:10:06
+    reserved_parking: "2"
+    num_partial_bath: "2"
+    building_year: "1111"
+    ac: 1;2
+    realty_type: CWareHouse
+    updated_at: 2010-01-10 22:36:13
+    num_bath: "3"
+    building_area_h: "3.00"
+    public_parking: "1"
+    num_unload: "1"
+    county: aa
+    id: "1"
+    inside_component: 1;2;3
+    main_entrance: "1"
+    user_id: "1"
+    address_id: "25"
+    neighbor: bb
+    public_facility: 2;3
+    num_unit: "1"
+    building_area_w: "2.00"
+    heater: "1"
+    num_floor: "1"
+  attributes_cache: {}
+

@@ -1,0 +1,38 @@
+<h1>Listing companies</h1>
+Order by: <%= sort_link '# people recommended', 'picks_count' %>, <%= sort_link 'date created', 'created_at' %>,
+<table>
+  <tr>
+    <th># people recommended</th>
+    <th>date created</th>
+    <th>Engname</th>
+    <th>Othername</th>
+    <th>LicenseNum</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th>Website</th>
+  </tr>
+
+<% @companies.each do |company| %>
+  <tr>
+    <td>company.picks_count</td>
+    <td><%=h company.created_at %></td>
+    <td><%=h company.name %></td>
+    <td><%=h company.other_language_name %></td>
+    <td><%=h company.license_number %></td>
+    <td><%=h format_address(company.address) %></td>
+    <td><%=h company.phone %></td>
+    <td><%=h company.fax %></td>
+    <td><%=h company.email %></td>
+    <td><%=h company.website %></td>
+    <td><%= link_to 'Show', company %></td>
+    <td><%= link_to 'Edit', edit_company_path(company) %></td>
+    <td><%= link_to 'Destroy', company, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New company', new_company_path %>

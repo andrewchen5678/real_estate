@@ -1,0 +1,42 @@
+<% form_for(@land) do |f| %>
+  <%= error_messages_for(:land,:address) %>
+
+  <%= render :partial => "addresses/addresspart", :locals => {:addressvar=>@address } %>
+  <p>
+    <%= f.label :zoning %><br />
+    <%= f.text_field :zoning %>
+  </p>
+  <p>
+    <%= f.label :lot_size %><br />
+    <%= f.text_field :lot_size %>
+  </p>
+  <p>
+    <%= f.label :lot_size_unit %><br />
+    <%= f.text_field :lot_size_unit %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :school_district %><br />
+    <%= f.text_field :school_district %>
+  </p>
+  <p>
+    <%= f.label :view %><br />
+    <% #lot_type_array = ResidentialRealty::LOT_DESC.map {|x,y| [y,x]}  %>
+    <% # = f.select :lot, lot_type_array, {:include_blank => 'please select'} %>
+    <%= checkboxlist("land[view]", Land::VIEW_DESC,@land.view) %>
+  </p>
+  <p>
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </p>
+  <p>
+    <%= f.label :cross_street %><br />
+    <%= f.text_field :cross_street %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

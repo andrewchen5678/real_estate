@@ -1,0 +1,135 @@
+<%= render :partial => "sidebar" %>
+  <p class="c1">Detail page for residential realty id: <%=@residential_realty.id%></p><a name="0.1_table03" id="0.1_table03"></a>
+
+<%= render :partial=>'residential_realties/square', :locals=>{ :rr=>@residential_realty, :listview=>false } %>
+<br/>
+<%= render :partial=>'showpart' %>
+<%#*<p>%>
+  <%#*<b>Address:</b>%>
+  <%#=h @residential_realty.address_id %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>User:</b>%>
+  <%#=h @residential_realty.user_id %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Square feet:</b>%>
+  <%#=h @residential_realty.square_feet %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Building year:</b>%>
+  <%#=h @residential_realty.building_year %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Num room:</b>%>
+  <%#=h @residential_realty.num_room %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Num bath:</b>%>
+  <%#=h @residential_realty.num_bath %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Num partial bath:</b>%>
+  <%#=h @residential_realty.num_partial_bath %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Type:</b>%>
+  <%#=h @residential_realty.type %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>School district:</b>%>
+  <%#=h @residential_realty.school_district %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Main entrance:</b>%>
+  <%#=h @residential_realty.main_entrance %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Num floor:</b>%>
+  <%#=h @residential_realty.num_floor %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Lot:</b>%>
+  <%#=h @residential_realty.lot %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Room:</b>%>
+  <%#=h @residential_realty.room %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Laundry:</b>%>
+  <%#=h @residential_realty.laundry %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Kitchen:</b>%>
+  <%#=h @residential_realty.kitchen %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Dinning:</b>%>
+  <%#=h @residential_realty.dinning %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Inside component:</b>%>
+  <%#=formatmultiplechoice(ResidentialRealty::INSIDE_COMPONENT_DESC,@residential_realty.inside_component) %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Heater:</b>%>
+  <%#=h @residential_realty.heater %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Ac:</b>%>
+  <%#=h @residential_realty.ac %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Num plot:</b>%>
+  <%#=h @residential_realty.num_plot %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Plot type:</b>%>
+  <%#=h @residential_realty.plot_type %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Outside component:</b>%>
+  <%#=h @residential_realty.outside_component %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Community:</b>%>
+  <%#=h @residential_realty.community %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>County:</b>%>
+  <%#=h @residential_realty.county %>
+<%#*</p>%>
+
+<%#*<p>%>
+  <%#*<b>Neighbor:</b>%>
+  <%#=h @residential_realty.neighbor %>
+<%#*</p>%>
+
+
+<%= link_to 'Edit', edit_residential_realty_path(@residential_realty) %> |
+<%= link_to 'Edit Additional pictures', :action=>:updatepics %> |
+<%= link_to 'Back', residential_realties_path %>

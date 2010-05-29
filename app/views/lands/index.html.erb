@@ -1,0 +1,8 @@
+<h1>Listing residential_realties</h1>
+
+<p><%= better_page_entries_info @residential_realties, :entry_name => '住宅地產',:plural_name => '住宅地產' %></p>
+<%=render :partial=>'list' %>
+
+<br />
+
+<%= link_to 'New residential_realty', new_residential_realty_path %>

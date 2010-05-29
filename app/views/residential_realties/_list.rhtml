@@ -1,0 +1,5 @@
+<% @residential_realties.each do |residential_realty| %>
+<%= render :partial=>'residential_realties/square',:locals=>{:rr=>residential_realty,:listview=>true} %>
+<hr/>
+<% end %>
+<%= will_paginate @residential_realties %>

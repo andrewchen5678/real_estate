@@ -1,0 +1,21 @@
+- make 'any' work even when the same attribute_query is specified twice: 
+  * Person.any(:conditions => { :first_name.eql => "Bob", :first_name.eql => "Nathan" }) (?)
+  * Person.any(:conditions => { :first_name.eql => ["Bob", "Nathan"] })
+- make it work with objects that include all types of eager loaded associations (?)
+- include support for joined or included attributes (?)
+
+=== Notes on Find Hierarchy ===
+
+activerecord/base.rb
+  find (line 581)
+    find_every (line 1484)
+      construct_finder_sql (line 1615)
+        add_conditions! (line 1729)
+            merge_conditions (line 1436)
+              sanitize_sql_for_conditions (line 2068)
+                sanitize_sql_hash_for_conditions (line 2139)
+                   attribute_condition (line 1855)
+            
+
+activerecord/associations
+  find_with_associations (line 1247)

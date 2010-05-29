@@ -1,0 +1,42 @@
+<p>
+    <% form_tag(nil,:method => :get) do %>
+
+    <%= render :partial => "addresses/address_select", :locals => {:forsearch=>'ResidentialRealty' } %>
+
+    <%= submit_tag 'Submit',:name=>'submit_search' %>
+    <% end %>
+
+<% if @residential_realties %>
+
+<script type="text/javascript">
+  function selectrrobj(whichid){
+    parent.selectRrCallback(whichid);
+  }
+</script>
+
+<table>
+
+  <tr>
+    <th>ID</th>
+    <th>user id</th>
+    <th>address</th>
+    <th>square feet</th>
+  </tr>
+    <% @residential_realties.each do |listobj| %>
+    <tr>
+      <td><%=h listobj.id %></td>
+      <td><%=h listobj.user_id %></td>
+      <td><%=h format_address(listobj.address) %></td>
+      <td><%=h listobj.square_feet %></td>
+      <td><a href="javascript:selectrrobj('<%= listobj.id %>')">Select</a></td>
+      <td><%= link_to 'View',listobj,:target=>'viewobj' %></td>
+    </tr>
+  <% end %>
+  </table>
+  <%= will_paginate @residential_realties %>
+<% end %>
+
+</p>
+<iframe name='viewobj' width="700" height="300">your browser doesnt support iframe
+</iframe>
+<%= javascript_include_tag "selectobj" %>

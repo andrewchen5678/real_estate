@@ -1,0 +1,9 @@
+<h1>Listing businesses</h1>
+<p><%= better_page_entries_info @businesses, :entry_name => '生意',:plural_name => '生意' %></p>
+<%=render :partial=>'list' %>
+
+<br />
+
+<%= will_paginate @businesses %>
+
+<%= link_to 'New business', new_business_path %>

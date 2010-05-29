@@ -1,0 +1,3 @@
+<h1>Complete registration</h1>
+Register as <%= link_to 'regular user', new_user_url %>,<%= link_to 'agent',new_user_url(:user_type=>'agent') %>
+<%=render :partial=>'form' %>

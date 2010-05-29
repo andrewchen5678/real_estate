@@ -1,0 +1,47 @@
+  <% startindex=@business_ads.offset+1 %>
+  <% @business_ads.each do |business| %>
+<p><%=startindex %><% startindex+=1 %> &nbsp;
+
+  <b>id:</b>
+  <%= business.id %>
+
+  <b>user_id:</b>
+  <%=h business.user_id %>
+
+  <b>business_id:</b>
+  <%=h business.business_id %>
+
+  <b>commercial_realty_id:</b>
+  <%=h business.commercial_realty_id %>
+
+  <b>topic:</b>
+  <%=h business.topic %>
+
+  <b>introduction:</b>
+  <%=h business.introduction %>
+
+  <b>price:</b>
+  <%=h business.price %>
+
+  <b>immigration:</b>
+  <%=h business.immigration %>
+
+  <b>ad_type:</b>
+  <%=h business.ad_type %>
+
+  <b>status:</b>
+  <%=h business.show_ad_status %>
+
+  <b>expiration date:</b>
+  <%=h business.expiration_date %>
+
+  <b>partnership_percent:</b>
+  <%=h business.partnership_percent %>
+
+  <b>annual_fee:</b>
+  <%=h business.annual_fee %>
+
+  <b><%= link_to 'show ad', business_ad_path(business) %></b>
+  <b><%= link_to 'edit ad', edit_business_ad_path(business) %></b>
+</p>
+<% end %>

@@ -1,0 +1,16 @@
+<%= render :partial => 'widgets/selectmenu' %>
+<p>
+  Search Residential Realty for sale
+    <%= render :partial=>'searchpart' %>
+</p>
+
+<% if @rr_sales %>
+<p><%= better_page_entries_info @rr_sales, :entry_name => 'Residential Realty for sale' %></p>
+<p>
+Sort by: <%= sort_link 'Date', :created_at %>, <%= sort_link 'City', 'addresses.city_name' %>, <%= sort_link 'Price', :price %>, <%= sort_link 'Rating', :thumbs_rate %>,
+</p>
+<%= render :partial=>'list' %>
+<% end %>
+
+<%= link_to 'New rr_sale', new_rr_sale_path %> |
+<%= link_to 'Search rr_sale', :controller=>:rr_sales, :action=>:search %>

@@ -1,0 +1,23 @@
+<%= javascript_include_tag 'rating/jquery.rating' %>
+<%= stylesheet_link_tag 'jquery.rating' %>
+
+<script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery(".rating").rating();
+        });
+</script>
+
+<% if !current_user.nil? %>
+<p>我要評分:</p>
+  <% form_for @rating_comment,:url=>{:action=>:rate,:id=>@company.id} do |f| %>
+    <!-- f.text_area :content, :style=>'width:400px;height:100px' --><br/>
+    <%=rating_star_control('a_star')%><br/>
+    <%=rating_star_control('b_star')%><br/>
+    <%=rating_star_control('c_star')%><br/>
+    <%=rating_star_control('d_star')%><br/>
+    <%= f.text_area :comment %>
+    <%= f.submit '送出' %>
+  <% end %>
+<% else %>
+<p>若要評分，請先<a href="<%= login_url(:return_to=>request.request_uri,:plain=>'1') %>">登錄</a></p>
+<% end %>

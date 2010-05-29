@@ -1,0 +1,11 @@
+<% obj.build_video unless obj.video %>
+<% f.fields_for(:video) do |fvid| %>
+  <p>
+    <%= fvid.label :url_input %>
+    <%= fvid.text_field :url_input %>
+  </p>
+  <p>
+    <%= fvid.label :description %>
+    <%= fvid.text_field :description %>
+  </p>
+<% end %>

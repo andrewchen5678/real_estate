@@ -1,0 +1,96 @@
+.tabs {
+    position:relative;
+    height: 20px; margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.tabs li {
+    display:inline;
+}
+.tabs a {
+    height: 16px;
+    background: #c2ceda;
+    position:relative;
+    padding: 8px;
+    font-size : 11px;
+    font-weight : bold;
+    color : #fff;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.tabs a.tab-visited {
+    background-color:#6898d0;
+    border-right: 1px solid #fff;
+    font-size : 11px;
+    font-weight : bold;
+    color : #fff;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.tabs a:hover {
+    background-color:#80A0C6;
+    font-size : 11px;
+    font-weight : bold;
+    color : #fff;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.tabs a.tab-active {
+    background-color:#6898d0;
+    border-right: 1px solid #fff;
+    font-size : 11px;
+    font-weight : bold;
+    color : #fff;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.tab-panes {
+    #width: 98%;
+    #width: 200px;
+    #width: 300px;
+    overflow: auto;
+    margin: 0px;
+}
+.divtabs {
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #B9CFE1;
+    font-size : 12px;
+    font-weight : normal;
+    color : #2a2a2a;
+    font-family : Verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.divcnt5 {
+    margin-top: 6px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    background-color: #fff;
+}
+.contbout {
+    font-size : 14px;
+    font-weight : bold;
+    color : #2C5885;
+    font-family : verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.contwho {
+    font-size : 12px;
+    font-weight : normal;
+    color : #4e4e4e;
+    font-family : verdana, arial, helvetica, sans-serif;
+    text-decoration : none;
+}
+.dvtabbout {
+    height: 47px;
+    background: url(learnaboutexdesignz1.gif) no-repeat;
+    padding-left: 42px;
+    margin-left: 32px;
+    margin-right: 12px;
+    padding-top: 13px;
+    font-family : Verdana, Arial, helvetica, sans-serif;
+    color : #DF5900;
+    font-weight : normal;
+    font-size : 11px;
+    text-decoration : none;
+}

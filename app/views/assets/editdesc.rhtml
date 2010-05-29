@@ -1,0 +1,10 @@
+<h1>edit picture description</h1>
+<% form_for([@parentobj,@pic]) do |f| %>
+  <%= f.error_messages %>
+  <%= image_tag(@pic.url) %>
+  <%= f.text_field :description %>
+  <p>
+    <%= f.submit "Update",:name=>'updatepicbtn' %>
+  </p>
+<% end %>
+<%= link_to 'Back', polymorphic_path(@parentobj,:action=>'updatepics') %>

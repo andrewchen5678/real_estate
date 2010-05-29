@@ -1,0 +1,91 @@
+--- 
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-01-28 08:57:57
+    company_name: ""
+    updated_at: 2010-02-04 19:17:56
+    id: "2"
+    user_id: "6"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-01-30 01:39:39
+    company_name: ""
+    updated_at: 2010-01-30 01:40:43
+    id: "5"
+    user_id: "3"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-01-30 01:40:43
+    company_name: gffddddd
+    updated_at: 2010-04-15 21:39:59
+    id: "6"
+    user_id: "5"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-03-01 20:08:12
+    company_name: ""
+    updated_at: 2010-03-01 20:21:13
+    id: "7"
+    user_id: 
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-03-01 20:24:46
+    company_name: ""
+    updated_at: 2010-03-01 20:24:46
+    id: "9"
+    user_id: "10"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-03-03 00:16:13
+    company_name: abccccc
+    updated_at: 2010-03-03 00:16:13
+    id: "10"
+    user_id: "14"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-03-23 05:47:17
+    company_name: ""
+    updated_at: 2010-03-23 05:47:17
+    id: "11"
+    user_id: "17"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-04-15 01:25:55
+    company_name: abccccc
+    updated_at: 2010-04-15 01:25:55
+    id: "12"
+    user_id: "18"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-04-21 04:21:50
+    company_name: ""
+    updated_at: 2010-04-21 04:21:50
+    id: "13"
+    user_id: "19"
+  attributes_cache: {}
+
+- !ruby/object:RegularUserProfile 
+  attributes: 
+    created_at: 2010-05-06 03:17:55
+    company_name: ""
+    updated_at: 2010-05-06 03:17:55
+    id: "14"
+    user_id: "23"
+  attributes_cache: {}
+

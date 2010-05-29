@@ -1,0 +1,15 @@
+<% if !current_user.nil? %>
+<p>我要留言:</p>
+  <% form_for [@parentobj,@newcomment],:url => polymorphic_path([@parentobj,@newcomment],:view=>params[:view]) do |f| %>
+    <%= f.text_area :content, :style=>'width:400px;height:100px' %><br/>
+    <% if(@parentobj.respond_to?(:thumbs)) %>
+    Thumb:
+    <%= f.radio_button :thumbupdown, '',:checked => true %>n/a
+    <%= f.radio_button :thumbupdown, true %><%=image_tag 'thumbs_up.gif' %>
+    <%= f.radio_button :thumbupdown, false %><%=image_tag 'thumbs_down.gif' %>
+    <% end %>
+    <%= f.submit '送出' %>
+  <% end %>
+<% else %>
+<p>若要留言，請先<a href="<%= login_url(:return_to=>request.request_uri,:plain=>'1') %>">登錄</a></p>
+<% end %>

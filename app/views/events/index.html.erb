@@ -1,0 +1,9 @@
+<h1>Listing events</h1>
+<p><%= better_page_entries_info @events, :entry_name => 'event',:plural_name => 'events' %></p>
+<%=render :partial=>'list' %>
+
+<br />
+
+<%= will_paginate @events %>
+
+<%= link_to 'New events', new_company_event_path(@company) %>

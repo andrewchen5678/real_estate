@@ -1,0 +1,316 @@
+--- 
+user_auth_00007: 
+  single_access_token: dmo-VaYQnED76tQ6eUY-
+  last_request_at: 2010-01-30 01:32:42 Z
+  crypted_password: 29de30a515a64cd4c0f33ecd8f39710d273d713ba1f318d727b15364f3be334844042f120c4886951e147740c79a7bac339d5b25e0bf3c6799a54ed0f2ad8892
+  perishable_token: zoiSwaoWoFFCPVMk8JYe
+  id: 7
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 4vKoA02FKE5EjP0oghzr
+  current_login_at: 2010-01-30 01:29:51 Z
+  persistence_token: 14642cb1ea7a4939f2f7de7321fae96fbbac31057d7c43debadc88afe69125958a0decc2d231c9b3f010c4cb6a534f50076228c59d06a0e611d1230dcf8f7f5b
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: test2@test2.com
+user_auth_00018: 
+  single_access_token: AdH9gaCFQzQ-VpOpAlyg
+  last_request_at: 2010-05-06 03:59:43 Z
+  crypted_password: 7108626a6533528bd4efca134a6a2f556855b987673a1a4c79d816835f659981ab788def68455fe29799a467e52c8487f8a4702d120d6e1ad93c2868b13abd8c
+  perishable_token: Bv536OERhItSscSQMJAA
+  id: 18
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: gdfPynTBSfjny5JzBS8e
+  current_login_at: 2010-05-06 03:40:11 Z
+  persistence_token: 41e96e384b657ad4abff066e6b4ba94759b94534e7c057401e056c54f7052a01888a77ae639b15a130015654f408b5c73da4a901461edccc996d596b316429de
+  login_count: 8
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-04-19 00:21:12 Z
+  email: testauth@test.com
+user_auth_00019: 
+  single_access_token: GmzhjB7rbQxpCAqLgGWZ
+  last_request_at: 2010-04-22 01:26:52 Z
+  crypted_password: d050383136242e5caaa9f6f96e906fe4e91dfcea4884e3c61924d1ec5833ece7ecb8d0586da11de5b22d6e4869c84ecf419742da6f1274a562e4d3e11bc2e186
+  perishable_token: UutnBxLXdZHypT-TCOHM
+  id: 19
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: ipmY5XxilFKgU45bv7xM
+  current_login_at: 2010-04-21 04:19:51 Z
+  persistence_token: f1cc932889908662b527d7064748914008cdfb6c2c23429bd9c8e003b57d9f1733286a972772b3be78fffd73e7c51354a8214e04a6adfc3070b897a7fade287c
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: testauth2@test.com
+user_auth_00008: 
+  single_access_token: 0JtFPUWVpqugEllRH9p8
+  last_request_at: 2010-02-07 05:23:08 Z
+  crypted_password: 66a0a9198d9757d9464164afb54d430d25d7872d98b46bf3d3875e475423d842c561dfb70f6c7864313c3807fbbf1ea4963558e51d7e4aa8abe942419ff28efd
+  perishable_token: eVbRFk9DI-22DKUZPtpA
+  id: 8
+  failed_login_count: 2
+  current_login_ip: 127.0.0.1
+  password_salt: 8zroxTepDopFE7eZucLR
+  current_login_at: 2010-02-06 20:43:52 Z
+  persistence_token: def5fd7b6016ca7313858298108c1eed4b9cf807a00c78cd98aca575b1b260b123c1100369e12e14498e6429a8ac9943718a78464c19beb2ec8f6b08c9791743
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: testagent@testagent.com
+user_auth_00009: 
+  single_access_token: i-zYFPUForhzU_PCojvF
+  last_request_at: 2010-02-25 21:37:51 Z
+  crypted_password: 482d7a3f0fa92f261d682f2aa47ad11132adff49f020ea039f128b4297ec40187aa1ab70d43688937f69465d5db23da10a67cddfc08bcca26a1f9ca028c3710a
+  perishable_token: sQaPOWfVBPyYTUSwOSTt
+  id: 9
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: Kg277fJd_4KQ9KLz19Tb
+  current_login_at: 2010-02-25 21:36:03 Z
+  persistence_token: bac670f8864a8ee471cafb216aeea1f9d6b3d2bd35bf16681b3d578ef6477d8c5cfaf91785ce836b3150caa1eee3e03bb8b246369a44723aee35f544a2d8e2b3
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: hhh@test.com
+user_auth_00020: 
+  single_access_token: X3kbNjJRT-BR5DmMJ8cw
+  last_request_at: 2010-04-28 16:08:42 Z
+  crypted_password: a234f24fc8a1d280692779b5d3e39fb47404bc45c5f537eff14b136162bafa8086614cf4992dcf853c7c89a28d7442e250540215df603b651e148d17c580f401
+  perishable_token: D1wh5sl-M8MwbUuvalyX
+  id: 20
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 3EYEnlvA8s3vYC7W7_jA
+  current_login_at: 2010-04-28 16:03:37 Z
+  persistence_token: ba2df208c8642a96a0ead8da0c410fb128916ca1a95fcc3f48193c0aa0e88f641b4c87d01d004ef90bfc9246fbc72d2ceb8a156b4be39e4445774e72272f5122
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: testauth3@test.com
+user_auth_00021: 
+  single_access_token: pWpmpLTka9kdHiYq-QJF
+  last_request_at: 2010-04-29 03:37:39 Z
+  crypted_password: 5750244bdc64113482bf659f3444b669f9b34707bff018999d9bcd0c12dbacece472764e86accb4408d1a3d8a439ae62528f60f7dc134a3f9de68fdec2235549
+  perishable_token: y6HIuDUZmwLwqFhx56Na
+  id: 21
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 434eHpydgTHTQPUWa8DN
+  current_login_at: 2010-04-29 02:40:38 Z
+  persistence_token: c7d78e0666b27743a6a5c094bfbc682c4b63338ad339c1262f69fc9444a781a0345951492487f3eea9f20be091f7c4477689f535731657c5fd48cdb437f6cce7
+  login_count: 2
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-04-29 02:12:32 Z
+  email: user1@user.com
+user_auth_00010: 
+  single_access_token: Xq0B5HcNUJItOi7gnrLD
+  last_request_at: 2010-03-01 20:31:12 Z
+  crypted_password: a1123c082f9f7e636158f8fcc86848591c0513dbc3eac73b46068f003ecbc042d977ef6a9292e7641d636e8893de0d8999088472a408cbff58d587ab9aee76ce
+  perishable_token: mqDMRGk5iGzCUbE4RS5S
+  id: 10
+  failed_login_count: 1
+  current_login_ip: 127.0.0.1
+  password_salt: x4JqWy7fAx8EVG6aD-nC
+  current_login_at: 2010-03-01 20:04:17 Z
+  persistence_token: 804e2214f9e6f50171269578d9f49e0aad8fc7ab3f7f87e05f2cc7e53eec33b45f615f1d8018fe949c93bb3ee55ec4fe9a11aa75b4e3ac8627bc272a63d3ded6
+  login_count: 3
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-03-01 20:03:37 Z
+  email: test3@test3.com
+user_auth_00011: 
+  single_access_token: jmtJxZbVFWaSJuVQGYcN
+  last_request_at: 2010-03-02 06:18:09 Z
+  crypted_password: fae251d9285ed9cf017dc4b6e136fa773994ef47bbef707fbd3657e72dd6dedd3a41b366d177ff4b084fa70155aacf54d6b7a1cbbd64af22eeb0cf5bdbca8092
+  perishable_token: usEB2AzIaeSx9heOS57-
+  id: 11
+  failed_login_count: 1
+  current_login_ip: 127.0.0.1
+  password_salt: Z2iCtGLTrtfCEPbMc4Cj
+  current_login_at: 2010-03-01 20:38:06 Z
+  persistence_token: 56f9a97b5426d5524a10d685f5a7177dab011b9cbd0ef21f80a83a6ecd48b0792d28378cfdd7bc071fb150b65a6f6d192d32f401d64ce43bd07aa547bc115822
+  login_count: 3
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-03-01 20:36:37 Z
+  email: agent@agent.com
+user_auth_00022: 
+  single_access_token: mMhxkzZxOSfE0Tm605oq
+  last_request_at: 
+  crypted_password: fe8e4a61ed5da3d911073b75882793aefe1429321453259856816afc7f426b55aaf29314db24205179b25d0911aef0028dd268c08f9214c6d21c72b3b4346ff8
+  perishable_token: Zj2I8m_1IT-tZpcGiUYY
+  id: 22
+  failed_login_count: 0
+  current_login_ip: 
+  password_salt: v9mEdcewGRSNkUSWcZHm
+  current_login_at: 
+  persistence_token: d2be5c489db70b5bc9e958ae018d25829334dc1cd6f4ecdf79e3dcd079078c0e6402d98740af019ef340df4bf9f188ca52d8445921fc7ff33f892fd168d22d78
+  login_count: 0
+  last_login_ip: 
+  last_login_at: 
+  email: testuser1e@gfdgd.com
+user_auth_00023: 
+  single_access_token: 0bofWXNZgOdJvNz_yCPQ
+  last_request_at: 2010-05-06 04:30:29 Z
+  crypted_password: 5750244bdc64113482bf659f3444b669f9b34707bff018999d9bcd0c12dbacece472764e86accb4408d1a3d8a439ae62528f60f7dc134a3f9de68fdec2235549
+  perishable_token: JpeOslnz_52gUXB_N6Lr
+  id: 23
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 434eHpydgTHTQPUWa8DN
+  current_login_at: 2010-05-05 22:13:50 Z
+  persistence_token: 41e378b23ce5273ed035b2f741e60856c224f5a094e2f826303b0fe909b8ebc63201ad8827989088e81cc93981530646fa81d5628595dc61d64150565573c4a9
+  login_count: 2
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-04-29 03:38:30 Z
+  email: user2@user.com
+user_auth_00001: 
+  single_access_token: 391sClT_nM9ElR5jioQz
+  last_request_at: 2010-05-08 22:50:35 Z
+  crypted_password: 5750244bdc64113482bf659f3444b669f9b34707bff018999d9bcd0c12dbacece472764e86accb4408d1a3d8a439ae62528f60f7dc134a3f9de68fdec2235549
+  perishable_token: y2Qv9ScuWXtq1Gsbu1_9
+  id: 1
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 434eHpydgTHTQPUWa8DN
+  current_login_at: 2010-05-08 20:43:07 Z
+  persistence_token: a79269a82e0e7a20c86193bd37a9d453afd93af63898186cc5f1dd1124882ee0618c87abd7e66d5bd7fd995742e158e7bea505f654751d9fad9847d3b646f95d
+  login_count: 93
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-05-05 21:42:32 Z
+  email: angelchen1111@gmail.com
+user_auth_00012: 
+  single_access_token: SS6N5NF-FqHgofFNYUKP
+  last_request_at: 
+  crypted_password: 09e16f7cad7369e7fc8ec905180cb90c821dd50470bf1f866a45f905069cba13dfacdb6402661315fd368ee46ab62cd8c775eaec6cb89e7bea38b68b15e981e6
+  perishable_token: vhWCrjVXYa30Ye2sHtL6
+  id: 12
+  failed_login_count: 0
+  current_login_ip: 
+  password_salt: h1nTfpt3KqRDy0Xayieq
+  current_login_at: 
+  persistence_token: e7e388212eac997f1954d419168ae134bd3e313984170e4f71896a90b1571d8934bbe2c913024ba0173f5ad2f636d206e7a88bbda4ea043cb4f2d6fa47d78b10
+  login_count: 0
+  last_login_ip: 
+  last_login_at: 
+  email: gfdh@gfhgf.com
+user_auth_00013: 
+  single_access_token: M_ip3i40lJO-kJRJtJUd
+  last_request_at: 2010-03-03 00:02:02 Z
+  crypted_password: 5dae91cb3f6e917007607ff3644a34d01b7aad96af46ff09838ca0c54093a78ed9664111eda0e634ce5d9c579eab8a01676732a8c89d1ec5364b042ad95504b2
+  perishable_token: et9iZs9kDw6EFMo02uIu
+  id: 13
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 3TXL7okA63cFNCefZrU2
+  current_login_at: 2010-03-02 06:19:07 Z
+  persistence_token: ad09ff6e203f39e248782856575699a91912e719691ae8a9084d1690fb0ef1559a3e0b3af8a208f57d08a71cb086ffad8ee5bc0b02a944e9a6d7b5a862213675
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: test5@test5.com
+user_auth_00002: 
+  single_access_token: 8mtLr3j8L1mGiJy-6EJw
+  last_request_at: 2010-03-16 06:41:51 Z
+  crypted_password: 29de30a515a64cd4c0f33ecd8f39710d273d713ba1f318d727b15364f3be334844042f120c4886951e147740c79a7bac339d5b25e0bf3c6799a54ed0f2ad8892
+  perishable_token: UfIOQhujeZlu1EI1rd6N
+  id: 2
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 4vKoA02FKE5EjP0oghzr
+  current_login_at: 2010-03-16 06:16:41 Z
+  persistence_token: 433357bac0fada7ce846d1bb8b616698e6b0dd254662cae0a21c229588eddf1db24f3591b77f7af7ecddec08cbd7465be81ef712ac1b41577ab65684091ab6ec
+  login_count: 9
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-02-05 02:48:11 Z
+  email: angelchen9999@hotmail.com
+user_auth_00014: 
+  single_access_token: KyqsEpVW_sxyNR8lbQGG
+  last_request_at: 2010-04-12 22:09:27 Z
+  crypted_password: 66a8aba8085ddd3293d201984fad4fcc872cc546d5769e1d82486a844a10e5aaf8c0ff4b03d014c71aa3ee996f05488c3e12af05ff85193166243a865785c692
+  perishable_token: HfvbTF6Gl-H0TyqM8-FJ
+  id: 14
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: RJfIqNPT37hOjcWXptqq
+  current_login_at: 2010-04-12 22:05:14 Z
+  persistence_token: 78216a9ecb88897c7f371e23978b64de4fc7b3cb2cb1696cd0a98ac93064ac31ce71a8e2cabcabe80f601cee801a9f2a15ed0fc2b162d456eda8805a5058fd36
+  login_count: 3
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-03-03 00:16:13 Z
+  email: regular1@regular.com
+user_auth_00015: 
+  single_access_token: nalFkfiJ4WXZ_HblqCP_
+  last_request_at: 
+  crypted_password: c63e69dede014957460a7789b7126e43fbe67cae5965d66e0bc96db0745cb48ea2b2dd443dba222efdbcc7bdbc8aeff74afe0a9e611ab4642bb1fdfa2b556659
+  perishable_token: tUHd84CXr183kcHYvK1W
+  id: 15
+  failed_login_count: 0
+  current_login_ip: 
+  password_salt: wwfE34fD3Roc-2-4M-Se
+  current_login_at: 
+  persistence_token: 97457c0ca6168d491f31161c05835b9daf0de15b0a35c726779926dde8b1b3579024f6a2398e3f9be0fbc04d98d001317e999195f9d8751f4178b740b5a3f277
+  login_count: 0
+  last_login_ip: 
+  last_login_at: 
+  email: gfgfdgfd@gdfgdf.com
+user_auth_00005: 
+  single_access_token: M2ZyqOjL7MK1zte6SbhJ
+  last_request_at: 2010-04-21 04:18:14 Z
+  crypted_password: 45c9b8217977b5ac85209a0ae48c8dd4953f0e3918aa10b72d09aab8251b28ed8ee8f0f2740313b2a90783ee781ffe7df731f25fd36478b2fdde2e563516e9de
+  perishable_token: azDOQqRwnYuxo_zSBTkl
+  id: 5
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: -t6FGdOw9E3tA9FvK9hX
+  current_login_at: 2010-04-21 04:08:11 Z
+  persistence_token: 65c03539ef22b9eb7c7772d2a7c9c331bb3523eee059d2e1d7dc3e22df91fad44803c71581d80ae637b7095aa0ee859e979b6fbc3520dd6bc23c7f1dadc51d3c
+  login_count: 14
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-04-19 20:50:48 Z
+  email: muybien1234@hotmail.com
+user_auth_00016: 
+  single_access_token: yjZ1sFv-sMfkSvRmDH0H
+  last_request_at: 2010-04-14 18:36:19 Z
+  crypted_password: 29de30a515a64cd4c0f33ecd8f39710d273d713ba1f318d727b15364f3be334844042f120c4886951e147740c79a7bac339d5b25e0bf3c6799a54ed0f2ad8892
+  perishable_token: lcRw786CNiRsQ3Ui8CkK
+  id: 16
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 4vKoA02FKE5EjP0oghzr
+  current_login_at: 2010-04-12 22:09:46 Z
+  persistence_token: fcb98787baaa5f7b2072a380f2afd235a94e08b983b5ddadb2b76a613f68446e934cca1b600202eaf0c22722a297b8a774000e60fe6fa0e90b796b6a87238dc4
+  login_count: 5
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-03-22 19:29:11 Z
+  email: testagent@test.com
+user_auth_00017: 
+  single_access_token: ILMr5kd70CW_Iq_UMtV1
+  last_request_at: 2010-03-23 06:23:01 Z
+  crypted_password: 4234fff4c270a1eca7b956a52a8e8a75e733fed06fe7074665ea39489def9c4946401e76a4188bc003b4eb45c396b83374043e49d6d489cad9a236a5ec029206
+  perishable_token: o7HyAeLzHzImCgNasUIt
+  id: 17
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 2nAA3AFFQhblPXpwtHcd
+  current_login_at: 2010-03-23 05:45:01 Z
+  persistence_token: cc2781ae4726bf644e8f27b4ac6d6d1c7fd0757b6fca46014dcf61095e01b52c5e19c42455dcdb3084a3e15f16939b5ed6852d272924e0807ff706a27d39cb3f
+  login_count: 1
+  last_login_ip: 
+  last_login_at: 
+  email: rayshao@hotmail.com
+user_auth_00006: 
+  single_access_token: dmo-VaYQnED76tQ6eUY-
+  last_request_at: 2010-03-20 21:32:41 Z
+  crypted_password: 29de30a515a64cd4c0f33ecd8f39710d273d713ba1f318d727b15364f3be334844042f120c4886951e147740c79a7bac339d5b25e0bf3c6799a54ed0f2ad8892
+  perishable_token: UDmDxf0kJ3q478T4aVBV
+  id: 6
+  failed_login_count: 0
+  current_login_ip: 127.0.0.1
+  password_salt: 4vKoA02FKE5EjP0oghzr
+  current_login_at: 2010-03-20 04:54:06 Z
+  persistence_token: 14642cb1ea7a4939f2f7de7321fae96fbbac31057d7c43debadc88afe69125958a0decc2d231c9b3f010c4cb6a534f50076228c59d06a0e611d1230dcf8f7f5b
+  login_count: 9
+  last_login_ip: 127.0.0.1
+  last_login_at: 2010-01-28 08:59:32 Z
+  email: test@test.com

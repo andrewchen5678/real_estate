@@ -1,0 +1,11 @@
+<%= error_messages_for(:newcomment) %>
+<a name="newcomment"></a>
+<p><% if @headerdesc %>
+    <%=@headerdesc%>
+  <% end %>
+
+  <%=@comments.total_entries%>人留言</p>
+  <%=render :partial=>'list' %>
+  <%=render :partial=>'new' %>
+<br/>
+<%= link_to 'Back', polymorphic_path(@parentobj) %>

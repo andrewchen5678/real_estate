@@ -1,0 +1,8 @@
+<% form_tag(nil,:method => :get) do %>
+
+<%= render :partial => "addresses/address_select", :locals => {:forsearch=>'BusinessAd' } %>
+
+<%= submit_tag 'Submit',:name=>'submit_search' %>
+<% end %>
+
+<%=render :partial=>'list' %>

@@ -1,0 +1,22 @@
+--- 
+favorite_00008: 
+  created_at: 2010-03-29 22:37:14 Z
+  updated_at: 2010-03-29 22:37:14 Z
+  favoritable_type: ResidentialRealty
+  id: 8
+  favoritable_id: 1
+  user_id: 1
+favorite_00009: 
+  created_at: 2010-04-21 04:12:36 Z
+  updated_at: 2010-04-21 04:12:36 Z
+  favoritable_type: RrSale
+  id: 9
+  favoritable_id: 13
+  user_id: 5
+favorite_00004: 
+  created_at: 2010-03-27 20:47:51 Z
+  updated_at: 2010-03-27 20:47:51 Z
+  favoritable_type: RrSale
+  id: 4
+  favoritable_id: 6
+  user_id: 1

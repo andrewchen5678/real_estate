@@ -1,0 +1,21 @@
+<% if @thumbs.size==0 %>
+No user voted yet.
+<% end %>
+<% @thumbs.each do |t| %>
+<div>
+  <table>
+    <tr>
+      <td rowspan="3"><%= image_tag(t.user.coverpic.url(:thumb)) %></td>
+    </tr>
+    <tr>
+      <td><%=t.user.nickname%></td>
+      <td><%=get_thumb_image t.thumbup %></td>
+    </tr>
+    <tr>
+      <td><%=t.updated_at%></td>
+    </tr>
+
+  </table>
+<hr/>
+</div>
+<% end %>

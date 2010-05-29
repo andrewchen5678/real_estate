@@ -1,0 +1,10 @@
+\.orig$
+\.orig\..*$
+\.chg\..*$
+\.rej$
+\.conflict\~$
+^vendor/rails/
+^vendor/gems/
+^public/system/
+^tmp/
+^log/

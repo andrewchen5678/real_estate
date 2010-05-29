@@ -1,0 +1,111 @@
+--- 
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-03-15 13:45:24
+    updated_at: 2010-04-28 15:47:58
+    thumbable_id: "4"
+    id: "3"
+    user_id: "1"
+    thumbup: "1"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-03-15 16:59:54
+    updated_at: 2010-03-15 17:00:26
+    thumbable_id: "4"
+    id: "4"
+    user_id: "5"
+    thumbup: "0"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-03-16 05:38:35
+    updated_at: 2010-03-16 05:39:21
+    thumbable_id: "3"
+    id: "5"
+    user_id: "5"
+    thumbup: "0"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-03-20 04:54:21
+    updated_at: 2010-03-20 04:54:21
+    thumbable_id: "4"
+    id: "6"
+    user_id: "6"
+    thumbup: "1"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-03-23 06:13:50
+    updated_at: 2010-03-23 06:13:50
+    thumbable_id: "4"
+    id: "7"
+    user_id: "17"
+    thumbup: "1"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-04-06 23:23:11
+    updated_at: 2010-04-06 23:23:11
+    thumbable_id: "1"
+    id: "8"
+    user_id: "1"
+    thumbup: "1"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-04-11 05:02:59
+    updated_at: 2010-04-11 05:04:15
+    thumbable_id: "7"
+    id: "10"
+    user_id: "1"
+    thumbup: "0"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-04-11 05:11:07
+    updated_at: 2010-04-11 05:11:07
+    thumbable_id: "7"
+    id: "11"
+    user_id: "5"
+    thumbup: "0"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-04-12 22:05:25
+    updated_at: 2010-04-12 22:09:20
+    thumbable_id: "7"
+    id: "12"
+    user_id: "14"
+    thumbup: "0"
+  attributes_cache: {}
+
+- !ruby/object:Thumb 
+  attributes: 
+    thumbable_type: RrSale
+    created_at: 2010-04-12 23:47:11
+    updated_at: 2010-04-13 00:31:19
+    thumbable_id: "7"
+    id: "16"
+    user_id: "16"
+    thumbup: "0"
+  attributes_cache: {}
+

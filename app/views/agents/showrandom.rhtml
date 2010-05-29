@@ -1,0 +1,10 @@
+<script type='text/javascript'>
+setTimeout("document.location=document.location.pathname+('?randomnum='+ Math.random())" ,5000);
+</script>
+California agent:
+<div id="agentrand">
+<%= image_tag @agent.coverpic.url(:thumb) %>
+name: <%= @agent.first_name %> <%= @agent.last_name %><br/>
+<%= @agent.city_name %>, <%= @agent.state_id %><br/>
+<%=link_to 'more agents', {:controller=>:agents},:target=>'_parent' %>
+</div>

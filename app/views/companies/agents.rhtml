@@ -1,0 +1,22 @@
+<%=render :partial=>'top' %>
+<p>Sort by: First name, Last name, Rating,</p>
+<table>
+<% @agents.each do |agent_profile| %>
+  <tr>
+  <th></th>
+  <th>First name</th>
+  <th>Last name</th>
+  <th>Rating</th>
+  <th>Mobile phone</th>
+  <th>Language</th>
+  </tr>
+  <tr>
+    <td><%=image_tag(agent_profile.coverpic.url(:thumb)) %></td>
+    <td><%=h agent_profile.first_name %></td>
+    <td><%=h agent_profile.last_name %></td>
+    <td>rating...</td>
+    <td><%=h agent_profile.mobile_phone %></td>
+    <td><%=h agent_profile.language %></td>
+  </tr>
+<% end %>
+</table>

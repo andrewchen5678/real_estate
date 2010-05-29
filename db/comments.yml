@@ -1,0 +1,1426 @@
+--- 
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2009-01-11 03:00:00
+    commentable_type: Business
+    updated_at: 2009-01-11 03:00:00
+    commentable_id: "1"
+    id: "1"
+    user_id: "1"
+    content: testcomment1
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-18 23:27:04
+    commentable_type: Business
+    updated_at: 2010-01-18 23:27:04
+    commentable_id: "1"
+    id: "3"
+    user_id: "1"
+    content: fdsfregrg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-18 23:27:53
+    commentable_type: Business
+    updated_at: 2010-01-18 23:27:53
+    commentable_id: "1"
+    id: "4"
+    user_id: "1"
+    content: fdsfgfegretest3
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-18 23:29:00
+    commentable_type: Business
+    updated_at: 2010-01-18 23:29:00
+    commentable_id: "1"
+    id: "5"
+    user_id: "1"
+    content: |-
+      grfgrtre
+      freger2
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-18 23:29:26
+    commentable_type: Business
+    updated_at: 2010-01-18 23:29:26
+    commentable_id: "1"
+    id: "6"
+    user_id: "1"
+    content: frdfrgtrgrtrewreww
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-18 23:31:14
+    commentable_type: Business
+    updated_at: 2010-01-18 23:31:14
+    commentable_id: "1"
+    id: "7"
+    user_id: "1"
+    content: testagain
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:15:51
+    commentable_type: Business
+    updated_at: 2010-01-19 00:15:51
+    commentable_id: "1"
+    id: "8"
+    user_id: "1"
+    content: fsdgfdgfdtestagain2
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:17:48
+    commentable_type: Business
+    updated_at: 2010-01-19 00:17:48
+    commentable_id: "1"
+    id: "9"
+    user_id: "1"
+    content: testagain4
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:18:13
+    commentable_type: Business
+    updated_at: 2010-01-19 00:18:13
+    commentable_id: "1"
+    id: "10"
+    user_id: "1"
+    content: testagain5
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:21:07
+    commentable_type: Business
+    updated_at: 2010-01-19 00:21:07
+    commentable_id: "1"
+    id: "11"
+    user_id: "1"
+    content: testagain6
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:22:06
+    commentable_type: Business
+    updated_at: 2010-01-19 00:22:06
+    commentable_id: "1"
+    id: "12"
+    user_id: "1"
+    content: testagain7
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:39:51
+    commentable_type: Business
+    updated_at: 2010-01-19 00:39:51
+    commentable_id: "1"
+    id: "13"
+    user_id: "1"
+    content: ghfhrehtnhthnhrtgergerger
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 00:40:03
+    commentable_type: Business
+    updated_at: 2010-01-19 00:40:03
+    commentable_id: "1"
+    id: "14"
+    user_id: "1"
+    content: ggregrgrger
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 02:09:10
+    commentable_type: Business
+    updated_at: 2010-01-19 02:09:10
+    commentable_id: "1"
+    id: "15"
+    user_id: "1"
+    content: ggguuu
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-01-19 09:23:03
+    commentable_type: Business
+    updated_at: 2010-01-19 09:23:03
+    commentable_id: "1"
+    id: "16"
+    user_id: "1"
+    content: testggggffff
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-03 03:43:11
+    commentable_type: Business
+    updated_at: 2010-02-03 03:43:11
+    commentable_id: "11"
+    id: "17"
+    user_id: "1"
+    content: gfdgdfgfd
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-03 03:43:15
+    commentable_type: Business
+    updated_at: 2010-02-03 03:43:15
+    commentable_id: "11"
+    id: "18"
+    user_id: "1"
+    content: vcxfdgfdgd
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-03 03:43:20
+    commentable_type: Business
+    updated_at: 2010-02-03 03:43:20
+    commentable_id: "11"
+    id: "19"
+    user_id: "1"
+    content: gfdgcbvcfg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-03 03:43:24
+    commentable_type: Business
+    updated_at: 2010-02-03 03:43:24
+    commentable_id: "11"
+    id: "20"
+    user_id: "1"
+    content: bvbc
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:29:54
+    commentable_type: Company
+    updated_at: 2010-02-04 00:29:54
+    commentable_id: "1"
+    id: "21"
+    user_id: "1"
+    content: fdsgdfgs
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:30:05
+    commentable_type: Company
+    updated_at: 2010-02-04 00:30:05
+    commentable_id: "1"
+    id: "22"
+    user_id: "1"
+    content: |-
+      gfdgfdgdfgdfds
+      fdsfsd
+      fdsfsd
+      
+      
+      fdsfds
+      fds
+      
+      
+      fdsfsd
+      fds
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:31:37
+    commentable_type: Company
+    updated_at: 2010-02-04 00:31:37
+    commentable_id: "1"
+    id: "23"
+    user_id: "1"
+    content: |-
+      fdsfdstest3
+      dfsf
+      fgddddd
+      ggggg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:32:56
+    commentable_type: Company
+    updated_at: 2010-02-04 00:32:56
+    commentable_id: "1"
+    id: "24"
+    user_id: "1"
+    content: |-
+      fdsfdfds
+      fdgdf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:34:07
+    commentable_type: Company
+    updated_at: 2010-02-04 00:34:07
+    commentable_id: "1"
+    id: "25"
+    user_id: "1"
+    content: |-
+      gfdgfd1
+      gfdgdf2
+      gdfgdf3
+      gfdgdf4
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:34:49
+    commentable_type: Company
+    updated_at: 2010-02-04 00:34:49
+    commentable_id: "1"
+    id: "26"
+    user_id: "1"
+    content: |-
+      gfdgfd1
+      gfdgdf2
+      gdfgdf3
+      gfdgdf4
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:39:03
+    commentable_type: Company
+    updated_at: 2010-02-04 00:39:03
+    commentable_id: "1"
+    id: "27"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:39:56
+    commentable_type: Company
+    updated_at: 2010-02-04 00:39:56
+    commentable_id: "1"
+    id: "28"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:41:12
+    commentable_type: Company
+    updated_at: 2010-02-04 00:41:12
+    commentable_id: "1"
+    id: "29"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:41:38
+    commentable_type: Company
+    updated_at: 2010-02-04 00:41:38
+    commentable_id: "1"
+    id: "30"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:41:56
+    commentable_type: Company
+    updated_at: 2010-02-04 00:41:56
+    commentable_id: "1"
+    id: "31"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:42:20
+    commentable_type: Company
+    updated_at: 2010-02-04 00:42:20
+    commentable_id: "1"
+    id: "32"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:49:08
+    commentable_type: Company
+    updated_at: 2010-02-04 00:49:08
+    commentable_id: "1"
+    id: "33"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:52:45
+    commentable_type: Company
+    updated_at: 2010-02-04 00:52:45
+    commentable_id: "1"
+    id: "34"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:52:56
+    commentable_type: Company
+    updated_at: 2010-02-04 00:52:56
+    commentable_id: "1"
+    id: "35"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:53:21
+    commentable_type: Company
+    updated_at: 2010-02-04 00:53:21
+    commentable_id: "1"
+    id: "36"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:54:03
+    commentable_type: Company
+    updated_at: 2010-02-04 00:54:03
+    commentable_id: "1"
+    id: "37"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:56:03
+    commentable_type: Company
+    updated_at: 2010-02-04 00:56:03
+    commentable_id: "1"
+    id: "38"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:56:24
+    commentable_type: Company
+    updated_at: 2010-02-04 00:56:24
+    commentable_id: "1"
+    id: "39"
+    user_id: "1"
+    content: try post again
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-04 00:56:36
+    commentable_type: Company
+    updated_at: 2010-02-04 00:56:36
+    commentable_id: "1"
+    id: "40"
+    user_id: "1"
+    content: nose
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-02-06 08:41:02
+    commentable_type: User
+    updated_at: 2010-02-06 08:41:02
+    commentable_id: "2"
+    id: "41"
+    user_id: "2"
+    content: fdsfdsgfsd
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-05 06:44:09
+    commentable_type: RrSale
+    updated_at: 2010-03-05 06:44:09
+    commentable_id: "4"
+    id: "42"
+    user_id: "1"
+    content: testgfdgdfgdfgfd
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-05 06:44:16
+    commentable_type: RrSale
+    updated_at: 2010-03-05 06:44:16
+    commentable_id: "4"
+    id: "43"
+    user_id: "1"
+    content: test22222222
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-05 06:44:21
+    commentable_type: RrSale
+    updated_at: 2010-03-05 06:44:21
+    commentable_id: "4"
+    id: "44"
+    user_id: "1"
+    content: test333333
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-09 06:52:39
+    commentable_type: Company
+    updated_at: 2010-03-09 06:52:39
+    commentable_id: "1"
+    id: "45"
+    user_id: "1"
+    content: tyuytrurtutr
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:20:20
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:20:20
+    commentable_id: "4"
+    id: "46"
+    user_id: "1"
+    content: dfdgfgfdgfdfdddd
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:20:37
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:20:37
+    commentable_id: "4"
+    id: "47"
+    user_id: "1"
+    content: fdsfdsfsd
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:20:54
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:20:54
+    commentable_id: "4"
+    id: "48"
+    user_id: "1"
+    content: fdsfdsdssss
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:22:02
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:22:02
+    commentable_id: "4"
+    id: "49"
+    user_id: "1"
+    content: vddvxcvx
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:22:41
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:22:41
+    commentable_id: "4"
+    id: "50"
+    user_id: "1"
+    content: cvxcvxcxxxxxxxx
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:23:03
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:23:03
+    commentable_id: "4"
+    id: "51"
+    user_id: "1"
+    content: vcxvxcvxxxxxxxxxxxxxxxxxxxxxxxzzzzzzzzzzzzzzzz
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:23:25
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:23:25
+    commentable_id: "4"
+    id: "52"
+    user_id: "1"
+    content: cxzcxzcxvxcvcx
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:26:04
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:26:04
+    commentable_id: "4"
+    id: "53"
+    user_id: "1"
+    content: fgngggggggggggg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:36:19
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:36:19
+    commentable_id: "4"
+    id: "54"
+    user_id: "1"
+    content: hhhjjjkkkmmmbbvv
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:37:01
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:37:01
+    commentable_id: "4"
+    id: "55"
+    user_id: "1"
+    content: hgfggggg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:38:35
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:38:35
+    commentable_id: "4"
+    id: "56"
+    user_id: "1"
+    content: fdgfdhahanose
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:38:51
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:38:51
+    commentable_id: "4"
+    id: "57"
+    user_id: "1"
+    content: fdssdfsdhahanoseup
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:39:05
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:39:05
+    commentable_id: "4"
+    id: "58"
+    user_id: "1"
+    content: vdffdsfsdhahanosedown
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:39:15
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:39:15
+    commentable_id: "4"
+    id: "59"
+    user_id: "1"
+    content: fdsfsdfsdhahanose
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:41:52
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:41:52
+    commentable_id: "4"
+    id: "60"
+    user_id: "1"
+    content: nochg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:42:03
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:42:03
+    commentable_id: "4"
+    id: "61"
+    user_id: "1"
+    content: up
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:45:24
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:45:24
+    commentable_id: "4"
+    id: "62"
+    user_id: "1"
+    content: up
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:45:45
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:45:45
+    commentable_id: "4"
+    id: "63"
+    user_id: "1"
+    content: nochg
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:46:28
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:46:28
+    commentable_id: "4"
+    id: "64"
+    user_id: "1"
+    content: down
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 13:49:06
+    commentable_type: RrSale
+    updated_at: 2010-03-15 13:49:06
+    commentable_id: "4"
+    id: "65"
+    user_id: "1"
+    content: down
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 16:47:07
+    commentable_type: RrSale
+    updated_at: 2010-03-15 16:47:07
+    commentable_id: "4"
+    id: "66"
+    user_id: "1"
+    content: |-
+      jgvkdffgfdgdf
+      vfddsfdsfsd
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 16:59:54
+    commentable_type: RrSale
+    updated_at: 2010-03-15 16:59:54
+    commentable_id: "4"
+    id: "67"
+    user_id: "5"
+    content: ""
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 17:00:09
+    commentable_type: RrSale
+    updated_at: 2010-03-15 17:00:09
+    commentable_id: "4"
+    id: "68"
+    user_id: "5"
+    content: |-
+      gfdgdfgdfgfd
+      hgfgfhgfhgf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-15 17:00:26
+    commentable_type: RrSale
+    updated_at: 2010-03-15 17:00:26
+    commentable_id: "4"
+    id: "69"
+    user_id: "5"
+    content: ""
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-16 05:38:35
+    commentable_type: RrSale
+    updated_at: 2010-03-16 05:38:35
+    commentable_id: "3"
+    id: "70"
+    user_id: "5"
+    content: fdsfdsfsdfds
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-16 05:39:21
+    commentable_type: RrSale
+    updated_at: 2010-03-16 05:39:21
+    commentable_id: "3"
+    id: "71"
+    user_id: "5"
+    content: fdsfdsfdsfsd
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-20 04:53:10
+    commentable_type: RrSale
+    updated_at: 2010-03-20 04:53:10
+    commentable_id: "4"
+    id: "72"
+    user_id: "1"
+    content: ""
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-20 04:54:20
+    commentable_type: RrSale
+    updated_at: 2010-03-20 04:54:20
+    commentable_id: "4"
+    id: "73"
+    user_id: "6"
+    content: ""
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-03-23 06:13:49
+    commentable_type: RrSale
+    updated_at: 2010-03-23 06:13:49
+    commentable_id: "4"
+    id: "74"
+    user_id: "17"
+    content: nice
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-06 23:23:11
+    commentable_type: RrSale
+    updated_at: 2010-04-06 23:23:11
+    commentable_id: "1"
+    id: "75"
+    user_id: "1"
+    content: gfdgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-11 05:01:24
+    commentable_type: RrSale
+    updated_at: 2010-04-11 05:01:24
+    commentable_id: "7"
+    id: "76"
+    user_id: "1"
+    content: fdgbfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-11 05:02:59
+    commentable_type: RrSale
+    updated_at: 2010-04-11 05:02:59
+    commentable_id: "7"
+    id: "77"
+    user_id: "1"
+    content: |-
+      fdgfdgfd
+      gfdgdfgd
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-11 05:04:15
+    commentable_type: RrSale
+    updated_at: 2010-04-11 05:04:15
+    commentable_id: "7"
+    id: "78"
+    user_id: "1"
+    content: vfdvsdvfvsd
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-11 05:11:07
+    commentable_type: RrSale
+    updated_at: 2010-04-11 05:11:07
+    commentable_id: "7"
+    id: "79"
+    user_id: "5"
+    content: gfdgdfgdfgdf
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:05:25
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:05:25
+    commentable_id: "7"
+    id: "80"
+    user_id: "14"
+    content: gfdgfdgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:06:16
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:06:16
+    commentable_id: "7"
+    id: "81"
+    user_id: "14"
+    content: frggrefdfsffdsfds
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:09:10
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:09:10
+    commentable_id: "7"
+    id: "82"
+    user_id: "14"
+    content: gfhgfhtyhhytrthrt
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:09:20
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:09:20
+    commentable_id: "7"
+    id: "83"
+    user_id: "14"
+    content: grfdgrgtrgtr
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:12:14
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:12:14
+    commentable_id: "7"
+    id: "84"
+    user_id: "16"
+    content: fdsgfdggfdgdfffdddddd
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:14:11
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:14:11
+    commentable_id: "7"
+    id: "85"
+    user_id: "16"
+    content: grerferfregge
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:14:21
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:14:21
+    commentable_id: "7"
+    id: "86"
+    user_id: "16"
+    content: dfsfeferfer
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:14:30
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:14:30
+    commentable_id: "7"
+    id: "87"
+    user_id: "16"
+    content: frefregrefre
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:15:03
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:15:03
+    commentable_id: "7"
+    id: "88"
+    user_id: "16"
+    content: rewrewrere
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:15:33
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:15:33
+    commentable_id: "7"
+    id: "89"
+    user_id: "16"
+    content: rewrfr4ferfre
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:15:54
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:15:54
+    commentable_id: "7"
+    id: "90"
+    user_id: "16"
+    content: gfdgfdgdfgdf
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 22:16:20
+    commentable_type: RrSale
+    updated_at: 2010-04-12 22:16:20
+    commentable_id: "7"
+    id: "91"
+    user_id: "16"
+    content: vfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:05:45
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:05:45
+    commentable_id: "7"
+    id: "92"
+    user_id: "16"
+    content: htrhgfhgf
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:07:33
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:07:33
+    commentable_id: "7"
+    id: "93"
+    user_id: "16"
+    content: fdgfgfdgdffg
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:08:36
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:08:36
+    commentable_id: "7"
+    id: "94"
+    user_id: "16"
+    content: gdfgdf
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:09:59
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:09:59
+    commentable_id: "7"
+    id: "95"
+    user_id: "16"
+    content: fdsfdsfdsfds
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:30:28
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:30:28
+    commentable_id: "7"
+    id: "96"
+    user_id: "16"
+    content: ""
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:33:23
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:33:23
+    commentable_id: "7"
+    id: "97"
+    user_id: "16"
+    content: fdsfsdfdsf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:40:47
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:40:47
+    commentable_id: "7"
+    id: "98"
+    user_id: "16"
+    content: gfdgdfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:41:34
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:41:34
+    commentable_id: "7"
+    id: "99"
+    user_id: "16"
+    content: gfdgdfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:42:10
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:42:10
+    commentable_id: "7"
+    id: "100"
+    user_id: "16"
+    content: gfdgdfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:44:33
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:44:33
+    commentable_id: "7"
+    id: "101"
+    user_id: "16"
+    content: gfdgdfgdfgdfgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:45:00
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:45:00
+    commentable_id: "7"
+    id: "102"
+    user_id: "16"
+    content: ""
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-12 23:47:11
+    commentable_type: RrSale
+    updated_at: 2010-04-12 23:47:11
+    commentable_id: "7"
+    id: "103"
+    user_id: "16"
+    content: fdsfdsfsdfds
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:27:37
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:27:37
+    commentable_id: "7"
+    id: "104"
+    user_id: "16"
+    content: gfdgfdgfdgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:28:08
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:28:08
+    commentable_id: "7"
+    id: "105"
+    user_id: "16"
+    content: gfdgfdgfdgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:28:25
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:28:25
+    commentable_id: "7"
+    id: "106"
+    user_id: "16"
+    content: gfdgfdgfdgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:29:13
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:29:13
+    commentable_id: "7"
+    id: "107"
+    user_id: "16"
+    content: gfdgfdgfdgdf
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:31:19
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:31:19
+    commentable_id: "7"
+    id: "108"
+    user_id: "16"
+    content: jyuyutyuyuyt
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:31:45
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:31:45
+    commentable_id: "7"
+    id: "109"
+    user_id: "16"
+    content: fdfdsf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-13 00:31:48
+    commentable_type: RrSale
+    updated_at: 2010-04-13 00:31:48
+    commentable_id: "7"
+    id: "110"
+    user_id: "16"
+    content: fdsfdsfds
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:39:07
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:39:07
+    commentable_id: "4"
+    id: "111"
+    user_id: "1"
+    content: gfdgdfgdf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:43:00
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:43:00
+    commentable_id: "4"
+    id: "112"
+    user_id: "1"
+    content: gfxgfdgdgfdgdfg
+    thumbupdown: "1"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:45:16
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:45:16
+    commentable_id: "4"
+    id: "113"
+    user_id: "1"
+    content: gfdgfdgdf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:45:31
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:45:31
+    commentable_id: "4"
+    id: "114"
+    user_id: "1"
+    content: gfdgfdgdf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:46:18
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:46:18
+    commentable_id: "4"
+    id: "115"
+    user_id: "1"
+    content: gfdgdfhgfhfdhfdghfhgfb
+    thumbupdown: "0"
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:46:56
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:46:56
+    commentable_id: "4"
+    id: "116"
+    user_id: "1"
+    content: dsgsdfgdfgdf
+    thumbupdown: 
+  attributes_cache: {}
+
+- !ruby/object:Comment 
+  attributes: 
+    created_at: 2010-04-28 15:47:58
+    commentable_type: RrSale
+    updated_at: 2010-04-28 15:47:58
+    commentable_id: "4"
+    id: "117"
+    user_id: "1"
+    content: gfdgfdhgfdgdghddgh
+    thumbupdown: "1"
+  attributes_cache: {}
+

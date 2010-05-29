@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Company</th>
+    <th>City</th>
+    <th>Mobile Phone</th>
+    <th>Office Phone</th>
+    <th>Email</th>
+    <th>Website</th>
+  </tr>
+
+<% @agents.each do |agent| %>
+  <tr>
+    <td><%=h agent.first_name %></td>
+    <td><%=h agent.last_name %></td>
+    <td><%=h agent.company.name %></td>
+    <td><%=h agent.city_name + ', '+ agent.state_id %></td>
+    <td><%=h agent.mobile_phone %></td>
+    <td><%=h agent.office_phone %></td>
+    <td><%=h agent.email %></td>
+    <td><%=h agent.website %></td>
+    <td><%= link_to 'Show', agent %></td>
+    <td><%= link_to 'Edit', edit_user_path(agent) %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

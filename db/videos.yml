@@ -1,0 +1,36 @@
+--- 
+- !ruby/object:Video 
+  attributes: 
+    id: "1"
+    vid: Ghf6wn0XSZM
+    description: test video desc
+  attributes_cache: {}
+
+- !ruby/object:Video 
+  attributes: 
+    id: "2"
+    vid: d_GeTVfCwLI
+    description: gfdgfdhgfhgfhgfhgf
+  attributes_cache: {}
+
+- !ruby/object:Video 
+  attributes: 
+    id: "3"
+    vid: 5XP5RP6OEJI
+    description: fggfdhgfhfghgfvid
+  attributes_cache: {}
+
+- !ruby/object:Video 
+  attributes: 
+    id: "4"
+    vid: JaXAkgzwljE
+    description: fggfdhgfhfghgfvid
+  attributes_cache: {}
+
+- !ruby/object:Video 
+  attributes: 
+    id: "5"
+    vid: JaXAkgzwljE
+    description: fdsfgergerddddd
+  attributes_cache: {}
+

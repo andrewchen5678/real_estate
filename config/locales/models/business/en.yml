@@ -1,0 +1,23 @@
+en:
+  activerecord:
+#    models:
+#      business: Shengyi
+    attributes:
+      business:
+        businessName: 'Business name'
+        operateTime: 'Operating time'
+        capitalQuota: 'Capital quota'
+        numEmployee: 'Number of employees'
+        monthlySalary: 'Monthly salary'
+        annualIncome: 'Monthly income'
+        monthlyRent: 'Monthly rent'
+        #franchise:
+        business_type_id: 'Business type'
+        business_cat_id: 'Business category'
+        #items:
+        #description:
+        #phone:
+        #fax:
+        phoneExt: 'ext'
+        #website:
+        #email:

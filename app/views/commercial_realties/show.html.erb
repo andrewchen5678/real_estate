@@ -1,0 +1,108 @@
+<p>
+  <b>Address:</b>
+  <%=h @commercial_realty.address_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @commercial_realty.user_id %>
+</p>
+
+<p>
+  <b>Building area w:</b>
+  <%=h @commercial_realty.building_area_w %>
+</p>
+
+<p>
+  <b>Building area h:</b>
+  <%=h @commercial_realty.building_area_h %>
+</p>
+
+<p>
+  <b>Building year:</b>
+  <%=h @commercial_realty.building_year %>
+</p>
+
+<p>
+  <b>Num room:</b>
+  <%=h @commercial_realty.num_room %>
+</p>
+
+<p>
+  <b>Num bath:</b>
+  <%=h @commercial_realty.num_bath %>
+</p>
+
+<p>
+  <b>Num partial bath:</b>
+  <%=h @commercial_realty.num_partial_bath %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @commercial_realty.type %>
+</p>
+
+<p>
+  <b>Main entrance:</b>
+  <%=h @commercial_realty.main_entrance %>
+</p>
+
+<p>
+  <b>Num floor:</b>
+  <%=h @commercial_realty.num_floor %>
+</p>
+
+<p>
+  <b>Number of units:</b>
+  <%=h @commercial_realty.num_unit %>
+</p>
+
+<p>
+  <b>Inside component:</b>
+  <%=formatmultiplechoice(CommercialRealty::INSIDE_COMPONENT_DESC,@commercial_realty.inside_component) %>
+</p>
+
+<p>
+  <b>Public facilities:</b>
+  <%=formatmultiplechoice(CommercialRealty::PUBLIC_FACILITY_DESC,@commercial_realty.public_facility) %>
+</p>
+
+<p>
+  <b>Heater:</b>
+  <%=h @commercial_realty.heater %>
+</p>
+
+<p>
+  <b>Ac:</b>
+  <%=h @commercial_realty.ac %>
+</p>
+
+<p>
+  <b>Num unload:</b>
+  <%=h @commercial_realty.num_unload %>
+</p>
+
+<p>
+  <b>reserved parking:</b>
+  <%=h @commercial_realty.reserved_parking %>
+</p>
+
+<p>
+  <b>public parking:</b>
+  <%=h @commercial_realty.public_parking %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%=h @commercial_realty.county %>
+</p>
+
+<p>
+  <b>Neighbor:</b>
+  <%=h @commercial_realty.neighbor %>
+</p>
+
+
+<%= link_to 'Edit', edit_commercial_realty_path(@commercial_realty) %> |
+<%= link_to 'Back', commercial_realties_path %>

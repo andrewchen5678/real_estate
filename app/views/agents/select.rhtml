@@ -1,0 +1,54 @@
+<script type="text/javascript">
+  //function helperselect(paramname,obj){
+  //  selectobj(window.location.search.toQueryParams()[paramname],obj);
+  //}
+  //alert(window.location.search.toQueryParams()['update_id']);
+</script>
+<p>
+  Search Agents
+  <% form_tag(nil,:method => :get) do %>
+    <%= render :partial=>'searchpart' %>
+  <% end %>
+</p>
+
+<% if @agents %>
+<script type="text/javascript">
+  function selectagentobj(whichid){
+    parent.selectAgentCallback(whichid);
+  }
+</script>
+<p><%= better_page_entries_info @agents, :entry_name => 'Agents' %></p>
+<p>
+Sort by: <%= sort_link 'First Name', :first_name %>, <%= sort_link 'Last Name', :last_name %>, <%= sort_link 'City', :city_name %>
+</p>
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Company</th>
+    <th>City</th>
+    <th>Mobile Phone</th>
+    <th>Office Phone</th>
+    <th>Email</th>
+    <th>Website</th>
+  </tr>
+
+<% @agents.each do |agent| %>
+  <tr>
+    <td><%=h agent.first_name %></td>
+    <td><%=h agent.last_name %></td>
+    <td><%=h agent.company.name %></td>
+    <td><%=h agent.city_name + ', '+ agent.state_id %></td>
+    <td><%=h agent.mobile_phone %></td>
+    <td><%=h agent.office_phone %></td>
+    <td><%=h agent.email %></td>
+    <td><%=h agent.website %></td>
+      <td><a href="javascript:selectagentobj('<%= agent.id %>')">Select</a></td>
+      <td><%= link_to 'View',agent,:target=>'viewobj' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<% end %>
+<%= javascript_include_tag "selectobj" %>

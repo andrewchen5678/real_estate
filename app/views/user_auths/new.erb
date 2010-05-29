@@ -1,0 +1,7 @@
+<!-- register -->
+<% form_for @user_auth do |form| %>
+  <%= form.error_messages %>
+  <%= form.label :email %><br />
+  <%= form.text_field :email %><br />
+  <%= form.submit "Register" %>
+<% end %>

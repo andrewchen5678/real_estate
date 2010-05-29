@@ -1,0 +1,14 @@
+<% @comments.each do |c| %>
+  <p><span><%=c.created_at %></span></p>
+  <p><%=image_tag(c.user.coverpic.url(:thumb)) %></p>
+  <p><span><%=c.user.type %>:
+  <%=c.user.nickname %></span>
+    <% if !c.thumbupdown.nil? %>
+    <span><%=get_thumb_image c.thumbupdown %></span>
+    <% end %>
+  </p>
+  <p><%=format_tarea c.content %></p>
+  <hr/>
+<% end %>
+<%= will_paginate @comments, :param_name=>'comment_page' %>
+

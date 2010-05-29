@@ -1,0 +1,40 @@
+  <div class="c5">
+    <table width="647" border="2" cellspacing="0">
+      <tr valign="top">
+        <td class="c3" colspan="4"><span class="c2">Residential Realty&gt;<%=h rr.realty_type %>&gt;
+        <%=h rr.user.nickname %></span></td>
+
+      </tr>
+
+      <tr valign="top">
+        <td rowspan="6"><a name="0.1_graphic31" id="0.1_graphic31"></a><span><%= image_tag(rr.coverpic.url(:thumb)) %></span></td>
+
+        <td colspan="3"><span class="c2"><%=h format_address rr.address %></span></td>
+
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Bed:<%=h rr.num_of_beds %></span></td>
+
+        <td><span class="c2">Bath/Partial: <%=h rr.num_bath %>/<%=h rr.num_partial_bath %></span></td>
+
+        <td><span class="c2">Year built:<%=h rr.building_year %></span></td>
+
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2"><%=I18n.t 'activerecord.attributes._all.square_feet'%>: <%=h rr.square_feet %></span></td>
+
+        <td><span class="c2">Lot size:<%=h rr.lot_size %></span></td>
+
+        <td><span class="c2">Zoning:<%=h rr.zoning %></span></td>
+      </tr>
+
+
+      <tr valign="top">
+        <td><% if listview %><%= link_to('&lt;more&gt;',rr) %><% end %></td>
+        <td><span class="c2">Created Date: <%=h rr.created_at %></span></td>
+        <td rowspan="3"><span class="c2">Views: <%= rr.num_views %></span></td>
+      </tr>
+    </table>
+  </div>

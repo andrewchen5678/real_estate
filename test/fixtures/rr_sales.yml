@@ -1,0 +1,293 @@
+--- 
+rr_sale_00008: 
+  price: 4444.0
+  expiration_date: 
+  created_at: 2010-04-15 23:12:04 Z
+  thumbs_count: 0
+  sale_category: 2
+  mls_number: 
+  updated_at: 2010-04-15 23:12:04 Z
+  topic: sdwdwded
+  id: 8
+  ad_status: 
+  user_id: 5
+  residential_realty_id: 1
+  seller_id: 5
+  thumbs_rate: 0
+  description: wsddsadas
+  thumbs_up: 0
+  status: 3
+  num_views: 1
+rr_sale_00009: 
+  price: 12233.0
+  expiration_date: 
+  created_at: 2010-04-15 23:33:56 Z
+  thumbs_count: 0
+  sale_category: 3
+  mls_number: 1123334
+  updated_at: 2010-04-15 23:52:44 Z
+  topic: test
+  id: 9
+  ad_status: 
+  user_id: 5
+  residential_realty_id: 1
+  seller_id: 2
+  thumbs_rate: 0
+  description: fesdgdtgregtgregrtgre
+  thumbs_up: 0
+  status: 2
+  num_views: 9
+rr_sale_00010: 
+  price: 111.0
+  expiration_date: 
+  created_at: 2010-04-16 00:44:45 Z
+  thumbs_count: 0
+  sale_category: 2
+  mls_number: 1123334
+  updated_at: 2010-04-16 00:44:45 Z
+  topic: jhjhhhkjjhkjjkh
+  id: 10
+  ad_status: 
+  user_id: 5
+  residential_realty_id: 11
+  seller_id: 2
+  thumbs_rate: 0
+  description: dsffewfewfew
+  thumbs_up: 0
+  status: 4
+  num_views: 1
+rr_sale_00011: 
+  price: 111.0
+  expiration_date: 
+  created_at: 2010-04-16 00:45:07 Z
+  thumbs_count: 0
+  sale_category: 2
+  mls_number: 1123334
+  updated_at: 2010-04-16 00:45:40 Z
+  topic: jhjhhhkjjhkjjkh
+  id: 11
+  ad_status: 
+  user_id: 5
+  residential_realty_id: 11
+  seller_id: 2
+  thumbs_rate: 0
+  description: dsffewfewfew
+  thumbs_up: 0
+  status: 4
+  num_views: 6
+rr_sale_00001: 
+  price: 244.0
+  expiration_date: 
+  created_at: 2010-02-01 21:39:41 Z
+  thumbs_count: 1
+  sale_category: 3
+  mls_number: 2222
+  updated_at: 2010-03-21 07:59:18 Z
+  topic: test
+  id: 1
+  ad_status: 
+  user_id: 1
+  residential_realty_id: 9
+  seller_id: 1
+  thumbs_rate: 1
+  description: |-
+    <html>dfdsfsd
+    gfdgdfgdfghg
+  thumbs_up: 1
+  status: 1
+  num_views: 18
+rr_sale_00012: 
+  price: 555555.0
+  expiration_date: 
+  created_at: 2010-04-19 04:08:45 Z
+  thumbs_count: 0
+  sale_category: 3
+  mls_number: 0
+  updated_at: 2010-04-19 04:08:45 Z
+  topic: fdsfgds
+  id: 12
+  ad_status: 
+  user_id: 18
+  residential_realty_id: 13
+  seller_id: 1
+  thumbs_rate: 0
+  description: ekjhtrewrkujyt5yjh,
+  thumbs_up: 0
+  status: 4
+  num_views: 8
+rr_sale_00013: 
+  price: 43322.0
+  expiration_date: 
+  created_at: 2010-04-21 04:09:04 Z
+  thumbs_count: 0
+  sale_category: 1
+  mls_number: 1123334
+  updated_at: 2010-04-21 04:09:04 Z
+  topic: ttttoooppppiicccccc
+  id: 13
+  ad_status: 
+  user_id: 5
+  residential_realty_id: 1
+  seller_id: 11
+  thumbs_rate: 0
+  description: vchgfhgfhfghgfhgfhgf
+  thumbs_up: 0
+  status: 2
+  num_views: 29
+rr_sale_00002: 
+  price: 222.0
+  expiration_date: 
+  created_at: 2010-01-11 21:39:41 Z
+  thumbs_count: 0
+  sale_category: 
+  mls_number: 
+  updated_at: 2010-01-12 21:39:41 Z
+  topic: test2
+  id: 2
+  ad_status: 
+  user_id: 8
+  residential_realty_id: 1
+  seller_id: 8
+  thumbs_rate: 0
+  description: 
+  thumbs_up: 0
+  status: 3
+  num_views: 5
+rr_sale_00003: 
+  price: 12233.0
+  expiration_date: 
+  created_at: 2010-03-01 20:52:17 Z
+  thumbs_count: 1
+  sale_category: 2
+  mls_number: 2222
+  updated_at: 2010-03-01 22:35:45 Z
+  topic: jhjhhhkjjhkjjkh
+  id: 3
+  ad_status: 
+  user_id: 11
+  residential_realty_id: 1
+  seller_id: 11
+  thumbs_rate: -1
+  description: hjjgjgjkgghkhjkhjjghgvhhkhjbjjhvvgvhh
+  thumbs_up: 0
+  status: 1
+  num_views: 7
+rr_sale_00014: 
+  price: 555555.0
+  expiration_date: 
+  created_at: 2010-05-05 23:48:11 Z
+  thumbs_count: 0
+  sale_category: 1
+  mls_number: 
+  updated_at: 2010-05-05 23:48:11 Z
+  topic: fdsfgds
+  id: 14
+  ad_status: 
+  user_id: 23
+  residential_realty_id: 1
+  seller_id: 23
+  thumbs_rate: 0
+  description: ""
+  thumbs_up: 0
+  status: 2
+  num_views: 2
+rr_sale_00015: 
+  price: 555555.0
+  expiration_date: 
+  created_at: 2010-05-06 00:38:28 Z
+  thumbs_count: 0
+  sale_category: 1
+  mls_number: 
+  updated_at: 2010-05-06 00:38:28 Z
+  topic: sdwdwdedfffff
+  id: 15
+  ad_status: 
+  user_id: 23
+  residential_realty_id: 1
+  seller_id: 1
+  thumbs_rate: 0
+  description: gfdgdfgfd
+  thumbs_up: 0
+  status: 2
+  num_views: 1
+rr_sale_00004: 
+  price: 12233.0
+  expiration_date: 
+  created_at: 2010-03-02 06:34:18 Z
+  thumbs_count: 4
+  sale_category: 2
+  mls_number: 2222
+  updated_at: 2010-03-05 01:33:40 Z
+  topic: jhjhhhkjjhkjjkh
+  id: 4
+  ad_status: 
+  user_id: 13
+  residential_realty_id: 9
+  seller_id: 13
+  thumbs_rate: 2
+  description: gfgfdgf
+  thumbs_up: 3
+  status: 1
+  num_views: 68
+rr_sale_00005: 
+  price: 43322.0
+  expiration_date: 
+  created_at: 2010-03-18 20:25:20 Z
+  thumbs_count: 0
+  sale_category: 2
+  mls_number: 2222
+  updated_at: 2010-03-18 20:25:20 Z
+  topic: test
+  id: 5
+  ad_status: 
+  user_id: 1
+  residential_realty_id: 8
+  seller_id: 1
+  thumbs_rate: 0
+  description: |-
+    fdgdfdgdfsdfddgfdgdfgfdvfdvfdfdfffffffffffdddddddddddddddvvvvvvvvvvvvvvvvcccccccccccccccccccccccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+    dsfsdfdsfds
+    vcxvxcvxc
+    vcxc
+    xx
+  thumbs_up: 0
+  status: 2
+  num_views: 17
+rr_sale_00006: 
+  price: 555555.0
+  expiration_date: 
+  created_at: 2010-03-23 06:01:10 Z
+  thumbs_count: 0
+  sale_category: 1
+  mls_number: 
+  updated_at: 2010-03-23 06:01:10 Z
+  topic: AA
+  id: 6
+  ad_status: 
+  user_id: 17
+  residential_realty_id: 13
+  seller_id: 17
+  thumbs_rate: 0
+  description: DDDDDD
+  thumbs_up: 0
+  status: 1
+  num_views: 18
+rr_sale_00007: 
+  price: 4444.0
+  expiration_date: 
+  created_at: 2010-03-29 07:14:01 Z
+  thumbs_count: 4
+  sale_category: 2
+  mls_number: 0
+  updated_at: 2010-03-29 07:14:01 Z
+  topic: ttttoooppppiicccccc
+  id: 7
+  ad_status: 
+  user_id: 1
+  residential_realty_id: 1
+  seller_id: 1
+  thumbs_rate: -4
+  description: ffdsgdfgfdhgfhfg
+  thumbs_up: 0
+  status: 2
+  num_views: 35

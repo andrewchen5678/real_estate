@@ -1,0 +1,31 @@
+<% form_tag({ :controller=>'rr_sales',:action=>'index' },:method => :get) do %>
+
+    <%= label_tag 'mls_number' %>
+    <%= text_field_tag 'mls_number',params[:mls_number] %>
+
+    <%= render :partial => "addresses/address_select", :locals => {:forsearch=>'ResidentialRealty'} %>
+
+    <%= label_tag 'price_min' %>
+    <%= text_field_tag 'price_min',params[:price_min] %>
+
+    <%= label_tag 'price_max' %>
+    <%= text_field_tag 'price_max',params[:price_max] %>
+
+    <%= label_tag 'square_feet_min' %>
+    <%= text_field_tag 'square_feet_min',params[:square_feet_min] %>
+
+    <%= label_tag 'square_feet_max' %>
+    <%= text_field_tag 'square_feet_max',params[:square_feet_max] %>
+
+    <%= label_tag 'beds' %>
+    <%= select_tag "beds", options_for_select([['Any',''],['1+','1'],['2+','2'],['3+','3'],['4+','4'],['5+','5']],params[:beds]) %>
+
+    <%= label_tag 'baths' %>
+    <%= select_tag "baths", options_for_select([['Any',''],['1+','1'],['2+','2'],['3+','3'],['4+','4'],['5+','5']],params[:baths]) %>
+    <br/>
+
+    <%= label_tag 'show_type' %>
+    <%= select_tag "show_type", options_for_select([['show only valid','onlyvalid'],['show all','all'],['show pending','pending']],params[:show_type]) %>
+
+    <%= submit_tag 'Submit',:name=>'submit_search' %>
+<% end %>

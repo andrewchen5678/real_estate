@@ -1,0 +1,12 @@
+<div style="float:right">
+  <table><tr>Contact Person:</tr>
+    <tr><td><%= image_tag(@rr_sale.seller.coverpic.url(:thumb)) %></td><td>
+<%= @rr_sale.seller.type %>:
+<% link_to user_url(@rr_sale.seller) do %> 
+  <%= @rr_sale.seller.nickname %>
+<% end %> <br/>
+<%= @rr_sale.seller.city_name %>,
+<%= @rr_sale.seller.state_id %>
+    </td></tr>
+  </table>
+</div>

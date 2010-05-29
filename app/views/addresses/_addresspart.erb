@@ -1,0 +1,25 @@
+<% fields_for @address do |address_form| %>
+  <p>Street:
+    <%= address_form.text_field :streetNumber %>
+    <%= address_form.select :streetWay,Address::STREET_WAY,{:include_blank=>'-'} %>
+
+    <%= address_form.text_field :street %>
+
+    <%= address_form.select :streetRoad,Address::STREET_ROAD, {:include_blank=>true} %>
+
+    <%= address_form.label :unit %>
+    <%= address_form.text_field :unit %>
+  </p><p><%= address_form.label :city_name, 'City' %>
+    <span id="cityspan">
+    <%= address_form.select :city_name,helpergetcity(@address.state_id).map{|x| x.name },{:include_blank => @address.state_id.blank? ? 'please select state first':''} %>
+    </span>
+    <%= address_form.select :state_id, State.all.map{ |s| [s.name, s.id]}, :include_blank=>true %>
+    <% sanecityid=sanitize_to_id(address_form.object_name+"[city_name]") %>
+    <% sanestateid=sanitize_to_id(address_form.object_name+"[state_id]") %>
+    <%= stateobservefield(sanestateid,sanecityid) %>
+  </p>
+  <p>
+    <%= address_form.label :zip %>
+    <%= address_form.text_field :zip %>
+  </p>
+<% end %><!-- address_form.fields_for -->

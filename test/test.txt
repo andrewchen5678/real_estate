@@ -1,0 +1,44 @@
+(in C:/Users/angelchen/Documents/rubyonrail/landbook)
+Loaded suite C:/Ruby/lib/ruby/gems/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+test_the_truth(AddressTest): E
+test_the_truth(BusinessTest): E
+test_the_truth(CommercialRealtyTest): E
+test_the_truth(CompanyTest): E
+test_the_truth(ResidentialRealtyTest): E
+test: A User instance should have username and password. (UserSessionTest): .
+test_the_truth(UserTest): E
+
+Finished in 0.091 seconds.
+
+  1) Error:
+test_the_truth(AddressTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+  2) Error:
+test_the_truth(BusinessTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+  3) Error:
+test_the_truth(CommercialRealtyTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+  4) Error:
+test_the_truth(CompanyTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+  5) Error:
+test_the_truth(ResidentialRealtyTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+  6) Error:
+test_the_truth(UserTest):
+ActiveRecord::StatementInvalid: Mysql::Error: Table 'test_landbook_test.commercial_realties' doesn't exist: DELETE FROM `commercial_realties`
+    
+
+7 tests, 1 assertions, 0 failures, 6 errors

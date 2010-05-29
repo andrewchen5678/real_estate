@@ -1,0 +1,43 @@
+--- 
+agent_profile_00007: 
+  created_at: 2010-04-12 22:11:40 Z
+  updated_at: 2010-04-12 22:11:40 Z
+  id: 7
+  user_id: 16
+  license_number: "2222"
+agent_profile_00001: 
+  created_at: 2010-01-29 08:49:02 Z
+  updated_at: 2010-02-06 08:12:05 Z
+  id: 1
+  user_id: 2
+  license_number: "1234"
+agent_profile_00002: 
+  created_at: 2010-01-30 01:30:24 Z
+  updated_at: 2010-01-30 01:30:24 Z
+  id: 2
+  user_id: 7
+  license_number: "1234"
+agent_profile_00003: 
+  created_at: 2010-02-06 20:45:02 Z
+  updated_at: 2010-02-06 20:45:02 Z
+  id: 3
+  user_id: 8
+  license_number: "1234"
+agent_profile_00004: 
+  created_at: 2010-02-10 20:45:02 Z
+  updated_at: 2010-02-26 04:26:45 Z
+  id: 4
+  user_id: 1
+  license_number: "2222"
+agent_profile_00005: 
+  created_at: 2010-03-01 20:36:37 Z
+  updated_at: 2010-03-01 20:36:37 Z
+  id: 5
+  user_id: 11
+  license_number: "2222"
+agent_profile_00006: 
+  created_at: 2010-03-02 06:20:24 Z
+  updated_at: 2010-03-02 23:03:42 Z
+  id: 6
+  user_id: 13
+  license_number: "2222"

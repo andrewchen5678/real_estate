@@ -1,0 +1,55 @@
+  <div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6"><span class=
+        "c2">Home Description:</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <p>
+  <%= format_tarea @rr_sale.description %>
+  </p>
+
+<%= render :partial=>'residential_realties/showpart' %>
+
+<p>
+  <b>rr number:</b>
+  <%=h @rr_sale.residential_realty_id %>
+</p>
+
+<p>
+  <b>user id:</b>
+  <%=h @rr_sale.user_id %>
+</p>
+
+<p>
+  <b>topic:</b>
+  <%=h @rr_sale.topic %>
+</p>
+
+<p>
+  <b>price:</b>
+  <%=h @rr_sale.price %>
+</p>
+
+<p>
+  <b>mls_number:</b>
+  <%=h @rr_sale.mls_number %>
+</p>
+
+<p>
+  <b>status:</b>
+  <%=h RrSale::STATUS_DESC[@rr_sale.status] %>
+</p>
+
+<p>
+  <b>sale_type:</b>
+  <%=h RrSale::SALE_CATEGORY_DESC[@rr_sale.sale_category] %>
+</p>
+
+
+<p>
+  <b>description:</b>
+  <%= format_tarea @rr_sale.description %>
+</p>

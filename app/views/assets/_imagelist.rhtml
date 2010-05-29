@@ -1,0 +1,34 @@
+<% imglist=obj.assets.all -%>
+<% if imglist.size>0 %>
+<table>
+	<tr>
+          <td>
+            <tr>
+              <td><%= image_tag(imglist.first.url,:id=>'bigPic') %></td>
+            </tr>
+            <tr>
+              <td>Description:<span id="bigPicDesc"><%=h imglist.first.description || '' %></span></td>
+            </tr>
+          </td>
+		<td>
+                  <% imgarray=[] %>
+                  <% imglist.each do |a| %>
+                    <% imgarray.push([a.url,a.description || '']) %>
+                  <a href="javascript:switchPic(<%= imgarray.length-1 %>);">
+                      <%= image_tag(a.url(:thumb), :border=>"0") %>
+                  </a>
+                  <% end %>
+                </td>
+
+	</tr>
+</table>
+<% end %><!--  #if imglist -->
+<script type="text/javascript">
+<!--
+var myObject = <%=imgarray.to_json%>;
+function switchPic(which){
+    document.getElementById("bigPic").src=myObject[which][0];
+    document.getElementById("bigPicDesc").innerHTML=myObject[which][1];
+}
+//-->
+</script>

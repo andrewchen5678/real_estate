@@ -1,0 +1,85 @@
+<%=render :partial=>'top' %>
+<% if canshowinfo? @user %>
+<p>
+  <b>Login(Email):</b>
+  <%=h @user.email %>
+</p>
+
+  <p>
+    first_name<br />
+    <%= h @user.first_name %>
+  </p>
+  <p>
+    last_name<br />
+    <%= h @user.last_name %>
+  </p>
+<% end %><!-- user kind of -->
+  <p>
+    nickname<br />
+    <%= h @user.nickname %>
+  </p>
+  <p>
+    place:<br />
+    <%= h "#{@user.city_name}, #{@user.state_id}" %>
+  </p>
+  <p>
+    gender:<br />
+    <%= h @user.gender %>
+  </p>
+<% if canshowinfo? @user %>
+  <p>
+    other_language_name <br />
+    <%= h @user.other_language_name %>
+  </p>
+
+  <p>
+    birthday <br />
+    <%= h @user.birthday %>
+  </p>
+<% if @user.kind_of?(RegularUser) %>
+  <p> company(reg):
+  <%= h(@user.profile.company_name) if @user.profile %>
+  </p>
+<% elsif @user.kind_of?(Agent) %>
+  <p> company:
+    <%= h @user.company.name %>
+  </p>
+  <p>
+    staff <br />
+    <%= h @user.staff %>
+  </p>
+  <p> license_number: <br />
+    <%= h @user.profile.license_number %>
+  </p>
+<% else %>
+unknown user type
+<% end %>
+
+  <p>
+    position <br />
+    <%= h @user.position %>
+  </p>
+  <p>
+    office_phone <br />
+    <%= h @user.office_phone %>
+  </p>
+  <p>
+    office_ext <br />
+    <%= h @user.office_ext %>
+  </p>
+  <p>
+    mobile_phone <br />
+    <%= h @user.mobile_phone %>
+  </p>
+  <p>
+    website <br />
+    <%= h @user.website %>
+  </p>
+  <p>
+    language <br />
+    <%= h formatmultiplechoice(User::LANGUAGE_DESC,@user.language) %>
+  </p>
+<% end %><!-- user kind of -->
+<%= render :partial => "widgets/picvid", :locals => { :obj=>@user } %>
+<%= link_to 'edit', edit_account_path %> |
+<%= link_to 'Edit Additional pictures', :action=>:updatepics, :id=>@user.id %> |

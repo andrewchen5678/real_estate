@@ -1,0 +1,90 @@
+<%= javascript_include_tag 'rating/jquery.rating' %>
+<%= stylesheet_link_tag 'jquery.rating' %>
+
+<script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery(".rating").rating();
+        });
+
+</script>
+
+
+<%=rating_star_control('a')%>
+
+<%= render :partial=>'top' %>
+<%= render :partial => "sidebar" %>
+<%= image_tag(@company.coverpic.url(:thumb)) %>
+<p>Ratings for the company:
+<%#= @company.rating.a %>
+<%#= @company.rating.b %>
+<%#= @company.rating.c %>
+<%#= @company.rating.d %>
+<%#= @company.rating.comment %>
+</p>
+<p>Number of people recommended: <%= @company.picks_count %></p>
+
+<p>
+  <b>Engname:</b>
+  <%=h @company.name %>
+</p>
+
+<p>
+  <b>Othername:</b>
+  <%=h @company.other_language_name %>
+</p>
+
+<p>
+  <b>Licensenum:</b>
+  <%=h @company.license_number %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h format_address(@company.address) %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @company.phone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%=h @company.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @company.email %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%=h @company.website %>
+</p>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Title</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+  </tr>
+<% @agents.each do |agent_profile| %>
+  <tr>
+    <td><%=image_tag(agent_profile.coverpic.url(:thumb)) %></td>
+    <td><%=h agent_profile.position %></td>
+    <td><%=h agent_profile.first_name %></td>
+    <td><%=h agent_profile.last_name %></td>
+  </tr>
+<% end %>
+</table>
+
+<p>Message board</p>
+<%= render :partial => "comments/list" %>
+<p><%= link_to '更多►►', polymorphic_path([@company,:comments]) %></p>
+<p><%= link_to '我要留言', polymorphic_path([@company,:comments],:anchor => "newcomment") %></p>
+
+<hr/>
+<%= link_to 'Edit', edit_company_path(@company) %> |
+<%= link_to 'Back', companies_path %>

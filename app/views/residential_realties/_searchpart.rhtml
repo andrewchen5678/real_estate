@@ -1,0 +1,12 @@
+    <% form_tag( { :controller=>'residential_realties',:action=>'search' },:method => :get) do %>
+
+    <%= render :partial => "addresses/address_select", :locals => {:forsearch=>'ResidentialRealty' } %>
+
+    <%= label_tag 'square_feet_min' %>
+    <%= text_field_tag 'square_feet_min',params[:square_feet_min] %>
+
+    <%= label_tag 'square_feet_max' %>
+    <%= text_field_tag 'square_feet_max',params[:square_feet_max] %>
+
+    <%= submit_tag 'Submit',:name=>'submit_search' %>
+    <% end %>

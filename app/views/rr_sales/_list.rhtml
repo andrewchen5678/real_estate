@@ -1,0 +1,4 @@
+<% @rr_sales.each do |r| %>
+<%= render :partial=>'rr_sales/square', :locals=>{ :rr_sale=>r, :listview=>true } %>
+<% end %>
+<%= will_paginate @rr_sales %>

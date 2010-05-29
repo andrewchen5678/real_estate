@@ -1,0 +1,338 @@
+--- 
+- !ruby/object:RrSale 
+  attributes: 
+    price: "244.00"
+    created_at: 2010-02-01 21:39:41
+    expiration_date: 
+    thumbs_count: "1"
+    sale_category: "3"
+    mls_number: "2222"
+    updated_at: 2010-03-21 07:59:18
+    topic: test
+    ad_status: 
+    id: "1"
+    residential_realty_id: "9"
+    user_id: "1"
+    seller_id: "1"
+    thumbs_rate: "1"
+    description: |-
+      <html>dfdsfsd
+      gfdgdfgdfghg
+    thumbs_up: "1"
+    status: "1"
+    num_views: "18"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "222.00"
+    created_at: 2010-01-11 21:39:41
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: 
+    mls_number: 
+    updated_at: 2010-01-12 21:39:41
+    topic: test2
+    ad_status: 
+    id: "2"
+    residential_realty_id: "1"
+    user_id: "8"
+    seller_id: "8"
+    thumbs_rate: "0"
+    description: 
+    thumbs_up: "0"
+    status: "3"
+    num_views: "5"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "12233.00"
+    created_at: 2010-03-01 20:52:17
+    expiration_date: 
+    thumbs_count: "1"
+    sale_category: "2"
+    mls_number: "2222"
+    updated_at: 2010-03-01 22:35:45
+    topic: jhjhhhkjjhkjjkh
+    ad_status: 
+    id: "3"
+    residential_realty_id: "1"
+    user_id: "11"
+    seller_id: "11"
+    thumbs_rate: "-1"
+    description: hjjgjgjkgghkhjkhjjghgvhhkhjbjjhvvgvhh
+    thumbs_up: "0"
+    status: "1"
+    num_views: "7"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "12233.00"
+    created_at: 2010-03-02 06:34:18
+    expiration_date: 
+    thumbs_count: "4"
+    sale_category: "2"
+    mls_number: "2222"
+    updated_at: 2010-03-05 01:33:40
+    topic: jhjhhhkjjhkjjkh
+    ad_status: 
+    id: "4"
+    residential_realty_id: "9"
+    user_id: "13"
+    seller_id: "13"
+    thumbs_rate: "2"
+    description: gfgfdgf
+    thumbs_up: "3"
+    status: "1"
+    num_views: "68"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "43322.00"
+    created_at: 2010-03-18 20:25:20
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "2"
+    mls_number: "2222"
+    updated_at: 2010-03-18 20:25:20
+    topic: test
+    ad_status: 
+    id: "5"
+    residential_realty_id: "8"
+    user_id: "1"
+    seller_id: "1"
+    thumbs_rate: "0"
+    description: |-
+      fdgdfdgdfsdfddgfdgdfgfdvfdvfdfdfffffffffffdddddddddddddddvvvvvvvvvvvvvvvvcccccccccccccccccccccccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+      dsfsdfdsfds
+      vcxvxcvxc
+      vcxc
+      xx
+    thumbs_up: "0"
+    status: "2"
+    num_views: "17"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "555555.00"
+    created_at: 2010-03-23 06:01:10
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "1"
+    mls_number: 
+    updated_at: 2010-03-23 06:01:10
+    topic: AA
+    ad_status: 
+    id: "6"
+    residential_realty_id: "13"
+    user_id: "17"
+    seller_id: "17"
+    thumbs_rate: "0"
+    description: DDDDDD
+    thumbs_up: "0"
+    status: "1"
+    num_views: "18"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "4444.00"
+    created_at: 2010-03-29 07:14:01
+    expiration_date: 
+    thumbs_count: "4"
+    sale_category: "2"
+    mls_number: "0"
+    updated_at: 2010-03-29 07:14:01
+    topic: ttttoooppppiicccccc
+    ad_status: 
+    id: "7"
+    residential_realty_id: "1"
+    user_id: "1"
+    seller_id: "1"
+    thumbs_rate: "-4"
+    description: ffdsgdfgfdhgfhfg
+    thumbs_up: "0"
+    status: "2"
+    num_views: "35"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "4444.00"
+    created_at: 2010-04-15 23:12:04
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "2"
+    mls_number: 
+    updated_at: 2010-04-15 23:12:04
+    topic: sdwdwded
+    ad_status: 
+    id: "8"
+    residential_realty_id: "1"
+    user_id: "5"
+    seller_id: "5"
+    thumbs_rate: "0"
+    description: wsddsadas
+    thumbs_up: "0"
+    status: "3"
+    num_views: "1"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "12233.00"
+    created_at: 2010-04-15 23:33:56
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "3"
+    mls_number: "1123334"
+    updated_at: 2010-04-15 23:52:44
+    topic: test
+    ad_status: 
+    id: "9"
+    residential_realty_id: "1"
+    user_id: "5"
+    seller_id: "2"
+    thumbs_rate: "0"
+    description: fesdgdtgregtgregrtgre
+    thumbs_up: "0"
+    status: "2"
+    num_views: "9"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "111.00"
+    created_at: 2010-04-16 00:44:45
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "2"
+    mls_number: "1123334"
+    updated_at: 2010-04-16 00:44:45
+    topic: jhjhhhkjjhkjjkh
+    ad_status: 
+    id: "10"
+    residential_realty_id: "11"
+    user_id: "5"
+    seller_id: "2"
+    thumbs_rate: "0"
+    description: dsffewfewfew
+    thumbs_up: "0"
+    status: "4"
+    num_views: "1"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "111.00"
+    created_at: 2010-04-16 00:45:07
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "2"
+    mls_number: "1123334"
+    updated_at: 2010-04-16 00:45:40
+    topic: jhjhhhkjjhkjjkh
+    ad_status: 
+    id: "11"
+    residential_realty_id: "11"
+    user_id: "5"
+    seller_id: "2"
+    thumbs_rate: "0"
+    description: dsffewfewfew
+    thumbs_up: "0"
+    status: "4"
+    num_views: "6"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "555555.00"
+    created_at: 2010-04-19 04:08:45
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "3"
+    mls_number: "0"
+    updated_at: 2010-04-19 04:08:45
+    topic: fdsfgds
+    ad_status: 
+    id: "12"
+    residential_realty_id: "13"
+    user_id: "18"
+    seller_id: "1"
+    thumbs_rate: "0"
+    description: ekjhtrewrkujyt5yjh,
+    thumbs_up: "0"
+    status: "4"
+    num_views: "8"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "43322.00"
+    created_at: 2010-04-21 04:09:04
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "1"
+    mls_number: "1123334"
+    updated_at: 2010-04-21 04:09:04
+    topic: ttttoooppppiicccccc
+    ad_status: 
+    id: "13"
+    residential_realty_id: "1"
+    user_id: "5"
+    seller_id: "11"
+    thumbs_rate: "0"
+    description: vchgfhgfhfghgfhgfhgf
+    thumbs_up: "0"
+    status: "2"
+    num_views: "29"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "555555.00"
+    created_at: 2010-05-05 23:48:11
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "1"
+    mls_number: 
+    updated_at: 2010-05-05 23:48:11
+    topic: fdsfgds
+    ad_status: 
+    id: "14"
+    residential_realty_id: "1"
+    user_id: "23"
+    seller_id: "23"
+    thumbs_rate: "0"
+    description: ""
+    thumbs_up: "0"
+    status: "2"
+    num_views: "2"
+  attributes_cache: {}
+
+- !ruby/object:RrSale 
+  attributes: 
+    price: "555555.00"
+    created_at: 2010-05-06 00:38:28
+    expiration_date: 
+    thumbs_count: "0"
+    sale_category: "1"
+    mls_number: 
+    updated_at: 2010-05-06 00:38:28
+    topic: sdwdwdedfffff
+    ad_status: 
+    id: "15"
+    residential_realty_id: "1"
+    user_id: "23"
+    seller_id: "1"
+    thumbs_rate: "0"
+    description: gfdgdfgfd
+    thumbs_up: "0"
+    status: "2"
+    num_views: "1"
+  attributes_cache: {}
+

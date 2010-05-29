@@ -1,0 +1,34 @@
+
+  <b>business:</b>
+<table><tr>
+    <td>生意名稱:</td>
+    <td><%=h @business.businessName %></td>
+  </tr>
+
+  <tr><td>operating time:</td><td><%=h @business.operateTime %></td></tr>
+  <tr><td>year started:</td><td><%=h @business.year_started %></td></tr>
+    <tr><td>quota:</td><td><%=h @business.capitalQuota %></td></tr>
+    <tr><td>#員工:</td><td><%=h @business.numEmployee %></td></tr>
+    <tr><td>Monthly Salary:</td><td><%=h @business.monthlySalary %></td></tr>
+    <tr><td>Annual Income:</td><td><%=h @business.annualIncome %></td></tr>
+    <tr><td>Monthly Rent:</td><td><%=h @business.monthlyRent %></td></tr>
+    <tr><td>Franchise?:</td><td><%=h Business::FRANCHISE_DESC[@business.franchise] %></td></tr>
+    <tr><td>type:</td><td><%=h Business::BUSINESS_TYPE_DESC[@business.business_type_id] %></td></tr>
+    <tr><td>catalog:</td><td><%=h Business::BUSINESS_CAT_DESC[@business.business_cat_id] %></td></tr>
+    <tr><td>items:</td><td><%=h @business.items %></td></tr>
+    <tr><td>description:</td><td><%=h @business.description %></td></tr>
+    <tr><td>Phone:</td><td><%=h @business.phone %></td></tr>
+    <tr><td>Ext:</td><td><%=h @business.phoneExt %></td></tr>
+    <tr><td>Fax:</td><td><%=h @business.fax %></td></tr>
+    <tr><td>Website:</td><td><%=h @business.website %></td></tr>
+    <tr><td>Email:</td><td><%=h @business.email %></td></tr>
+    <tr><td>Address:</td><td><%=h format_address(@business.address) %></td></tr>
+    <tr><td>Front Picture:</td><td><%= image_tag(@business.coverpic.url) %></td></tr>
+</table>
+<p>Additional Pictures:</p>
+<%= render :partial => "assets/imagelist", :locals => { :obj=>@business } %>
+<%= link_to 'Edit Additional pictures', :action=>:updatepics %>
+
+<%= render :partial => "comments/first", :locals => { :obj=>@business } %>
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>

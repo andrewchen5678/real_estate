@@ -1,0 +1,66 @@
+  <p>
+    <% form_tag(nil,:method => :get) do %>
+
+    <%= render :partial => "addresses/address_select", :locals => {:forsearch=>'Business' } %>
+
+    <%= submit_tag 'Submit',:name=>'submit_search' %>
+    <% end %>
+
+<% if @businesses %>
+<table>
+
+  <tr>
+    <th>businessID</th>
+    <th>businessName</th>
+    <th>year started</th>
+    <th>operateTime</th>
+    <th>capitalQuota</th>
+    <th>numEmployee</th>
+    <th>monthlySalary</th>
+    <th>annualIncome</th>
+    <th>monthlyRent</th>
+    <th>franchise</th>
+    <th>business_type_id</th>
+    <th>business_cat_id</th>
+    <th>items</th>
+    <th>description</th>
+    <th>phone</th>
+    <th>phoneExt</th>
+    <th>fax</th>
+    <th>website</th>
+    <th>email</th>
+    <th>picture</th>
+  </tr>
+    <% @businesses.each do |business| %>
+    <tr>
+      <td><%=h business.id %></td>
+      <td><%=h business.businessName %></td>
+      <td><%=h business.year_started %></td>
+      <td><%=h business.operateTime %></td>
+      <td><%=h business.capitalQuota %></td>
+      <td><%=h business.numEmployee %></td>
+      <td><%=h business.monthlySalary %></td>
+      <td><%=h business.annualIncome %></td>
+      <td><%=h business.monthlyRent %></td>
+      <td><%=h Business::FRANCHISE_DESC[business.franchise] %></td>
+      <td><%=h Business::BUSINESS_TYPE_DESC[business.business_type_id] %></td>
+      <td><%=h Business::BUSINESS_CAT_DESC[business.business_cat_id] %></td>
+      <td><%=h business.items %></td>
+      <td><%=h business.description %></td>
+      <td><%=h business.phone %></td>
+      <td><%=h business.phoneExt %></td>
+      <td><%=h business.fax %></td>
+      <td><%=h business.website %></td>
+      <td><%=h business.email %></td>
+      <td><%= image_tag(business.coverpic.url(:thumb)) %></td>
+      <td><%= link_to 'Show', business %></td>
+      <td><%= link_to 'Edit', edit_business_path(business) %></td>
+      <td><%= link_to 'Destroy', business, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+  <%= will_paginate @businesses %>
+<% end %>
+
+</p>
+

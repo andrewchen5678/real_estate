@@ -1,0 +1,34 @@
+<h1>Listing addresses</h1>
+
+<table>
+  <tr>
+    <th>Streetnumber</th>
+    <th>Streetway</th>
+    <th>Street</th>
+    <th>Streetroad</th>
+    <th>Unit</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+  </tr>
+
+<% @addresses.each do |address| %>
+  <tr>
+    <td><%=h address.streetNumber %></td>
+    <td><%=h address.streetWay %></td>
+    <td><%=h address.street %></td>
+    <td><%=h address.streetRoad %></td>
+    <td><%=h address.unit %></td>
+    <td><%=h address.city.name %></td>
+    <td><%=h address.city.state_id %></td>
+    <td><%=h address.zip %></td>
+    <td><%= link_to 'Show', address %></td>
+    <td><%= link_to 'Edit', edit_address_path(address) %></td>
+    <td><%= link_to 'Destroy', address, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New address', new_address_path %>

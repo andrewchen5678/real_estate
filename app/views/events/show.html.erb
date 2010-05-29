@@ -1,0 +1,26 @@
+<b>Event:</b>
+<p>
+  <b>id:</b>
+  <%= @event.id %>
+</p>
+<p>
+  <b>user:</b>
+  <%=h @event.user.first_name + ' ' + @event.user.last_name %>
+</p>
+<p>
+  <b>company id:</b>
+  <%=h @event.company_id %>
+</p>
+<p>
+  <%=h @event.created_at %>
+</p>
+<p>
+  <b>title:</b>
+  <%=h @event.title %>
+</p>
+<p>
+  <b>content:</b>
+  <%=h @event.content %>
+</p>
+<%= link_to 'Edit', edit_company_event_path(@company,@event) %> |
+<%= link_to 'Back', company_event_path %>

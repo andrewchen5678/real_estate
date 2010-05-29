@@ -1,0 +1,149 @@
+    <%= stylesheet_link_tag 'alert' %>
+    <%= stylesheet_link_tag 'default' %>
+    <%= javascript_include_tag 'window'%>
+<script type="text/javascript">
+  //function showselected(){
+  //  window.open('/companies/'+document.getElementById('user_company_id').value);
+  //  //return false;
+  //}
+  
+  function selectCompanyCallback(whichid){
+    $('user_company_id').value=whichid;
+    updateCompany(whichid);
+    win.close();
+  }
+
+  function selectcompany(){
+    //var win = new Window({className: "dialog", width:350, height:400, zIndex: 100, resizable: true, title: "Sample window", showEffect:Effect.BlindDown, hideEffect: Effect.SwitchOff, draggable:false, destroyOnClose: true, recenterAuto:true})
+    //win.getContent().innerHTML= "<div style='padding:10px'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, set eiusmod tempor incidunt et labore et dolore magna aliquam. Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse molestaie cillum. Tia non ob ea soluad incom dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda et tam. \ At vver eos et accusam dignissum qui blandit est praesent. Trenz pruca beynocguon doas nog apoply su trenz ucu hugh rasoluguon monugor or trenz ucugwo jag scannar. Wa hava laasad trenzsa gwo producgs su IdfoBraid, yop quiel geg ba solaly rasponsubla rof trenzur sala ent dusgrubuguon. Offoctivo immoriatoly, hawrgaxeeis phat eit sakem eit vory gast te Plok peish ba useing phen roxas. Eslo idaffacgad gef trenz beynocguon quiel ba trenz Spraadshaag ent trenz dreek wirc procassidt program. Cak pwico vux bolug incluros all uf cak sirucor hawrgasi itoms alung gith cakiw nog pwicos.\ Lor sum amet, commy nulputat. Duipit lum ipisl eros dolortionsed tin hent aliquis illam volor in ea feum in ut adipsustrud elent ulluptat. Duisl ullan ex et am vulputem augiam doloreet amet enibh eui te dipit acillutat acilis amet, suscil er iuscilla con utat, quisis eu feugait ad dolore commy nullam iuscilisl iureril ilisl del ut pratuer iliquis acipissit accum quis nulluptat. Dui bla faccumsan velis auguero con henis duismolor sumsandrem quat vulluptat alit er iniamcore exeriure vero core te dit ut nulla feummolore commod dipis augiamcommod tem ese dolestrud do odo odiamco eetummy nis aliquamcommy nonse eu feugue del eugiamconsed ming estrud magnis exero eumsandio enisim del dio od tat.sumsan et pratum velit ing etue te consequis alis nullan et, quis am iusci bla feummy.</div>"
+    //win.setStatusBar("Status bar info");
+    win = new Window({className: "dialog", title: "Select company", top:70, left:100, width:600, height:200, url: '<%=escape_javascript(url_for(:controller=>'companies', :action => "select"))  %>', showEffectOptions: {duration:1.5}, draggable:false, destroyOnClose: true, recenterAuto:false, draggable:true, wiredDrag: true});
+    win.showCenter(true);
+    //selectwin.onclose=null;
+  }
+
+  document.observe("dom:loaded", function() {
+    id_read=$('user_company_id').value;
+    if(id_read>0){
+      updateCompany(id_read);
+    }
+  });
+
+  function updateCompany(whichid){
+    new Ajax.Request('/companies/'+whichid+'.js', {
+      method:'get',
+      //requestHeaders: {Accept: 'application/json'},
+      onSuccess: function(transport){
+        //alert(point);
+        //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+        company_json = transport.responseText.evalJSON(true);
+        //alert(transport.responseText);
+        $('company_info').update(company_json.company.name+', '+company_json.company.address.city_name+', '+company_json.company.address.state_id);
+      }
+    });
+  }
+  </script>
+<% form_for @user, :url => account_path(:user_type=>params[:user_type]),:html => { :multipart => true } do |form| %>
+  <%= error_messages_for(:auth,:user) %>
+  <!--= form.label :email %><br />-->
+  <!--= form.text_field :email %<br />-->
+  email: <%= @auth.email %><br/>
+  <br />
+  <% fields_for @auth do |ua| %>
+    <%= ua.label :password, @user.new_record? ? nil : "Change password" %><br />
+    <%= ua.password_field :password %><br />
+    <br />
+    <%= ua.label :password_confirmation %><br />
+    <%= ua.password_field :password_confirmation %><br />
+  <% end %>
+    <p><%=render :partial=>'city_form',:locals=>{ :f=>form } %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= form.label :first_name %><br />
+    <%= form.text_field :first_name %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= form.label :last_name %><br />
+    <%= form.text_field :last_name %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= form.label :nickname %><br />
+    <%= form.text_field :nickname %><span style="color: red">*</span>
+  </p>
+  <p>
+    <%= form.label :other_language_name %><br />
+    <%= form.text_field :other_language_name %>
+  </p>
+  <p>
+    <%= form.label :gender %><br />
+    <%= form.select :gender,[['Male','M'],['Female','F']] %>
+  </p>
+  <p>
+    <%= form.label :birthday %><br />
+    <%= form.date_select :birthday, :order=>[:month, :day, :year] %>
+  </p>
+<% if @user.instance_of?(RegularUser) %>
+  <% form.fields_for :profile do |profile| %>
+  <p>
+    <%= profile.label :company_name %><br />
+    <%= profile.text_field :company_name %>
+  </p>
+  <p>
+    <%= form.label :hide_info %><br />
+    <%= form.check_box :hide_info %>
+  </p>
+  <% end %>
+<% elsif @user.instance_of?(Agent) %>
+  <p>
+    <%= form.label :company_id %><br />
+    <%= form.text_field :company_id, :readonly=>true %><span id="company_info"></span>
+    <%= link_to "Select", 'javascript:selectcompany();'  %>
+    <a href="javascript:showselected();">View selected</a>
+  </p>
+  <p>
+    <%= form.label :staff %><br />
+    <%= form.text_field :staff %>
+  </p>
+  <% form.fields_for :profile do |profile| %>
+  <p>
+    <%= profile.label :license_number %><br />
+    <%= profile.text_field :license_number %>
+  </p>
+  <% end %>
+<% else %>
+unknown user type
+<% end %>
+  <p>
+    <%= form.label :position %><br />
+    <%= form.text_field :position %>
+  </p>
+  <p>
+    <%= form.label :office_phone %><br />
+    <%= form.text_field :office_phone %>
+  </p>
+  <p>
+    <%= form.label :office_ext %><br />
+    <%= form.text_field :office_ext %>
+  </p>
+  <p>
+    <%= form.label :mobile_phone %><br />
+    <%= form.text_field :mobile_phone %>
+  </p>
+  <p>
+    <%= form.label :website %><br />
+    <%= form.text_field :website %>
+  </p>
+  <p>
+    <%= form.label :language %><span style="color: red">*</span><br />
+    <% # = form.text_field :language %>
+    <%= checkboxlist("user[language]", User::LANGUAGE_DESC,@user.language) %>
+  </p>
+  <p>
+
+    logo:<%= form.file_field :coverpic %>
+
+  </p>
+  <p>
+    <%= form.submit 'Save' %>
+  </p>
+<% end %>

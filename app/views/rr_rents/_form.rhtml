@@ -1,0 +1,46 @@
+<% form_for(@rr_rent) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :residential_realty_id %>
+    <%= f.text_field :residential_realty_id %>
+  </p>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :rent_price %>
+    <%= f.text_field :rent_price %>
+  </p>
+  <p>
+    <%= f.label :term %>
+    <%= f.text_field :term %>
+  </p>
+  <p>
+    <%= f.label :deposit %>
+    <%= f.text_field :deposit %>
+  </p>
+  <p>
+    <%= f.label :this_term %>
+    <%= f.text_field :this_term %>
+  </p>
+  <p>
+    Status:<br/>
+    <% RrRent::STATUS_DESC.each_pair do |k,v| %>
+    <%= f.radio_button :status, k %><%= f.label :status, v %>
+    
+    <% end #STATUS_DESC %>
+  </p>
+  <p>
+    Rent type:<br/>
+    <% RrRent::RENT_TYPE_DESC.each_pair do |k,v| %>
+    <%= f.radio_button :rent_type, k %><%= f.label :rent_type, v %>
+    
+    <% end #RENT_TYPE_DESC %>
+  </p>
+  <p>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </p>
+  <%= f.submit "Save" %>
+<% end %>

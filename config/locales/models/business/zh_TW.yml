@@ -1,0 +1,23 @@
+zh_TW:
+  activerecord:
+#    models:
+#      business: Shengyi
+    attributes:
+      business:
+        businessName: '生意名稱'
+        operateTime: '營業時間'
+        capitalQuota: '資本額'
+        numEmployee: 'Number of employees'
+        monthlySalary: 'Monthly salary'
+        annualIncome: 'Monthly income'
+        monthlyRent: 'Monthly rent'
+        #franchise:
+        business_type_id: 'Business type'
+        business_cat_id: 'Business category'
+        #items:
+        #description:
+        #phone:
+        #fax:
+        phoneExt: 'ext'
+        #website:
+        #email:

@@ -1,0 +1,62 @@
+<h1>edit pictures</h1>
+<% form_for(@pics, :url => { :action => "updatepics" }, :html => { :multipart => true }) do |f| %>
+  <% # = f.error_messages %>
+  <% if(!@imgerrors.blank?) %>
+  <div class="errorExplanation" id="errorExplanation"><h2>Error uploading:</h2><ul>
+    <% @imgerrors.each do |i| %>
+    <li><%=i%></li>
+  <% end %>
+  </ul></div>
+  <% end %>
+<h2>Current Pictures</h2>
+<table><tr>
+<% @pics.each do |a| %>
+
+    <% if(!a.data.dirty?) %>
+    <td><tr><td><%= image_tag(a.url) %></td></tr>
+    <tr><td>Description:<%= a.description %></td></tr>
+    <tr><td><%=link_to("edit description",edit_polymorphic_url([@parentobj,a]))%></td><td><%=link_to("delete picture","updatepics?deletepicid=#{a.id}")%></td></tr></td>
+    <% end %>
+  
+<% end %>
+</tr></table>
+  <p>Upload new pictures: (Max of <%= AttachmentsCommon::Max_Attachments %>)</p>
+  <div id="morePhotoDiv">
+    <p><input name="attachment[]" type="file" /></p>
+    <p><input name="attachment[]" type="file" /></p>
+  </div>
+  <a href="javascript:addMore();" id="addPhotoLink">增加</a>
+<script type="text/javascript">
+<!--
+
+var morephotoboxcount=2;
+function addMore(){
+    var morePhotoDiv=document.getElementById('morePhotoDiv');
+    if(morephotoboxcount<10){
+        for(i=0;i<2;i++){
+            para=document.createElement("p");
+            newinput=document.createElement("input");
+            newinput.name="attachment[]";
+            newinput.type="file";
+            para.appendChild(newinput);
+            morePhotoDiv.appendChild(para);
+        }
+        morephotoboxcount+=2;
+    }else{
+        morePhotoDiv.innerHTML=
+            morePhotoDiv.innerHTML+'\n\
+        <p><input name="Photo[]" type="file" /></p>\n';
+    }
+    if(morephotoboxcount>=10){
+        document.getElementById("addPhotoLink").removeAttribute("href");
+        document.getElementById("addPhotoLink").innerHTML="不能再增加";
+    }
+}
+
+//-->
+</script>
+  <p>
+    <%= f.submit "Update",:name=>'updatepicbtn' %>
+  </p>
+<% end %>
+<%= link_to 'Back', polymorphic_path(@parentobj) %>

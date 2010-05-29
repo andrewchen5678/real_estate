@@ -1,0 +1,88 @@
+<% form_for(@commercial_realty) do |f| %>
+  <%= error_messages_for(:object=>[@commercial_realty,@address]) %>
+
+  <%= render :partial => "addresses/addresspart", :locals => {:addressvar=>@address } %>
+  <p>
+    <%= f.label :building_area_w %><br />
+    <%= f.text_field :building_area_w %>
+  </p>
+  <p>
+    <%= f.label :building_area_h %><br />
+    <%= f.text_field :building_area_h %>
+  </p>
+  <p>
+    <%= f.label :building_year %><br />
+    <%= f.text_field :building_year %>
+  </p>
+  <p>
+    <%= f.label :num_room %><br />
+    <%= f.text_field :num_room %>
+  </p>
+  <p>
+    <%= f.label :num_bath %><br />
+    <%= f.text_field :num_bath %>
+  </p>
+  <p>
+    <%= f.label :num_partial_bath %><br />
+    <%= f.text_field :num_partial_bath %>
+  </p>
+  <p>
+    <%= f.label :realty_type %><br />
+    <% CommercialRealty::REALTY_TYPE_DESC.each_pair do |k,v| %>
+    <%= f.radio_button :realty_type, k %><%= f.label :realty_type, v %>
+    <br/>
+    <%  end #CommercialRealty::REALTY_TYPE_DESC.each_with_keys %>
+  </p>
+  <p>
+    <%= f.label :main_entrance %><br />
+    <%= f.text_field :main_entrance %>
+  </p>
+  <p>
+    <%= f.label :num_floor %><br />
+    <%= f.text_field :num_floor %>
+  </p>
+  <p>
+    <%= f.label :num_unit %><br />
+    <%= f.text_field :num_unit %>
+  </p>
+  <p>
+    <%= f.label :inside_component %><br />
+
+    <%= checkboxlist("commercial_realty[inside_component]", CommercialRealty::INSIDE_COMPONENT_DESC,@commercial_realty.inside_component) %>
+  </p>
+  <p>
+    <%= f.label :public_facility %><br />
+    <%= checkboxlist("commercial_realty[public_facility]", CommercialRealty::PUBLIC_FACILITY_DESC,@commercial_realty.public_facility) %>
+  </p>
+  <p>
+    <%= f.label :heater %><br />
+    <%= checkboxlist("commercial_realty[heater]", CommercialRealty::HEATER_DESC,@commercial_realty.heater) %>
+  </p>
+  <p>
+    <%= f.label :ac %><br />
+    <%= checkboxlist("commercial_realty[ac]", CommercialRealty::AC_DESC,@commercial_realty.ac) %>
+  </p>
+  <p>
+    <%= f.label :num_unload %><br />
+    <%= f.text_field :num_unload %>
+  </p>
+  <p>
+    <%= f.label :reserved_parking %><br />
+    <%= f.text_field :reserved_parking %>
+  </p>
+  <p>
+    <%= f.label :public_parking %><br />
+    <%= f.text_field :public_parking %>
+  </p>
+  <p>
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </p>
+  <p>
+    <%= f.label :neighbor %><br />
+    <%= f.text_field :neighbor %>
+  </p>
+  <p>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

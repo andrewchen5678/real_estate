@@ -1,0 +1,32 @@
+<h1>Listing commercial_realties</h1>
+
+<table>
+  <tr>
+    <th>Address</th>
+    <th>User</th>
+    <th>Building area w</th>
+    <th>Building area h</th>
+    <th>Building year</th>
+    <th>Num room</th>
+    <th>Type</th>
+  </tr>
+
+<% @commercial_realties.each do |commercial_realty| %>
+  <tr>
+    <td><%=h commercial_realty.address_id %></td>
+    <td><%=h commercial_realty.user_id %></td>
+    <td><%=h commercial_realty.building_area_w %></td>
+    <td><%=h commercial_realty.building_area_h %></td>
+    <td><%=h commercial_realty.building_year %></td>
+    <td><%=h commercial_realty.num_room %></td>
+    <td><%=h commercial_realty.type %></td>
+    <td><%= link_to 'Show', commercial_realty %></td>
+    <td><%= link_to 'Edit', edit_commercial_realty_path(commercial_realty) %></td>
+    <td><%= link_to 'Destroy', commercial_realty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New commercial_realty', new_commercial_realty_path %>

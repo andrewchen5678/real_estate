@@ -1,0 +1,22 @@
+    <%= label_tag 'name_start' %>
+    <%= text_field_tag 'name_start',params[:name_start] %>
+
+    <!--%= render :partial => "addresses/address_select", :locals => {:forsearch=>'ResidentialRealty' } %-->
+
+    <%
+    if(params[:state_id])
+      cityarr=helpergetcityinclass(params[:state_id],'Agent').map{|x| x.city_name }
+      citylist='<option value=''>--ALL--</option>'+options_for_select(cityarr,params[:city_name])
+    else
+      citylist="<option value=''>--ALL--</option>"
+    end
+    %>
+
+    <%= label_tag 'city_name', "City" %>
+    <%= select_tag 'city_name', citylist %>
+    <%= label_tag 'state_id', "State" %>
+
+    <%= stateselector("state_id","state_id",params[:state_id],'--ALL--') %>
+    <%= stateobservefield("state_id",'city_name','Agent',true) %>
+
+    <%= submit_tag 'Submit',:name=>'submit_search' %>

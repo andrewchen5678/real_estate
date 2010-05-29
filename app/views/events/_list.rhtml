@@ -1,0 +1,11 @@
+<% @events.each do |event| %>
+<p>
+<%=h event.created_at %>
+</p>
+<p><b><%=h event.title %></b></p>
+<p>
+  <%=format_tarea event.content %>
+</p>
+  <%=h event.user.first_name + ' ' + event.user.last_name %>
+<hr/>
+<% end %>

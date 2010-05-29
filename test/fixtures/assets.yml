@@ -1,0 +1,171 @@
+--- 
+asset_00008: 
+  created_at: 2010-02-04 03:23:14 Z
+  updated_at: 2010-02-04 03:23:28 Z
+  data_content_type: image/png
+  id: 8
+  data_file_name: page1.png
+  data_file_size: 22284
+  description: test3
+  attachable_type: Company
+  attachable_id: 1
+asset_00031: 
+  created_at: 2010-03-05 06:23:10 Z
+  updated_at: 2010-03-05 06:23:10 Z
+  data_content_type: image/jpeg
+  id: 31
+  data_file_name: dcb5c060ada0029ec96f8110.L.jpg
+  data_file_size: 22924
+  description: testdesc2
+  attachable_type: ResidentialRealty
+  attachable_id: 9
+asset_00009: 
+  created_at: 2010-02-04 03:23:44 Z
+  updated_at: 2010-02-04 03:23:44 Z
+  data_content_type: image/png
+  id: 9
+  data_file_name: page2.png
+  data_file_size: 18597
+  description: 
+  attachable_type: Company
+  attachable_id: 1
+asset_00021: 
+  created_at: 2010-02-05 08:06:33 Z
+  updated_at: 2010-02-05 08:06:33 Z
+  data_content_type: image/jpeg
+  id: 21
+  data_file_name: bach.h1.jpg
+  data_file_size: 19804
+  description: 
+  attachable_type: Business
+  attachable_id: 2
+asset_00010: 
+  created_at: 2010-02-05 02:25:19 Z
+  updated_at: 2010-02-05 02:25:19 Z
+  data_content_type: image/png
+  id: 10
+  data_file_name: check.png
+  data_file_size: 8978
+  description: 
+  attachable_type: Business
+  attachable_id: 1
+asset_00011: 
+  created_at: 2010-02-05 02:25:20 Z
+  updated_at: 2010-02-05 02:25:20 Z
+  data_content_type: image/png
+  id: 11
+  data_file_name: checkback.png
+  data_file_size: 5363
+  description: 
+  attachable_type: Business
+  attachable_id: 1
+asset_00022: 
+  created_at: 2010-02-05 08:06:34 Z
+  updated_at: 2010-02-05 08:06:34 Z
+  data_content_type: image/jpeg
+  id: 22
+  data_file_name: business.jpg
+  data_file_size: 6096
+  description: 
+  attachable_type: Business
+  attachable_id: 2
+asset_00034: 
+  created_at: 2010-03-29 20:28:59 Z
+  updated_at: 2010-03-29 20:28:59 Z
+  data_content_type: image/png
+  id: 34
+  data_file_name: 48x48_folder_blue_open.png
+  data_file_size: 3209
+  description: 
+  attachable_type: User
+  attachable_id: 1
+asset_00002: 
+  created_at: 2010-02-03 01:49:06 Z
+  updated_at: 2010-02-03 01:49:06 Z
+  data_content_type: image/jpeg
+  id: 2
+  data_file_name: bach.h1.jpg
+  data_file_size: 19804
+  description: 
+  attachable_type: Business
+  attachable_id: 11
+asset_00013: 
+  created_at: 2010-02-05 02:27:52 Z
+  updated_at: 2010-02-05 02:27:52 Z
+  data_content_type: image/png
+  id: 13
+  data_file_name: 48x48_folder_blue_open.png
+  data_file_size: 3209
+  description: 
+  attachable_type: Company
+  attachable_id: 1
+asset_00035: 
+  created_at: 2010-05-06 00:44:16 Z
+  updated_at: 2010-05-06 00:44:16 Z
+  data_content_type: image/jpeg
+  id: 35
+  data_file_name: business.jpg
+  data_file_size: 6096
+  description: 
+  attachable_type: User
+  attachable_id: 23
+asset_00036: 
+  created_at: 2010-05-06 00:44:18 Z
+  updated_at: 2010-05-06 00:44:18 Z
+  data_content_type: image/png
+  id: 36
+  data_file_name: drea_hosthacked1.png
+  data_file_size: 36000
+  description: 
+  attachable_type: User
+  attachable_id: 23
+asset_00004: 
+  created_at: 2010-02-03 01:52:13 Z
+  updated_at: 2010-02-03 01:52:13 Z
+  data_content_type: image/png
+  id: 4
+  data_file_name: 48x48_misc.png
+  data_file_size: 4897
+  description: 
+  attachable_type: Business
+  attachable_id: 11
+asset_00027: 
+  created_at: 2010-02-06 06:15:20 Z
+  updated_at: 2010-02-06 06:15:20 Z
+  data_content_type: image/png
+  id: 27
+  data_file_name: dreamhostdown.png
+  data_file_size: 27210
+  description: 
+  attachable_type: User
+  attachable_id: 2
+asset_00005: 
+  created_at: 2010-02-03 03:31:55 Z
+  updated_at: 2010-02-04 03:27:25 Z
+  data_content_type: image/jpeg
+  id: 5
+  data_file_name: Untitled.jpg
+  data_file_size: 12256
+  description: 
+  attachable_type: Company
+  attachable_id: 1
+asset_00028: 
+  created_at: 2010-02-06 06:15:21 Z
+  updated_at: 2010-02-06 06:19:41 Z
+  data_content_type: image/jpeg
+  id: 28
+  data_file_name: att-centro-black.jpg
+  data_file_size: 14478
+  description: testpalm
+  attachable_type: User
+  attachable_id: 2
+asset_00030: 
+  created_at: 2010-03-05 06:23:09 Z
+  updated_at: 2010-03-05 06:23:09 Z
+  data_content_type: image/png
+  id: 30
+  data_file_name: adsensecrash.png
+  data_file_size: 40893
+  description: testdesc1
+  attachable_type: ResidentialRealty
+  attachable_id: 9

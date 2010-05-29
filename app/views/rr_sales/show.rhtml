@@ -1,0 +1,21 @@
+<%= render :partial=>'sidebar_left' %>
+<div id="rr_sale_content" style="float: left;">
+<%= render :partial=>'widgets/imageslideshow', :locals=>{:obj=>@rr_sale.residential_realty} %>
+  <p class="c1">Detail page</p><a name="0.1_table03" id="0.1_table03"></a>
+
+<%= render :partial=>'square', :locals=>{ :rr_sale=>@rr_sale, :listview=>false } %>
+
+  <p class="c1"><%=link_to('Maps',{:action=>:showiframe, :part=>'map' },{ :target=>'showiframe' })%>| <%=link_to('details',{:action=>:showiframe, :part=>'details' },{ :target=>'showiframe' })%> | Client Ratings| <%=link_to('Message Board',rr_sale_comments_path(@rr_sale,:view=>'plain'),{:target=>'showiframe'})%> |
+
+  <%=link_to('video',{:action=>:showiframe, :part=>'video' },{ :target=>'showiframe' })%></p>
+
+  <p><span class="c2"><%=link_to_remote "Save to my favorite",
+    :url => { :action => "save_favorite", :id => @rr_sale.id } %><span id='favmsg'><!--  '(already favorite)' if (current_user && @rr_sale.favorites.exists?(:user_id=>current_user.id)) --></span> | Print this page | <%=link_to 'e-mail to a
+  friend',email_rr_sale_path(@rr_sale) %></span><br /></p><a name="0.1_table04" id="0.1_table04"></a>
+
+
+  <iframe id="showiframe" name="showiframe" style="width:800px;height:600px" src="<%=url_for(:action=>:showiframe, :part=>'details')%>"></iframe>
+<%= link_to 'Edit', edit_rr_sale_path(@rr_sale) %> |
+<a href="javascript:history.go(-1);">Back</a>
+</div>
+<%= render :partial => "sidebar_right" %>

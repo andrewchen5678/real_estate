@@ -1,0 +1,38 @@
+<% form_for @company,:html => { :multipart => true }  do |f| %>
+  <%= error_messages_for(:object=>[@company,@address]) %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :other_language_name %><br />
+    <%= f.text_field :other_language_name %>
+  </p>
+  <p>
+    <%= f.label :license_number %><br />
+    <%= f.text_field :license_number %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :fax %><br />
+    <%= f.text_field :fax %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </p>
+  <%= render :partial => "addresses/addresspart", :locals => {:addressvar=>@address } %>
+  <p>
+    logo:<%= f.file_field :coverpic %>
+    <%= render :partial=>'videos/fields', :locals => {:obj=>@company,:f=>f } %>
+    <%= f.submit 'Save' %>
+  </p>
+<% end %>

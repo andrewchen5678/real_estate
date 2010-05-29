@@ -1,0 +1,71 @@
+--- 
+- !ruby/object:Company 
+  attributes: 
+    name: com1
+    created_at: 2010-01-28 20:26:22
+    video_id: 
+    coverpic_file_size: 
+    updated_at: 2010-02-07 00:17:47
+    picks_count: "0"
+    coverpic_file_name: joomlafterinstall.jpg
+    id: "1"
+    address_id: "44"
+    user_id: "8"
+    rating_id: 
+    website: http://www.fdfd.com
+    fax: "6555555555"
+    phone: "1234567890"
+    license_number: "1111"
+    other_language_name: !binary |
+      5L2g5aW9dXA=
+
+    num_views: "203"
+    email: 32432423@fdgd.com
+  attributes_cache: {}
+
+- !ruby/object:Company 
+  attributes: 
+    name: com2
+    created_at: 2010-02-08 23:24:53
+    video_id: "1"
+    coverpic_file_size: 
+    updated_at: 2010-02-28 02:12:44
+    picks_count: "2"
+    coverpic_file_name: adsensecrash.png
+    id: "2"
+    address_id: "45"
+    user_id: "1"
+    rating_id: 
+    website: http://www.fdfd.com
+    fax: "5467854343"
+    phone: "1234567890"
+    license_number: "1111"
+    other_language_name: !binary |
+      5L2g5aW9dXA=
+
+    num_views: "139"
+    email: 32432423@fdgd.com
+  attributes_cache: {}
+
+- !ruby/object:Company 
+  attributes: 
+    name: com3
+    created_at: 
+    video_id: 
+    coverpic_file_size: 
+    updated_at: 
+    picks_count: "0"
+    coverpic_file_name: 
+    id: "3"
+    address_id: "45"
+    user_id: "1"
+    rating_id: 
+    website: http://www.fdfd.com
+    fax: "4534543534"
+    phone: "5466565465"
+    license_number: "133454"
+    other_language_name: fdgfdgdf
+    num_views: "1"
+    email: fdgdf@gdfgd.com
+  attributes_cache: {}
+

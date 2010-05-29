@@ -1,0 +1,18 @@
+<%= render :partial => 'widgets/selectmenu' %>
+<p>
+  Search Agents
+  <% form_tag({ :controller=>'agents',:action=>'index' },:method => :get) do %>
+    <%= render :partial=>'searchpart' %>
+  <% end %>
+</p>
+
+<% if @agents %>
+<p><%= better_page_entries_info @agents, :entry_name => 'Agents' %></p>
+<p>
+Sort by: <%= sort_link 'First Name', :first_name %>, <%= sort_link 'Last Name', :last_name %>, <%= sort_link 'City', :city_name %>
+</p>
+<%= render :partial=>'list' %>
+<% end %>
+
+<!--= link_to 'New rr_sale', new_rr_sale_path %--> |
+<!--= link_to 'Search rr_sale', :controller=>:rr_sales, :action=>:search -->

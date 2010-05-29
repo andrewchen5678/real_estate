@@ -1,0 +1,15 @@
+<% form_for [@company,@event] do |event_form| %>
+
+  <%= event_form.error_messages %>
+  <p>
+    <%= event_form.label :title %><br />
+    <%= event_form.text_field :title %>
+  </p>
+  <p>
+    <%= event_form.label :content %><br />
+    <%= event_form.text_area :content %>
+  </p>
+  <p>
+    <%= event_form.submit "Save" %>
+  </p>
+<% end %>

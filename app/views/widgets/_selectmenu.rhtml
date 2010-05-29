@@ -1,0 +1,108 @@
+<%= stylesheet_link_tag 'dropdownmenu' %>
+<%= javascript_include_tag 'dropdownmenu' %>
+<div>
+<ul class="menu" id="menu">
+	<li><%=link_to 'Residential Property', {:controller=>"residential_realties"} ,{:class=>"menulink"}   %>
+		<ul>
+			<li><%=link_to 'For sale',rr_sales_path%></li>
+			<li>
+				<%=link_to 'For rent',rr_rents_path%>
+			</li>
+			<li>
+                          <a href="#">Room for rent</a>
+				<!--<a href="#" class="sub">Room for rent</a>
+				<ul>
+					<li class="topline"><a href="#">Navigation Item 1</a></li>
+					<li><a href="#">Navigation Item 2</a></li>
+					<li>
+						<a href="#" class="sub">Navigation Item 3</a>
+						<ul>
+							<li class="topline"><a href="#">Navigation Item 1</a></li>
+							<li><a href="#">Navigation Item 2</a></li>
+							<li><a href="#">Navigation Item 3</a></li>
+							<li><a href="#">Navigation Item 4</a></li>
+							<li><a href="#">Navigation Item 5</a></li>
+							<li><a href="#">Navigation Item 6</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Navigation Item 4</a></li>
+				</ul>-->
+			</li>
+                        <!--
+			<li><a href="#">Navigation Item 4</a></li>
+			<li><a href="#">Navigation Item 5</a></li>
+                        -->
+		</ul>
+	</li>
+        <li><a href="#" class="menulink">Commercial Property</a>
+          <ul>
+                <li><a href="#">For sale</a></li>
+                <li>
+                        <a href="#">For rent/lease</a>
+                </li>
+          </ul>
+        </li>
+        <li><a href="#" class="menulink">Land</a>
+          <ul>
+                <li><a href="#">For sale</a></li>
+                <li><a href="#">For rent/lease</a></li>
+                <li><a href="#">Developing project</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menulink">Business</a>
+          <ul>
+                <li><a href="#">For sale</a></li>
+                <li><a href="#">For partnership</a></li>
+                <li><a href="#">Franchise</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="menulink">Realtor</a>
+          <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Agent</a></li>
+          </ul>
+        </li>
+	<li><%= link_to 'create ad', {:controller=>'home',:action=>'create_ad'},:class=>"menulink" %></li>
+        
+	<li>
+		<a href="#" class="menulink">Dropdown Two</a>
+		<ul>
+			<li><a href="#">Navigation Item 1</a></li>
+			<li>
+				<a href="#" class="sub">Navigation Item 2</a>
+				<ul>
+					<li class="topline"><a href="#">Navigation Item 1</a></li>
+					<li><a href="#">Navigation Item 2</a></li>
+					<li><a href="#">Navigation Item 3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#" class="menulink">Dropdown Three</a>
+		<ul>
+			<li><a href="#">Navigation Item 1</a></li>
+			<li><a href="#">Navigation Item 2</a></li>
+			<li><a href="#">Navigation Item 3</a></li>
+			<li><a href="#">Navigation Item 4</a></li>
+			<li><a href="#">Navigation Item 5</a></li>
+			<li>
+				<a href="#" class="sub">Navigation Item 6</a>
+				<ul>
+					<li class="topline"><a href="#">Navigation Item 1</a></li>
+					<li><a href="#">Navigation Item 2</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Navigation Item 7</a></li>
+			<li><a href="#">Navigation Item 8</a></li>
+			<li><a href="#">Navigation Item 9</a></li>
+			<li><a href="#">Navigation Item 10</a></li>
+		</ul>
+	</li>
+</ul>
+</div>
+<script type="text/javascript">
+	var menu=new menu.dd("menu");
+	menu.init("menu","menuhover");
+</script>
+<div style="clear:left;"></div>

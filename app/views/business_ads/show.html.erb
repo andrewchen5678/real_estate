@@ -1,0 +1,86 @@
+<b>business ad:</b>
+<b>Ad Topic:</b> <%=h @business_ad.topic %>
+<hr/>
+<p>
+  <b>price:</b>
+  <%=h @business_ad.price %>
+</p>
+<p>
+  <b>Ads introduction:</b>
+  <%=h @business_ad.introduction %>
+</p>
+<p>
+  <b>Ads date:</b>
+  <%=h @business_ad.created_at %>
+</p>
+<hr/>
+<p>
+  <b>Business name:</b>
+  <%=h @business_ad.business.businessName %>
+</p>
+<p>
+  <b>Business introduction:</b>
+  <%=h @business_ad.business.description %>
+</p>
+<p>
+  <b>Business since:</b>
+  <%=h @business_ad.business.year_started %>
+</p>
+<hr/>
+<p>
+  <b>address:</b>
+  <%=h format_address(@business_ad.business.address) %>
+</p>
+<p>
+  <b>business tel</b>
+  <%= @business_ad.business.phone %>
+</p>
+<p>
+  <b>business fax</b>
+  <%= @business_ad.business.fax %>
+</p>
+<p>
+  <b>business website</b>
+  <%= @business_ad.business.website %>
+</p>
+<p>
+  <b>business email</b>
+  <%= @business_ad.business.email %>
+</p>
+<p>
+  <b>business file number</b>
+  <%= @business_ad.business.id %>
+</p>
+<p>
+  <b>user_id:</b>
+  <%=h @business_ad.user_id %>
+</p>
+
+
+
+<p>
+  <b>immigration:</b>
+  <%=h @business_ad.immigration %>
+</p>
+<p>
+  <b>ad_type:</b>
+  <%=h @business_ad.ad_type %>
+</p>
+<p>
+  <b>status:</b>
+  <%=h @business_ad.show_ad_status %>
+</p>
+<p>
+  <b>expiration date:</b>
+  <%=h @business_ad.expiration_date %>
+</p>
+<p>
+  <b>partnership_percent:</b>
+  <%=h @business_ad.partnership_percent %>
+</p>
+<p>
+  <b>annual_fee:</b>
+  <%=h @business_ad.annual_fee %>
+</p>
+<%= link_to 'Edit', edit_business_ad_path(@business_ad) %> |
+<%= link_to 'Back', business_ads_path %>

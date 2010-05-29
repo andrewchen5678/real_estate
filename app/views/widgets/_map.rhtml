@@ -1,0 +1,155 @@
+<% format_mapaddr=format_address(mapaddr) %>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=<%=GOOGLE_MAP_API_KEY%>" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+    var map = null;
+    var geocoder = null;
+    var myPano;
+    var mapControl;
+    var gmarkers=[];
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+        geocoder = new GClientGeocoder();
+        myPano = new GStreetviewPanorama(document.getElementById("pano"));
+        GEvent.addListener(myPano, "error", handleNoFlash);
+        mapControl = new GMapTypeControl();
+
+        map = new GMap2(document.getElementById("map_canvas"));
+        map.addControl(mapControl);
+        map.addControl(new GLargeMapControl());
+
+        showAddressByID(<%=mapaddr.id%>);
+        //showAddressByString('<%=escape_javascript(format_address mapaddr)%>');
+      }
+    }
+
+    function showAddressByString(address){
+      //map.clearOverlays();
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+              //alert(point);
+              new Ajax.Request('/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+$('within').value, {
+                method:'get',
+                //requestHeaders: {Accept: 'application/json'},
+                onSuccess: function(transport){
+                  //alert(point);
+                  //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+                  addrlist = transport.responseText.evalJSON(true);
+                  //document.write(transport.responseText);
+                  //alert(address);
+                  helperShowAddress(address,new GLatLng(point.y,point.x),addrlist);
+                }
+              });
+            }
+          }
+        );
+      }
+    }
+
+    function showAddressByID(id){
+        new Ajax.Request('/addresses.js?address_id='+id+'&within='+$('within').value, {
+          method:'get',
+          //requestHeaders: {Accept: 'application/json'},
+          onSuccess: function(transport){
+            addrlist = transport.responseText.evalJSON(true);
+            //alert(addrlist);
+            helperShowAddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng),addrlist);
+          }
+        });
+    }
+
+    function helperShowAddress(address,point,addrlist) {
+        clearMarkers();
+      //if (geocoder) {
+      //  geocoder.getLatLng(
+      //    address,
+      //    function(point) {
+      //      if (!point) {
+      //        alert(address + " not found");
+      //      } else {
+        //fenwayPark = new GLatLng(42.345573,-71.098326);
+        //alert(point);
+              myPano.setLocationAndPOV(point);
+              map.setCenter(point, 13);
+              var marker = new GMarker(point);
+              helpermarker(map,marker,address);
+              for (var key in addrlist) {
+                markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                helpermarker(map,markertemp,addrlist[key].address);
+              }
+              //for (i=0;i<addrlist.length;i++) {
+              //  //alert(addrlist[i].address);
+              //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
+              //  helpermarker(map,markertemp,addrlist[i].address);
+              //}
+              marker.openInfoWindowHtml(address);
+            //}
+          //}
+        //);
+      //}
+    }
+
+    function helpermarker(map,marker,text){
+        map.addOverlay(marker);
+        gmarkers.push(marker);
+        GEvent.addListener(marker, 'click', function() {
+          // When clicked, open an Info Window
+          marker.openInfoWindowHtml(text);
+        });
+    }
+
+    function clearMarkers(){
+      for(i = 0; i < gmarkers.length; i++)
+      {
+              map.removeOverlay(gmarkers[i]);
+      }
+
+    }
+
+    function handleNoFlash(errorCode) {
+      if (errorCode == 603) {
+        alert("Error: Flash doesn't appear to be supported by your browser");
+        return;
+      }
+    }
+    </script>
+
+     <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value); return false">
+      <p>
+        <input type="text" size="60" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" />
+        <input type="submit" value="Go!" />
+<%=select_tag("within", options_for_select([['within 5 miles',5],
+    ['within 10 miles',10],
+    ['within 20 miles',20],
+    ['within 40 miles',40]],
+  (params[:within] || 10)),
+  :onchange=>'showAddressByString($("addressfield").value)'
+) %>
+      </p>
+      <div id="map_canvas" style="width: 500px; height: 300px"></div>
+      <div id="pano" style="width: 500px; height: 300px; border-style:solid"></div>
+    </form>
+
+<script type="text/javascript">
+document.observe("dom:loaded", function() {
+  initialize();
+});
+
+Event.observe(window, 'unload', function(){
+  //alert('calling window unload');
+  GUnload();
+});
+    //jQuery(document).ready(function(){
+    //    initialize();
+    // });
+//jQuery(window).unload(function() {
+//  GUnload();
+//});
+
+</script>

@@ -1,0 +1,38 @@
+<p>
+  <b>Streetnumber:</b>
+  <%=h @address.streetNumber %>
+</p>
+
+<p>
+  <b>Streetway:</b>
+  <%=h @address.streetWay %>
+</p>
+
+<p>
+  <b>Street:</b>
+  <%=h @address.street %>
+</p>
+
+<p>
+  <b>Streetroad:</b>
+  <%=h @address.streetRoad %>
+</p>
+
+<p>
+  <b>Unit:</b>
+  <%=h @address.unit %>
+</p>
+
+<p>
+  <b>Cityid:</b>
+  <%=h @address.cityID %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @address.zip %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

@@ -1,0 +1,89 @@
+<% form_for @business, :html => { :multipart => true } do |business_form| %>
+
+  <%= error_messages_for(:object=>[@business,@address]) %>
+  <p>
+    <%= business_form.label :businessName,nil,:class=>'fdfds' %><br />
+    <%= business_form.text_field :businessName, :class=>'fdfds' %>
+  </p>
+  <p>
+    <%= business_form.label :year_started %><br />
+    <%= business_form.text_field :year_started %>
+  </p>
+  <p>
+    <%= business_form.label :operateTime %><br />
+    <%= business_form.text_field :operateTime %>
+  </p>
+  <p>
+    <%= business_form.label :capitalQuota %><br />
+    <%= business_form.text_field :capitalQuota %>
+  </p>
+  <p>
+    <%= business_form.label :numEmployee %><br />
+    <%= business_form.text_field :numEmployee %>
+  </p>
+  <p>
+    <%= business_form.label :monthlySalary %><br />
+    <%= business_form.text_field :monthlySalary %>
+  </p>
+  <p>
+    <%= business_form.label :annualIncome %><br />
+    <%= business_form.text_field :annualIncome %>
+  </p>  
+  <p>
+    <%= business_form.label :monthlyRent %><br />
+    <%= business_form.text_field :monthlyRent %>
+  </p>  
+  <p>
+    <%= business_form.radio_button :franchise, false %><%= business_form.label :franchise, Business::FRANCHISE_DESC[false] %>
+    <%= business_form.radio_button :franchise, true %><%= business_form.label :franchise, Business::FRANCHISE_DESC[true] %>
+  </p>  
+  <p>
+    <%= business_form.label :business_type_id %><br />
+    <% #business_type_array = Business::BUSINESS_TYPE_DESC.map {|x,y| [y,x]}
+    #selected = @business.businessType
+    business_type_array = Business::BUSINESS_TYPE_DESC.map {|x,y| [y,x]}
+    #business_type_array.each{|a| logger.debug "[#{a}]"}
+    %>
+      <%= business_form.select :business_type_id, business_type_array, {:include_blank => 'please select'} %>
+  </p>
+  <p>
+    <%= business_form.label :business_cat_id %><br />
+    <%= business_form.select :business_cat_id, Business::BUSINESS_CAT_DESC.map {|x,y| [y,x]}, {:include_blank => 'please select'} %>
+  </p>
+  <p>
+    <%= business_form.label :items %><br />
+    <%= business_form.text_area :items %>
+  </p>  
+  <p>
+    <%= business_form.label :description %><br />
+    <%= business_form.text_area :description %>
+  </p>  
+  <p>
+    <%= business_form.label :phone %><br />
+    <%= business_form.text_field :phone %>
+  </p>  
+  <p>
+    <%= business_form.label :phoneExt %><br />
+    <%= business_form.text_field :phoneExt %>
+  </p>  
+  <p>
+    <%= business_form.label :fax %><br />
+    <%= business_form.text_field :fax %>
+  </p>  
+  <p>
+    <%= business_form.label :website %><br />
+    <%= business_form.text_field :website %>
+  </p>  
+  <p>
+    <%= business_form.label :email %><br />
+    <%= business_form.text_field :email %>
+  </p>
+  
+  <%= render :partial => "addresses/addresspart", :locals => {:addressvar=>@address } %>
+  
+  <%= render :partial=>'widgets/delete_coverpic', :locals => {:obj=>@business } %>
+  <p>
+    logo:<%= business_form.file_field :coverpic %>
+    <%= business_form.submit "Save" %>
+  </p>
+<% end %>

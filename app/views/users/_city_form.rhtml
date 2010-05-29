@@ -1,0 +1,8 @@
+<%= f.label :city_name %>
+<span id="cityspan">
+<%= f.select :city_name,helpergetcity(@user.state_id).map{|x| x.name },{:include_blank => @user.state_id.blank? ? 'please select state first':''} %>
+</span>
+<%= f.select :state_id, State.all.map{ |s| [s.name, s.id]}, :include_blank=>true %>
+<% sanecityid=sanitize_to_id(f.object_name.to_s+"[city_name]") %>
+<% sanestateid=sanitize_to_id(f.object_name.to_s+"[state_id]") %>
+<%= stateobservefield(sanestateid,sanecityid) %>

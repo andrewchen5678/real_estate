@@ -1,0 +1,1 @@
+require 'belongs_to_polymorphic_association'

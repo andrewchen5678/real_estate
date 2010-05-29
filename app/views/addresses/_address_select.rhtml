@@ -1,0 +1,38 @@
+<% addressdisp = @addressselected || params[:address] || {}
+#if addressdisp[:id]
+  #addressdisp=Address.find(addressdisp[:id]).attributes.symbolize_keys
+#end
+  #logger.debug addressdisp.inspect
+%>
+<p>
+    Street number:
+    <%= text_field_tag 'address[streetNumber]',addressdisp[:streetNumber] %>
+    Street:
+    <%= select_tag 'address[streetWay]','<option value=""></option>'+options_for_select(Address::STREET_WAY,addressdisp[:streetWay]) %>
+
+    <%= text_field_tag 'address[street]',addressdisp[:street] %>
+
+    <%= select_tag 'address[streetRoad]','<option value=""></option>'+options_for_select(Address::STREET_ROAD,addressdisp[:streetRoad]) %>
+
+    <%= label_tag 'address[unit]', 'Unit:' %>
+    <%= text_field_tag 'address[unit]',addressdisp[:unit] %>
+    <%
+    if(addressdisp[:state_id])
+      cityarr=helpergetcitybyclass(addressdisp[:state_id],forsearch).map{|x| x.city_name }
+      citylist='<option value=''>--ALL--</option>'+options_for_select(cityarr,addressdisp[:city_name])
+    else
+      citylist="<option value=''>--ALL--</option>"
+    end
+    %>
+
+    <%= label_tag 'address[city_name]', "City" %>
+    <%= select_tag 'address[city_name]', citylist %>
+    <%= label_tag 'address[state_id]', "State" %>
+
+    <%= stateselector("address[state_id]","address_state_id",addressdisp[:state_id],'--ALL--') %>
+    <%= stateobservefield("address_state_id",'address_city_name',forsearch) %>
+  </p>
+  <p>
+    <%= label_tag 'address[zip]','Zip:' %>
+    <%= text_field_tag 'address[zip]',addressdisp[:zip] %>
+  </p>

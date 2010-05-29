@@ -1,0 +1,29 @@
+<table>
+  <tr>
+    <th>RR#</th>
+    <th>Address</th>
+    <th>User</th>
+    <th>Building area w</th>
+    <th>Building area h</th>
+    <th>Building year</th>
+    <th>Num room</th>
+    <th>Type</th>
+  </tr>
+
+<% @residential_realties.each do |residential_realty| %>
+  <tr>
+    <td><%=h residential_realty.id %></td>
+    <td><%=h format_address(residential_realty.address) %></td>
+    <td><%=h residential_realty.user_id %></td>
+    <td><%=h residential_realty.building_area_w %></td>
+    <td><%=h residential_realty.building_area_h %></td>
+    <td><%=h residential_realty.building_year %></td>
+    <td><%=h residential_realty.num_room %></td>
+    <td><%=h residential_realty.type %></td>
+
+    <td><%= link_to 'Show', residential_realty %></td>
+    <td><%= link_to 'Edit', edit_residential_realty_path(residential_realty) %></td>
+    <td><%= link_to 'Destroy', residential_realty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,14 @@
+<div>
+  <%=link_to_if(action_name!='showads', "Ads", showads_company_path) do
+       '<a>Ads</a>'
+     end
+  %>
+  <%=link_to_if(action_name!='agents', "Agents", agents_company_path(@company)) do
+       '<a>Agents</a>'
+     end
+  %>
+  <%=link_to_if(action_name!='show', "More info", company_path(@company)) do
+       '<a>More info</a>'
+     end
+  %>
+</div>

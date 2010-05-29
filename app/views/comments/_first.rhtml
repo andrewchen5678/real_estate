@@ -1,0 +1,12 @@
+<p>留言板&nbsp;&nbsp; <%=obj.comments.count%>人留言</p>
+<% firstcomment=obj.comments.find(:first,:order => 'created_at DESC') %>
+<% if(firstcomment) %>
+<p><span><%=firstcomment.created_at %></span></p>
+<p><span><%=firstcomment.user_id %>
+<a href="mailto:yan1992@hotmail.com">yan1992@hotmail.com</a></span></p>
+<p><%=firstcomment.content %></p>
+<% end #if(firstcomment) %>
+<p><%= link_to '更多►►', polymorphic_path([obj,:comments]) %></p>
+<p><%= link_to '我要留言', polymorphic_path([obj,:comments],:anchor => "newcomment") %></p>
+<hr/>
+<p>&nbsp;</p>

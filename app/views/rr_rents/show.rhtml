@@ -1,0 +1,53 @@
+<p>
+  <b>rr number:</b>
+  <%=h @rr_rent.residential_realty_id %>
+</p>
+
+<p>
+  <b>user id:</b>
+  <%=h @rr_rent.user_id %>
+</p>
+
+<p>
+  <b>title:</b>
+  <%=h @rr_rent.title %>
+</p>
+
+<p>
+  <b>price:</b>
+  <%=h @rr_rent.rent_price %>
+</p>
+
+<p>
+  <b>term:</b>
+  <%=h @rr_rent.term %>
+</p>
+
+<p>
+  <b>deposit:</b>
+  <%=h @rr_rent.deposit %>
+</p>
+
+<p>
+  <b>this term:</b>
+  <%=h @rr_rent.this_term %>
+</p>
+
+<p>
+  <b>status:</b>
+  <%=h RrRent::STATUS_DESC[@rr_rent.status] %>
+</p>
+
+<p>
+  <b>rent_type:</b>
+  <%=h RrRent::RENT_TYPE_DESC[@rr_rent.rent_type] %>
+</p>
+
+<p>
+  <b>description:</b>
+  <%= format_tarea @rr_rent.description %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_rr_rent_path(@rr_rent) %> |

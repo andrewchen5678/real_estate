@@ -1,0 +1,2 @@
+module ResidentialRealtiesHelper
+end

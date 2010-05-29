@@ -1,0 +1,355 @@
+--- 
+- !ruby/object:State 
+  attributes: 
+    name: Alaska
+    id: AK
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Alabama
+    id: AL
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Arkansas
+    id: AR
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: American Samoa
+    id: AS
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Arizona
+    id: AZ
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: California
+    id: CA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Colorado
+    id: CO
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Connecticut
+    id: CT
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: District of Columbia
+    id: DC
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Delaware
+    id: DE
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Florida
+    id: FL
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Federated State
+    id: FM
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Georgia
+    id: GA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Guam
+    id: GU
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Hawaii
+    id: HI
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Iowa
+    id: IA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Idaho
+    id: ID
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Illinois
+    id: IL
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Indiana
+    id: IN
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Kansas
+    id: KS
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Kentucky
+    id: KY
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Louisiana
+    id: LA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Massachusetts
+    id: MA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Maryland
+    id: MD
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Maine
+    id: ME
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Marshall Island
+    id: MH
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Michigan
+    id: MI
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Minnesota
+    id: MN
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Missouri
+    id: MO
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Northern Marian
+    id: MP
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Mississippi
+    id: MS
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Montana
+    id: MT
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: North Carolina
+    id: NC
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: North Dakota
+    id: ND
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Nebraska
+    id: NE
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: New Hampshire
+    id: NH
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: New Jersey
+    id: NJ
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: New Mexico
+    id: NM
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Nevada
+    id: NV
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: New York
+    id: NY
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Ohio
+    id: OH
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Oklahoma
+    id: OK
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Oregon
+    id: OR
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Pennsylvania
+    id: PA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Puerto Rico
+    id: PR
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Palau
+    id: PW
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Rhode Island
+    id: RI
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: South Carolina
+    id: SC
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: South Dakota
+    id: SD
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Tennessee
+    id: TN
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Texas
+    id: TX
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Utah
+    id: UT
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Virginia
+    id: VA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Virgin Islands
+    id: VI
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Vermont
+    id: VT
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Washington
+    id: WA
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Wisconsin
+    id: WI
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: West Virginia
+    id: WV
+  attributes_cache: {}
+
+- !ruby/object:State 
+  attributes: 
+    name: Wyoming
+    id: WY
+  attributes_cache: {}
+

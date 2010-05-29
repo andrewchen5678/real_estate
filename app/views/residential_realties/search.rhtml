@@ -1,0 +1,12 @@
+  <p>
+<%= render :partial=>'searchpart' %>
+
+<% if @residential_realties %>
+<p><%= better_page_entries_info @residential_realties, :entry_name => '住宅地產' %></p>
+<%=  render :partial=>'list' %>
+<%= will_paginate @residential_realties %>
+<% end %>
+
+
+</p>
+

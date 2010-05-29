@@ -1,0 +1,51 @@
+<% form_for @admailer, :url =>{:action=>'email'} do |f| %>
+  <%= f.error_messages %>
+<table>
+<tr>
+<td align="right"><b>Your Name: </b></td>
+<td><%= f.text_field :from_name %>&nbsp;&nbsp;<% if current_user %>
+    <%= f.check_box :use_account,:onclick=>'javascript:toggletofields()' %>use my account information
+    <% end %>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Your Email Address: </b></td>
+<td><%= f.text_field :from_email %>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Friend's Name: </b></td>
+
+<td><%= f.text_field :to_name %>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Friend's Email Address: </b></td>
+<td><%= f.text_field :to_email %>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Message: </b></td>
+<td><%= f.text_area :message %>
+</td>
+</tr>
+
+<tr>
+  <td align="center" valign="top">&nbsp;</td>
+<td><%=f.submit 'Send' %></td>
+</tr>
+</table>
+<% end %>
+<script type="text/javascript">
+function toggletofields()
+{
+  if(document.getElementById('ad_mailer_model_use_account').checked){
+    document.getElementById('ad_mailer_model_from_name').disabled=true;
+    document.getElementById('ad_mailer_model_from_email').disabled=true;
+  }else{
+    document.getElementById('ad_mailer_model_from_name').disabled=false;
+    document.getElementById('ad_mailer_model_from_email').disabled=false;
+  }
+}
+
+</script>

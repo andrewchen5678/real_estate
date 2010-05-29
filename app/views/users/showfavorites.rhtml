@@ -1,0 +1,14 @@
+<%=render :partial=>'top' %>
+<p>showing favorites for user <%=@user.nickname%></p>
+<% @favorites.each do |f| %>
+<% if f.favoritable.instance_of? ResidentialRealty %>
+    <%= render :partial=>'residential_realties/square', :locals=>{ :rr=>f.favoritable, :listview=>true } %>
+  <% elsif f.favoritable.instance_of? RrSale %>
+    <%= render :partial=>'rr_sales/square', :locals=>{ :rr_sale=>f.favoritable, :listview=>true } %>
+  <% else %>
+    "You just making it up!"
+  <% end %>
+    action: <%=link_to 'delete favorite',{:action=>'showfavorites',:delfav=>f.id}%>
+  <hr/>
+<% end %>
+<%= link_to 'Back', user_path(@user) %>

@@ -1,0 +1,9 @@
+<h1>Listing businesses</h1>
+<p><%= better_page_entries_info @business_ads, :entry_name => '生意广告',:plural_name => '生意广告' %></p>
+<%=render :partial=>'list' %>
+
+<br />
+
+<%= will_paginate @business_ads %>
+
+<%= link_to 'New business ad', new_business_ad_path %>

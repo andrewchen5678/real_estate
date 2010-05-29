@@ -1,0 +1,375 @@
+--- 
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-24 04:54:22
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business1
+    frontpic_id: 
+    business_type_id: "4"
+    monthlySalary: "123.00"
+    updated_at: 2010-01-24 04:54:22
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "2"
+    id: "1"
+    address_id: "2"
+    user_id: "2"
+    website: ""
+    fax: ""
+    phone: "1111111111"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.01"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-24 06:04:08
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business2
+    frontpic_id: 
+    business_type_id: "4"
+    monthlySalary: "123.45"
+    updated_at: 2010-01-24 06:04:08
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "3"
+    id: "2"
+    address_id: "4"
+    user_id: "2"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.01"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-24 06:08:03
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business3
+    frontpic_id: 
+    business_type_id: "3"
+    monthlySalary: "123.40"
+    updated_at: 2010-01-24 06:08:03
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "2"
+    id: "3"
+    address_id: "6"
+    user_id: "2"
+    website: ""
+    fax: ""
+    phone: "1234567890"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.01"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 09:23:27
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business4
+    frontpic_id: 
+    business_type_id: "3"
+    monthlySalary: "123.45"
+    updated_at: 2010-01-25 09:23:27
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "1"
+    id: "4"
+    address_id: "7"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.01"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "1"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 09:25:08
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business5
+    frontpic_id: 
+    business_type_id: "3"
+    monthlySalary: "123.40"
+    updated_at: 2010-01-25 09:25:08
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "1"
+    id: "5"
+    address_id: "9"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "1234444.50"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 19:12:51
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business6
+    frontpic_id: 
+    business_type_id: "4"
+    monthlySalary: "123.40"
+    updated_at: 2010-01-25 19:12:51
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "1"
+    id: "6"
+    address_id: "11"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.89"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "1"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 19:13:53
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: businesstest
+    frontpic_id: 
+    business_type_id: "4"
+    monthlySalary: "123.45"
+    updated_at: 2010-01-25 19:13:53
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "2"
+    id: "7"
+    address_id: "13"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1234567890"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "12234.67"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "1"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 19:14:27
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: businesstest2
+    frontpic_id: 
+    business_type_id: "0"
+    monthlySalary: "456789.00"
+    updated_at: 2010-01-25 19:14:27
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "0"
+    id: "8"
+    address_id: "15"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1234567890"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "13332234.67"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 19:15:10
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business1nosehaha
+    frontpic_id: 
+    business_type_id: "3"
+    monthlySalary: "123.00"
+    updated_at: 2010-01-25 19:15:10
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "2"
+    id: "9"
+    address_id: "16"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.90"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: ""
+    franchise: "0"
+    year_started: 
+    coverpic_content_type: 
+    created_at: 2010-01-25 19:15:27
+    coverpic_file_size: 
+    thumbs_count: 
+    numEmployee: 
+    businessName: business1nosehaha2
+    frontpic_id: 
+    business_type_id: "3"
+    monthlySalary: "456.00"
+    updated_at: 2010-03-28 01:33:24
+    coverpic_file_name: 
+    coverpic_updated_at: 
+    business_cat_id: "2"
+    id: "10"
+    address_id: "17"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "1112223333"
+    capitalQuota: 
+    description: ""
+    monthlyRent: 
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "0.90"
+  attributes_cache: {}
+
+- !ruby/object:Business 
+  attributes: 
+    rating: "0.00"
+    items: "\""
+    franchise: "0"
+    year_started: "2001"
+    coverpic_content_type: image/jpeg
+    created_at: 2010-01-25 19:15:47
+    coverpic_file_size: "14478"
+    thumbs_count: 
+    numEmployee: "4"
+    businessName: business1nosehaha3
+    frontpic_id: 
+    business_type_id: "2"
+    monthlySalary: "3456.00"
+    updated_at: 2010-03-28 07:11:40
+    coverpic_file_name: att-centro-black.jpg
+    coverpic_updated_at: 2010-03-28 07:11:39
+    business_cat_id: "1"
+    id: "11"
+    address_id: "49"
+    user_id: "1"
+    website: ""
+    fax: ""
+    phone: "8760986543"
+    capitalQuota: 
+    description: ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+    monthlyRent: "1234.00"
+    operateTime: ""
+    email: ""
+    phoneExt: ""
+    annualIncome: "7890.00"
+  attributes_cache: {}
+

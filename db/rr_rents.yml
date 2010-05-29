@@ -1,0 +1,44 @@
+--- 
+- !ruby/object:RrRent 
+  attributes: 
+    pets: 
+    price: 
+    bedrooms: 
+    created_at: 2010-01-12 00:32:10
+    this_term: 
+    title: 
+    updated_at: 2010-01-12 00:32:10
+    term: 
+    rent_category: 
+    furnished: 
+    id: "1"
+    residential_realty_id: "2"
+    user_id: "1"
+    description: 
+    status: 
+    deposit: 
+  attributes_cache: {}
+
+- !ruby/object:RrRent 
+  attributes: 
+    pets: 
+    price: "1123.00"
+    bedrooms: 
+    created_at: 2010-01-12 00:36:09
+    this_term: dsfdsrentthis
+    title: testrent
+    updated_at: 2010-01-12 00:36:09
+    term: dsdsfsrrrent
+    rent_category: "2"
+    furnished: 
+    id: "2"
+    residential_realty_id: "3"
+    user_id: "1"
+    description: |-
+      rdfgdfgdfrent
+      gfdgdf
+      gfdgdf
+    status: "1"
+    deposit: "11.00"
+  attributes_cache: {}
+

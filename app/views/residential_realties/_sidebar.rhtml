@@ -1,0 +1,15 @@
+<div style="float:right">
+<%= render :partial => "widgets/picvid", :locals => { :obj=>@residential_realty } %>
+  <div>
+  <div>
+    <p>Recommend this item</p>
+    <p><%=link_to_remote "Save to my favorite",
+    :url => { :action => "save_favorite", :id => @residential_realty.id } %></p>
+    <p>Email to a friend</p>
+    <p>Print this page</p>
+  </div>
+<p>
+Viewed: <%= @residential_realty.num_views %>
+</p>
+</div>
+</div>

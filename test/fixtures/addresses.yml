@@ -1,0 +1,349 @@
+--- 
+address_00050: 
+  city_name: Aguanga
+  zip: "12343"
+  created_at: 2010-03-01 21:31:23 Z
+  updated_at: 2010-03-01 21:31:23 Z
+  streetRoad: Dr
+  streetWay: S
+  streetNumber: 1111
+  street: Duarte
+  id: 50
+  unit: "123"
+  state_id: CA
+address_00017: 
+  city_name: Americus
+  zip: "23564"
+  created_at: 2010-01-25 19:15:27 Z
+  updated_at: 2010-01-25 19:15:27 Z
+  streetRoad: Ave
+  streetWay: E
+  streetNumber: 2222
+  street: Duarte
+  id: 17
+  unit: "123"
+  state_id: GA
+address_00006: 
+  city_name: Hauula
+  zip: "99999"
+  created_at: 2010-01-24 06:07:55 Z
+  updated_at: 2010-01-24 06:07:55 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 2222
+  street: Duarte
+  id: 6
+  unit: ""
+  state_id: HI
+address_00007: 
+  city_name: Aliso Viejo
+  zip: "12343"
+  created_at: 2010-01-25 09:23:15 Z
+  updated_at: 2010-01-25 09:23:15 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 2222
+  street: Duarte
+  id: 7
+  unit: ""
+  state_id: CA
+address_00052: 
+  city_name: Alleghany
+  zip: "12343"
+  created_at: 2010-03-01 21:39:22 Z
+  updated_at: 2010-03-01 21:39:22 Z
+  streetRoad: Dr
+  streetWay: S
+  streetNumber: 1111
+  street: Duarte
+  id: 52
+  unit: "123"
+  state_id: CA
+address_00053: 
+  city_name: Monterey park
+  zip: "91754"
+  created_at: 2010-03-04 22:58:51 Z
+  updated_at: 2010-03-04 22:58:51 Z
+  streetRoad: Blvd
+  streetWay: S
+  streetNumber: 2168
+  street: Atlantic
+  id: 53
+  unit: "111"
+  state_id: CA
+address_00009: 
+  city_name: Alderpoint
+  zip: "12343"
+  created_at: 2010-01-25 09:24:48 Z
+  updated_at: 2010-01-25 09:24:48 Z
+  streetRoad: Rd
+  streetWay: S
+  streetNumber: 2222
+  street: Duarte
+  id: 9
+  unit: ""
+  state_id: CA
+address_00054: 
+  city_name: Long Beach
+  zip: "90712"
+  created_at: 2010-03-08 19:42:48 Z
+  updated_at: 2010-03-08 19:42:48 Z
+  streetRoad: Ave
+  streetWay: E
+  streetNumber: 1111
+  street: Atlantic
+  id: 54
+  unit: ""
+  state_id: CA
+address_00109: 
+  city_name: Agoura Hills
+  zip: "12343"
+  created_at: 2010-03-08 23:48:44 Z
+  updated_at: 2010-03-08 23:48:44 Z
+  streetRoad: St
+  streetWay: ""
+  streetNumber: 216
+  street: Nosenada
+  id: 109
+  unit: "111"
+  state_id: CA
+address_00110: 
+  city_name: Alhambra
+  zip: "91708"
+  created_at: 2010-03-14 03:36:50 Z
+  updated_at: 2010-03-14 03:36:50 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 2222
+  street: Duarte
+  id: 110
+  unit: ""
+  state_id: CA
+address_00044: 
+  city_name: Algona
+  zip: "12343"
+  created_at: 2010-02-01 23:58:07 Z
+  updated_at: 2010-02-01 23:58:07 Z
+  streetRoad: St
+  streetWay: ""
+  streetNumber: 1987
+  street: Carson
+  id: 44
+  unit: ""
+  state_id: IA
+address_00011: 
+  city_name: Alhambra
+  zip: "12343"
+  created_at: 2010-01-25 19:12:36 Z
+  updated_at: 2010-01-25 19:12:36 Z
+  streetRoad: St
+  streetWay: ""
+  streetNumber: 2222
+  street: Duarte
+  id: 11
+  unit: "111"
+  state_id: CA
+address_00023: 
+  city_name: Acampo
+  zip: "12343"
+  created_at: 2010-01-26 00:25:11 Z
+  updated_at: 2010-01-26 00:25:11 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 1111
+  street: Duarte
+  id: 23
+  unit: ""
+  state_id: CA
+address_00045: 
+  city_name: Hawaii National Park
+  zip: "91754"
+  created_at: 2010-02-08 23:24:26 Z
+  updated_at: 2010-02-08 23:24:26 Z
+  streetRoad: Rd
+  streetWay: W
+  streetNumber: 834
+  street: Duarte
+  id: 45
+  unit: ""
+  state_id: HI
+address_00046: 
+  city_name: Ahwahnee
+  zip: "23564"
+  created_at: 2010-02-15 21:27:23 Z
+  updated_at: 2010-02-15 21:27:23 Z
+  streetRoad: St
+  streetWay: E
+  streetNumber: 1111
+  street: Carson
+  id: 46
+  unit: "123"
+  state_id: CA
+address_00024: 
+  city_name: Ellendale
+  zip: "12343"
+  created_at: 2010-01-28 20:25:18 Z
+  updated_at: 2010-01-28 20:25:18 Z
+  streetRoad: St
+  streetWay: ""
+  streetNumber: 1111
+  street: Carson
+  id: 24
+  unit: ""
+  state_id: DE
+address_00002: 
+  city_name: Aguanga
+  zip: "91754"
+  created_at: 2010-01-24 04:54:22 Z
+  updated_at: 2010-01-24 04:54:22 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 1111
+  street: Duarte
+  id: 2
+  unit: ""
+  state_id: CA
+address_00013: 
+  city_name: Arvada
+  zip: "23564"
+  created_at: 2010-01-25 19:13:36 Z
+  updated_at: 2010-01-25 19:13:36 Z
+  streetRoad: St
+  streetWay: E
+  streetNumber: 2222
+  street: Carson
+  id: 13
+  unit: "123"
+  state_id: CO
+address_00102: 
+  city_name: Ahwahnee
+  zip: "90712"
+  created_at: 2010-03-08 22:48:08 Z
+  updated_at: 2010-03-08 22:48:08 Z
+  streetRoad: Rd
+  streetWay: ""
+  streetNumber: 216
+  street: Duarte
+  id: 102
+  unit: "123"
+  state_id: CA
+address_00003: 
+  city_name: Acampo
+  zip: "12343"
+  created_at: 2010-01-24 04:59:36 Z
+  updated_at: 2010-01-24 04:59:36 Z
+  streetRoad: Rd
+  streetWay: S
+  streetNumber: 1111
+  street: Duarte
+  id: 3
+  unit: "111"
+  state_id: CA
+address_00025: 
+  city_name: Algona
+  zip: "12343"
+  created_at: 2010-01-28 20:25:38 Z
+  updated_at: 2010-01-28 20:25:38 Z
+  streetRoad: St
+  streetWay: ""
+  streetNumber: 1111
+  street: Carson
+  id: 25
+  unit: ""
+  state_id: IA
+address_00047: 
+  city_name: Americus
+  zip: "23564"
+  created_at: 2010-02-20 09:26:51 Z
+  updated_at: 2010-02-20 09:26:51 Z
+  streetRoad: Ave
+  streetWay: E
+  streetNumber: 2222
+  street: Duarte
+  id: 47
+  unit: ""
+  state_id: GA
+address_00060: 
+  city_name: Hanapepe
+  zip: "23564"
+  created_at: 2010-03-08 20:39:49 Z
+  updated_at: 2010-03-08 20:39:49 Z
+  streetRoad: Ave
+  streetWay: ""
+  streetNumber: 1111
+  street: Duarte
+  id: 60
+  unit: ""
+  state_id: HI
+address_00048: 
+  city_name: San Gabriel
+  zip: "91776"
+  created_at: 2010-02-20 09:31:28 Z
+  updated_at: 2010-02-20 09:31:28 Z
+  streetRoad: St
+  streetWay: W
+  streetNumber: 312
+  street: Ralph
+  id: 48
+  unit: ""
+  state_id: CA
+address_00015: 
+  city_name: Arvada
+  zip: "23564"
+  created_at: 2010-01-25 19:14:27 Z
+  updated_at: 2010-01-25 19:14:27 Z
+  streetRoad: St
+  streetWay: E
+  streetNumber: 2222
+  street: Carson
+  id: 15
+  unit: ""
+  state_id: CO
+address_00004: 
+  city_name: Alhambra
+  zip: "12343"
+  created_at: 2010-01-24 06:04:00 Z
+  updated_at: 2010-01-24 06:04:00 Z
+  streetRoad: Blvd
+  streetWay: ""
+  streetNumber: 1111
+  street: Nose
+  id: 4
+  unit: "123"
+  state_id: CA
+address_00071: 
+  city_name: Ballouville
+  zip: "23564"
+  created_at: 2010-03-08 21:59:01 Z
+  updated_at: 2010-03-08 21:59:01 Z
+  streetRoad: Dr
+  streetWay: ""
+  streetNumber: 3222
+  street: Carson
+  id: 71
+  unit: ""
+  state_id: CT
+address_00016: 
+  city_name: Americus
+  zip: "23564"
+  created_at: 2010-01-25 19:15:10 Z
+  updated_at: 2010-01-25 19:15:10 Z
+  streetRoad: Ave
+  streetWay: ""
+  streetNumber: 2222
+  street: Duarte
+  id: 16
+  unit: "123"
+  state_id: GA
+address_00049: 
+  city_name: San Gabriel
+  zip: "91776"
+  created_at: 2010-02-20 09:33:02 Z
+  updated_at: 2010-02-20 09:33:02 Z
+  streetRoad: St
+  streetWay: W
+  streetNumber: 312
+  street: Ralph
+  id: 49
+  unit: "111"
+  state_id: CA

@@ -1,0 +1,174 @@
+<%=render :partial=>'widgets/map', :locals=>{ :mapaddr=>@residential_realty.address } %>
+<div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6"><span class="c2">School</span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">School District: <%=h @residential_realty.school_district %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Elementary school: <%=h @residential_realty.elementary_school %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Middle school: <%=h @residential_realty.middle_school %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">High school: <%=h @residential_realty.high_school %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td class="c6"><a name="0.1_graphic35" id="0.1_graphic35"></a><span><img src=
+        "https://mail.google.com/mail/?name=d33be9805ff33117.jpg&amp;attid=0.1&amp;disp=vahi&amp;view=att&amp;th=126c2ed569615ee4"
+        height="1" width="1" alt=
+        "Your browser may not support display of this image." /></span> <span class=
+        "c2">Interior Features</span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Stories Description:<%= format_tarea @residential_realty.story_description %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Bedroom:<%=h @residential_realty.bedroom %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Floor Covering:<%=h @residential_realty.floor_covering %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Kitchen:<%=h @residential_realty.kitchen %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><a name="0.1_graphic36" id="0.1_graphic36"></a><span><img src=
+        "https://mail.google.com/mail/?name=d33be9805ff33117.jpg&amp;attid=0.1&amp;disp=vahi&amp;view=att&amp;th=126c2ed569615ee4"
+        height="1" width="1" alt=
+        "Your browser may not support display of this image." /></span> <span class=
+        "c2">Dinning:<%=h @residential_realty.dinning %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Laundry:<%=h @residential_realty.laundry %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Fire place:<%=h @residential_realty.fire_place %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Others:<%=h @residential_realty.interior_others %></span></td>
+      </tr>
+    </table>
+  </div><br />
+  <a name="0.1_table06" id="0.1_table06"></a>
+
+  <div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6" colspan="2"><span class="c2">Exterior Features</span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2"># of stories:<%=h @residential_realty.num_of_stories %></span></td>
+
+        <td><span class="c2">Main access floor:<%=h @residential_realty.main_access %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td colspan="2"><span class="c2">Roof:<%=h @residential_realty.roof %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td colspan="2"><span class="c2">Parking:<%=h @residential_realty.parking %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td colspan="2"><span class="c2">Views:<%=h @residential_realty.view_types %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td colspan="2">
+          <div class="c7">
+            Lot Description:<%=h @residential_realty.lot_description %>
+          </div>
+        </td>
+      </tr>
+
+      <tr valign="top">
+        <td colspan="2"><span class="c2">Others:<%=h @residential_realty.exterior_others %></span></td>
+      </tr>
+    </table>
+  </div><br />
+  <a name="0.1_table07" id="0.1_table07"></a>
+
+  <div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6"><span class="c2">Community Features</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="c1">Total # of units:<%=h @residential_realty.num_of_units %></p>
+
+  <p><span class="c2">Others:<%=h @residential_realty.community_others %></span><br /></p><a name="0.1_table08" id="0.1_table08"></a>
+
+  <div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6"><span class="c2">Utilities</span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Heating:<%=h @residential_realty.heating %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Cooling:<%=h @residential_realty.cooling %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Water:<%=h @residential_realty.water %></span></td>
+      </tr>
+
+      <tr valign="top">
+        <td><span class="c2">Sewer:<%=h @residential_realty.sewer %></span></td>
+      </tr>
+    </table>
+  </div><br />
+  <a name="0.1_table09" id="0.1_table09"></a>
+
+  <div class="c5">
+    <table width="404">
+      <tr valign="top">
+        <td class="c6"><span class="c2">Additional Information</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <p class="c1">Cross Street:<%=h @residential_realty.cross_street %></p>
+
+  <p class="c1">County:<%=h @residential_realty.county %></p>
+
+  <p class="c1">Assessment:<%=h @residential_realty.assessment %></p>
+
+  <p class="c1">Handicap Features:<%=h @residential_realty.handicap_features %></p><a name="0.1_table0A" id="0.1_table0A"></a>
+
+  <div class="c5">
+    <table width="404" border="2" cellspacing="0">
+      <tr valign="top">
+        <td><span class="c2">HOA Dues:<%=h @residential_realty.hoa_fee %></span></td>
+
+        <td><span class="c2">HOA Frequency:<%=h @residential_realty.hoa_frequency %></span></td>
+      </tr>
+    </table>
+  </div><br />
+  <br />
+  <br />
+  <br />

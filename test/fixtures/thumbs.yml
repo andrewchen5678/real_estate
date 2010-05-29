@@ -1,0 +1,81 @@
+--- 
+thumb_00004: 
+  thumbable_type: RrSale
+  created_at: 2010-03-15 16:59:54 Z
+  updated_at: 2010-03-15 17:00:26 Z
+  thumbable_id: 4
+  id: 4
+  user_id: 5
+  thumbup: false
+thumb_00016: 
+  thumbable_type: RrSale
+  created_at: 2010-04-12 23:47:11 Z
+  updated_at: 2010-04-13 00:31:19 Z
+  thumbable_id: 7
+  id: 16
+  user_id: 16
+  thumbup: false
+thumb_00005: 
+  thumbable_type: RrSale
+  created_at: 2010-03-16 05:38:35 Z
+  updated_at: 2010-03-16 05:39:21 Z
+  thumbable_id: 3
+  id: 5
+  user_id: 5
+  thumbup: false
+thumb_00006: 
+  thumbable_type: RrSale
+  created_at: 2010-03-20 04:54:21 Z
+  updated_at: 2010-03-20 04:54:21 Z
+  thumbable_id: 4
+  id: 6
+  user_id: 6
+  thumbup: true
+thumb_00007: 
+  thumbable_type: RrSale
+  created_at: 2010-03-23 06:13:50 Z
+  updated_at: 2010-03-23 06:13:50 Z
+  thumbable_id: 4
+  id: 7
+  user_id: 17
+  thumbup: true
+thumb_00008: 
+  thumbable_type: RrSale
+  created_at: 2010-04-06 23:23:11 Z
+  updated_at: 2010-04-06 23:23:11 Z
+  thumbable_id: 1
+  id: 8
+  user_id: 1
+  thumbup: true
+thumb_00010: 
+  thumbable_type: RrSale
+  created_at: 2010-04-11 05:02:59 Z
+  updated_at: 2010-04-11 05:04:15 Z
+  thumbable_id: 7
+  id: 10
+  user_id: 1
+  thumbup: false
+thumb_00011: 
+  thumbable_type: RrSale
+  created_at: 2010-04-11 05:11:07 Z
+  updated_at: 2010-04-11 05:11:07 Z
+  thumbable_id: 7
+  id: 11
+  user_id: 5
+  thumbup: false
+thumb_00012: 
+  thumbable_type: RrSale
+  created_at: 2010-04-12 22:05:25 Z
+  updated_at: 2010-04-12 22:09:20 Z
+  thumbable_id: 7
+  id: 12
+  user_id: 14
+  thumbup: false
+thumb_00003: 
+  thumbable_type: RrSale
+  created_at: 2010-03-15 13:45:24 Z
+  updated_at: 2010-04-28 15:47:58 Z
+  thumbable_id: 4
+  id: 3
+  user_id: 1
+  thumbup: true

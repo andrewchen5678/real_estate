@@ -1,0 +1,29 @@
+<% imglist=obj.assets.all
+imgarray=[]
+imglist.each do |a|
+  imgarray.push([a.url,'','',a.description || ''])
+end
+%>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'fadeslideshow' %>
+
+<script type="text/javascript">
+
+var mygallery2=new fadeSlideShow({
+	wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+	dimensions: [250, 180], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: <%=imgarray.to_json%>,
+	displaymode: {type:'manual', pause:2500, cycles:0, wraparound:false},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 500, //transition duration (milliseconds)
+	descreveal: "always",
+	togglerid: "fadeshow2toggler"
+})
+
+</script>
+
+<div id="fadeshow2"></div>
+
+<div id="fadeshow2toggler" style="width:250px; text-align:center; margin-top:10px">
+<a href="#" class="prev"><%=image_tag 'arrow_left.png', :style=>"border-width:0"%></a>  <span class="status" style="margin:0 50px; font-weight:bold"></span> <a href="#" class="next"><%=image_tag 'arrow_right.png', :style=>"border-width:0"%></a>
+</div>

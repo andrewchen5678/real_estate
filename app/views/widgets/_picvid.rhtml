@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag 'sidebartabs' %>
+<%= javascript_include_tag 'sidebartabs' %>
+
+    <div>
+      <div id="container1">
+        <ul class="tabs">
+          <li><a title="Photo" class="hbout" href="javascript:void(0);" onClick="return showPane('pane1', this)" id="tab1">Photo</a></li>
+          <li><a title="Logo" class="hbout" href="javascript:void(0);" onClick="return showPane('pane2', this)">Logo</a></li>
+          <% if obj.respond_to? 'video' %>
+            <li><a title="Video" class="hbout" href="javascript:void(0);" onClick="return showPane('pane3', this)">Video</a></li>
+          <% end %>
+        </ul>
+
+        <div class="tab-panes">
+          <div class="divtabs" id="pane1">
+            <%= render :partial=>'assets/imagelist', :locals => { :obj=>obj } %>
+          </div>
+          <div class="divtabs" id="pane2">
+            <%= image_tag(obj.coverpic.url) %>
+          </div>
+
+          <div class="divtabs" id="pane3">
+            <% if obj.respond_to?(:video) && obj.video %>
+<object width="480" height="295">
+<param name="movie" value="http://www.youtube.com/v/<%= obj.video.vid %>&hl=en_US&fs=1"></param>
+<param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/<%= obj.video.vid %>&hl=en_US&fs=1" type="application/x-shockwave-flash" width="480" height="295" allowscriptaccess="always" allowfullscreen="true"></embed>
+</object>
+            <br/><span>Description: <%= obj.video.description %></span>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+<script type="text/javascript">
+<!--
+setupPanes("container1", "tab1");
+//-->
+</script>

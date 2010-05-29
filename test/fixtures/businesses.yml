@@ -1,0 +1,342 @@
+--- 
+business_00005: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: true
+  created_at: 2010-01-25 09:25:08 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business5
+  updated_at: 2010-01-25 09:25:08 Z
+  monthlySalary: 123.4
+  frontpic_id: 
+  business_type_id: 3
+  coverpic_file_name: 
+  id: 5
+  coverpic_updated_at: 
+  business_cat_id: 1
+  user_id: 1
+  address_id: 9
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 1234444.5
+business_00006: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-25 19:12:51 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business6
+  updated_at: 2010-01-25 19:12:51 Z
+  monthlySalary: 123.4
+  frontpic_id: 
+  business_type_id: 4
+  coverpic_file_name: 
+  id: 6
+  coverpic_updated_at: 
+  business_cat_id: 1
+  user_id: 1
+  address_id: 11
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.89
+business_00007: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: true
+  created_at: 2010-01-25 19:13:53 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: businesstest
+  updated_at: 2010-01-25 19:13:53 Z
+  monthlySalary: 123.45
+  frontpic_id: 
+  business_type_id: 4
+  coverpic_file_name: 
+  id: 7
+  coverpic_updated_at: 
+  business_cat_id: 2
+  user_id: 1
+  address_id: 13
+  website: ""
+  phone: "1234567890"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 12234.67
+business_00008: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: true
+  created_at: 2010-01-25 19:14:27 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: businesstest2
+  updated_at: 2010-01-25 19:14:27 Z
+  monthlySalary: 456789.0
+  frontpic_id: 
+  business_type_id: 0
+  coverpic_file_name: 
+  id: 8
+  coverpic_updated_at: 
+  business_cat_id: 0
+  user_id: 1
+  address_id: 15
+  website: ""
+  phone: "1234567890"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 13332234.67
+business_00009: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-25 19:15:10 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business1nosehaha
+  updated_at: 2010-01-25 19:15:10 Z
+  monthlySalary: 123.0
+  frontpic_id: 
+  business_type_id: 3
+  coverpic_file_name: 
+  id: 9
+  coverpic_updated_at: 
+  business_cat_id: 2
+  user_id: 1
+  address_id: 16
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.9
+business_00010: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-25 19:15:27 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business1nosehaha2
+  updated_at: 2010-03-28 01:33:24 Z
+  monthlySalary: 456.0
+  frontpic_id: 
+  business_type_id: 3
+  coverpic_file_name: 
+  id: 10
+  coverpic_updated_at: 
+  business_cat_id: 2
+  user_id: 1
+  address_id: 17
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.9
+business_00011: 
+  year_started: 2001
+  rating: 0.0
+  items: "\""
+  franchise: false
+  created_at: 2010-01-25 19:15:47 Z
+  coverpic_content_type: image/jpeg
+  thumbs_count: 
+  numEmployee: 4
+  coverpic_file_size: 14478
+  businessName: business1nosehaha3
+  updated_at: 2010-03-28 07:11:40 Z
+  monthlySalary: 3456.0
+  frontpic_id: 
+  business_type_id: 2
+  coverpic_file_name: att-centro-black.jpg
+  id: 11
+  coverpic_updated_at: 2010-03-28 07:11:39 Z
+  business_cat_id: 1
+  user_id: 1
+  address_id: 49
+  website: ""
+  phone: "8760986543"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 1234.0
+  description: ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+  phoneExt: ""
+  email: ""
+  annualIncome: 7890.0
+business_00001: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-24 04:54:22 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business1
+  updated_at: 2010-01-24 04:54:22 Z
+  monthlySalary: 123.0
+  frontpic_id: 
+  business_type_id: 4
+  coverpic_file_name: 
+  id: 1
+  coverpic_updated_at: 
+  business_cat_id: 2
+  user_id: 2
+  address_id: 2
+  website: ""
+  phone: "1111111111"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.01
+business_00002: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-24 06:04:08 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business2
+  updated_at: 2010-01-24 06:04:08 Z
+  monthlySalary: 123.45
+  frontpic_id: 
+  business_type_id: 4
+  coverpic_file_name: 
+  id: 2
+  coverpic_updated_at: 
+  business_cat_id: 3
+  user_id: 2
+  address_id: 4
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.01
+business_00003: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-24 06:08:03 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business3
+  updated_at: 2010-01-24 06:08:03 Z
+  monthlySalary: 123.4
+  frontpic_id: 
+  business_type_id: 3
+  coverpic_file_name: 
+  id: 3
+  coverpic_updated_at: 
+  business_cat_id: 2
+  user_id: 2
+  address_id: 6
+  website: ""
+  phone: "1234567890"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.01
+business_00004: 
+  year_started: 
+  rating: 0.0
+  items: ""
+  franchise: false
+  created_at: 2010-01-25 09:23:27 Z
+  coverpic_content_type: 
+  thumbs_count: 
+  numEmployee: 
+  coverpic_file_size: 
+  businessName: business4
+  updated_at: 2010-01-25 09:23:27 Z
+  monthlySalary: 123.45
+  frontpic_id: 
+  business_type_id: 3
+  coverpic_file_name: 
+  id: 4
+  coverpic_updated_at: 
+  business_cat_id: 1
+  user_id: 1
+  address_id: 7
+  website: ""
+  phone: "1112223333"
+  fax: ""
+  capitalQuota: 
+  operateTime: ""
+  monthlyRent: 
+  description: ""
+  phoneExt: ""
+  email: ""
+  annualIncome: 0.01

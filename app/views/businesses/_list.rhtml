@@ -1,0 +1,26 @@
+
+
+
+
+  <% @businesses.each do |business| %>
+    <table style="width: 100%">
+	<tr>
+                <td style="width: 68px"><a href="<%=business_path(business) %>"><%=image_tag(business.coverpic.url(:thumb)) %></a></td>
+		<td style="width: 548px" valign="top">刊登日期: <%=h format_date(business.created_at) %> &nbsp;
+		個人會員: <?php echo htmlentities_utf8($row["First_name"]).' '.htmlentities_utf8($row["Last_name"]); ?> 帳號: <%=h business.user.email %> <br />
+		生意名稱:&nbsp; <%=h business.businessName+'('+ Business::FRANCHISE_DESC[business.franchise]+')' %>&nbsp;&nbsp; 生意編號: B<%=h business.id %><br />
+		生意類別:<%=h Business::BUSINESS_TYPE_DESC[business.business_type_id] %>　<br />
+		營業地址: <%=h format_address(business.address) %><br />
+                <%= link_to '詳細內容', business %>
+                <%= link_to '編輯生意', edit_business_path(business) %>
+                </td>
+                <td valign="top" style="width: 198px">評價:<?php echo $row["rating"] ?>/5.00&nbsp; <?php $buz=new Business($row["id"]); echo $buz->getRatingCount(); ?>人評價<br />
+		<input name="lookbutton" type="button" onclick="javascript:window.open('comment.php?businessID=<?php echo $row["id"]; ?>&displayrating=1');" value="去看看" /><br />
+		<br />
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+    </table>
+    <hr/>
+  <% end %>
+

@@ -1,0 +1,47 @@
+<% form_for @business_ad, :html => { :multipart => true } do |business_form| %>
+
+  <%= business_form.error_messages %>
+  <p>
+    <%= business_form.label :business_id %><br />
+    <%= business_form.text_field :business_id %>
+  </p>
+  <p>
+    <%= business_form.label :commercial_realty_id %><br />
+    <%= business_form.text_field :commercial_realty_id %>
+  </p>
+  <p>
+    <%= business_form.label :topic %><br />
+    <%= business_form.text_field :topic %>
+  </p>
+  <p>
+    <%= business_form.label :introduction %><br />
+    <%= business_form.text_area :introduction %>
+  </p>
+  <p>
+    <%= business_form.label :price %><br />
+    <%= business_form.text_field :price %>
+  </p>
+  <p>
+    <%= business_form.label :immigration %><br />
+    <%= business_form.check_box :immigration %>
+  </p>
+  <p>
+    <%= business_form.label :ad_type %><br />
+    <%= business_form.select :ad_type, BusinessAd::AD_TYPE_DESC.map {|x,y| [y,x]}, {:include_blank => 'please select'} %>
+  </p>
+  <p>
+    <%= business_form.label :status %><br />
+    <%= business_form.select :status, BusinessAd::STATUS_DESC.map {|x,y| [y,x]}, {:include_blank => 'please select'} %>
+  </p>
+  <p>
+    <%= business_form.label :partnership_percent %><br />
+    <%= business_form.text_field :partnership_percent %>
+  </p>
+  <p>
+    <%= business_form.label :annual_fee %><br />
+    <%= business_form.text_field :annual_fee %>
+  </p>
+  <p>
+    <%= business_form.submit "Save" %>
+  </p>
+<% end %>

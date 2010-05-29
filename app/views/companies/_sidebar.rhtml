@@ -1,0 +1,19 @@
+<div style="float:right">
+<%= render :partial => "widgets/picvid", :locals => { :obj=>@company } %>
+  <div>
+  <div>
+    <p><%=link_to 'Recommend this company',:action=>:recommend %></p>
+    <p>Save to my favorite</p>
+    <p>Email to a friend</p>
+    <p>Print this page</p>
+  </div>
+<p>
+Viewed: <%= @company.num_views %>
+</p>
+  <p><b>Events:</b></p>
+<%= render :partial => "events/list" %>
+<% if @events.size>0 %>
+  <%= link_to '更多 event►►', company_events_path(@company) %>
+<% end %>
+</div>
+</div>

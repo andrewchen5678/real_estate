@@ -1,0 +1,4 @@
+<%=render :partial=>'top' %>
+<p>showing residential realties for sale for user <%=@user.nickname%></p>
+<%= render :partial=>'rr_sales/list' %>
+<%= link_to 'Back', user_path(@user) %>

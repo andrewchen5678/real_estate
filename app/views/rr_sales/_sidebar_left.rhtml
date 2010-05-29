@@ -1,0 +1,29 @@
+<div style="float:left;width:300px">
+Other residential Realties for sale:
+<% @recentads.each do |ra| %>
+  <p><% link_to url_for(ra) do %>
+  <%=image_tag(ra.residential_realty.coverpic.url(:thumb))%>
+    <% end %>
+  </p>
+  <p>
+  <ul>
+    <li>Address:
+    <%=format_address(ra.residential_realty.address)%>
+    </li>
+    <li>Price:
+      <%=ra.price%>
+    </li>
+    <li>Beds:
+      <%=ra.residential_realty.num_of_beds%>
+    </li>
+    <li>Square feet:
+      <%=ra.residential_realty.square_feet%>
+    </li>
+    <li>Lot size:
+      <%=ra.residential_realty.lot_size%>
+    </li>
+  </ul>
+  </p>
+  <hr/>
+<% end %>
+</div>

@@ -1,0 +1,178 @@
+--- 
+state_WI: 
+  name: Wisconsin
+  id: WI
+state_NV: 
+  name: Nevada
+  id: NV
+state_AS: 
+  name: American Samoa
+  id: AS
+state_KS: 
+  name: Kansas
+  id: KS
+state_VT: 
+  name: Vermont
+  id: VT
+state_CA: 
+  name: California
+  id: CA
+state_VI: 
+  name: Virgin Islands
+  id: VI
+state_MA: 
+  name: Massachusetts
+  id: MA
+state_DC: 
+  name: District of Columbia
+  id: DC
+state_AK: 
+  name: Alaska
+  id: AK
+state_NM: 
+  name: New Mexico
+  id: NM
+state_UT: 
+  name: Utah
+  id: UT
+state_WA: 
+  name: Washington
+  id: WA
+state_WV: 
+  name: West Virginia
+  id: WV
+state_VA: 
+  name: Virginia
+  id: VA
+state_NC: 
+  name: North Carolina
+  id: NC
+state_AL: 
+  name: Alabama
+  id: AL
+state_LA: 
+  name: Louisiana
+  id: LA
+state_NY: 
+  name: New York
+  id: NY
+state_HI: 
+  name: Hawaii
+  id: HI
+state_CO: 
+  name: Colorado
+  id: CO
+state_DE: 
+  name: Delaware
+  id: DE
+state_MN: 
+  name: Minnesota
+  id: MN
+state_ND: 
+  name: North Dakota
+  id: ND
+state_WY: 
+  name: Wyoming
+  id: WY
+state_RI: 
+  name: Rhode Island
+  id: RI
+state_PR: 
+  name: Puerto Rico
+  id: PR
+state_NE: 
+  name: Nebraska
+  id: NE
+state_MO: 
+  name: Missouri
+  id: MO
+state_MD: 
+  name: Maryland
+  id: MD
+state_OR: 
+  name: Oregon
+  id: OR
+state_ME: 
+  name: Maine
+  id: ME
+state_KY: 
+  name: Kentucky
+  id: KY
+state_GU: 
+  name: Guam
+  id: GU
+state_IA: 
+  name: Iowa
+  id: IA
+state_IL: 
+  name: Illinois
+  id: IL
+state_MP: 
+  name: Northern Marian
+  id: MP
+state_TX: 
+  name: Texas
+  id: TX
+state_OH: 
+  name: Ohio
+  id: OH
+state_AZ: 
+  name: Arizona
+  id: AZ
+state_IN: 
+  name: Indiana
+  id: IN
+state_GA: 
+  name: Georgia
+  id: GA
+state_NH: 
+  name: New Hampshire
+  id: NH
+state_SC: 
+  name: South Carolina
+  id: SC
+state_TN: 
+  name: Tennessee
+  id: TN
+state_SD: 
+  name: South Dakota
+  id: SD
+state_MS: 
+  name: Mississippi
+  id: MS
+state_ID: 
+  name: Idaho
+  id: ID
+state_FL: 
+  name: Florida
+  id: FL
+state_AR: 
+  name: Arkansas
+  id: AR
+state_CT: 
+  name: Connecticut
+  id: CT
+state_MH: 
+  name: Marshall Island
+  id: MH
+state_PA: 
+  name: Pennsylvania
+  id: PA
+state_NJ: 
+  name: New Jersey
+  id: NJ
+state_MI: 
+  name: Michigan
+  id: MI
+state_FM: 
+  name: Federated State
+  id: FM
+state_MT: 
+  name: Montana
+  id: MT
+state_OK: 
+  name: Oklahoma
+  id: OK
+state_PW: 
+  name: Palau
+  id: PW

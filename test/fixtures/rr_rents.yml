@@ -1,0 +1,38 @@
+--- 
+rr_rent_00002: 
+  price: 1123.0
+  pets: 
+  created_at: 2010-01-12 00:36:09 Z
+  bedrooms: 
+  title: testrent
+  this_term: dsfdsrentthis
+  updated_at: 2010-01-12 00:36:09 Z
+  term: dsdsfsrrrent
+  rent_category: 2
+  id: 2
+  furnished: 
+  user_id: 1
+  residential_realty_id: 3
+  description: |-
+    rdfgdfgdfrent
+    gfdgdf
+    gfdgdf
+  status: 1
+  deposit: 11.0
+rr_rent_00001: 
+  price: 
+  pets: 
+  created_at: 2010-01-12 00:32:10 Z
+  bedrooms: 
+  title: 
+  this_term: 
+  updated_at: 2010-01-12 00:32:10 Z
+  term: 
+  rent_category: 
+  id: 1
+  furnished: 
+  user_id: 1
+  residential_realty_id: 2
+  description: 
+  status: 
+  deposit: 

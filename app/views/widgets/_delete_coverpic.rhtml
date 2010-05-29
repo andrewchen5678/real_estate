@@ -1,0 +1,12 @@
+    <% if(@currentimg) %>
+      <p>
+        <%= image_tag(@currentimg[:url],:id=>'coverpic') %>
+        <% if(@currentimg[:exists]) %>
+          <%= link_to_remote "delete image",{:url    => { :action => 'delete_coverpic', :id => obj.id }},
+            #:update => 'coverpic',
+
+            :id=>'delete_coverpic_anchor'
+          %>
+        <% end %>
+      </p>
+    <% end %>

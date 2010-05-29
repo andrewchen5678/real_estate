@@ -1,0 +1,11 @@
+<script type='text/javascript'>
+setTimeout("document.location=document.location.pathname+('?randomnum='+ Math.random())" ,5000);
+</script>
+California company:
+<div id="companyrand">
+<%= image_tag @company.coverpic.url(:thumb) %>
+name: <% link_to company_url(@company.id),{:target=>'_parent'} do %><%= @company.name %><% end %> <br/>
+<%= @company.address.city_name %>, <%= @company.address.state_id %><br/>
+picked by number of people: <%= @company.company_picks_count %>
+<%=link_to 'more companies', {:controller=>:companies},:target=>'_parent' %>
+</div>
