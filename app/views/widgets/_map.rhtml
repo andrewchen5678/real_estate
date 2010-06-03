@@ -8,6 +8,8 @@
     var myPano;
     var mapControl;
     var gmarkers=[];
+    var moveListener;
+
     function initialize() {
       if (GBrowserIsCompatible()) {
         geocoder = new GClientGeocoder();
@@ -20,11 +22,44 @@
         map.addControl(new GLargeMapControl());
 
         showAddressByID(<%=mapaddr.id%>);
-        //showAddressByString('<%=escape_javascript(format_address mapaddr)%>');
+
+        //moveListener = GEvent.addListener(map, "moveend", function(){updatemapbound(true)});
+
       }
     }
 
-    function showAddressByString(address){
+    function updatemapbound(asyn) {
+        var bounds = map.getBounds();
+        var sw = bounds.getSouthWest();
+        var ne = bounds.getNorthEast();
+
+        var sBound = sw.lat();
+        var wBound = sw.lng();
+        var nBound = ne.lat();
+        var eBound = ne.lng();
+
+        new Ajax.Request('/addresses.js?s='+sBound+'&w='+wBound+'&n='+nBound+'&e='+eBound, {
+          method:'get',
+          asynchronous:asyn,
+          //requestHeaders: {Accept: 'application/json'},
+          onSuccess: function(transport){
+            //alert(point);
+            //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+            addrlist = transport.responseText.evalJSON(true);
+            //document.write(transport.responseText);
+            //alert(address);
+            clearMarkers();
+            for (var key in addrlist) {
+              markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+              helpermarker(map,markertemp,addrlist[key].address);
+            }
+          }
+        });
+
+            // AJAX call to the database with the map bounds
+    }
+
+    function showAddressByString(address,within){
       //map.clearOverlays();
       if (geocoder) {
         geocoder.getLatLng(
@@ -34,37 +69,52 @@
               alert(address + " not found");
             } else {
               //alert(point);
-              new Ajax.Request('/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+$('within').value, {
-                method:'get',
-                //requestHeaders: {Accept: 'application/json'},
-                onSuccess: function(transport){
-                  //alert(point);
-                  //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
-                  addrlist = transport.responseText.evalJSON(true);
-                  //document.write(transport.responseText);
-                  //alert(address);
-                  helperShowAddress(address,new GLatLng(point.y,point.x),addrlist);
-                }
-              });
+              if(within>0){
+                GEvent.removeListener(moveListener);
+                new Ajax.Request(ajaxstring='/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+$('within').value, {
+                  method:'get',
+                  //requestHeaders: {Accept: 'application/json'},
+                  onSuccess: function(transport){
+                    //alert(point);
+                    //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+                    addrlist = transport.responseText.evalJSON(true);
+                    //document.write(transport.responseText);
+                    alert(within);
+                    alert(address);
+
+                    helperListAddress(addrlist);
+                    focusaddress(address,new GLatLng(point.y,point.x));
+                  }
+                });
+              }else{
+
+                updatemapbound(false);
+                focusaddress(address,new GLatLng(point.y,point.x));
+                moveListener = GEvent.addListener(map, "moveend", function(){
+                  updatemapbound(true);
+                });
+              }
+
+
             }
           }
         );
       }
     }
 
-    function showAddressByID(id){
-        new Ajax.Request('/addresses.js?address_id='+id+'&within='+$('within').value, {
+    function showAddressByID(id,within){
+        new Ajax.Request('/addresses.js?address_id='+id+'&within='+within, {
           method:'get',
           //requestHeaders: {Accept: 'application/json'},
           onSuccess: function(transport){
             addrlist = transport.responseText.evalJSON(true);
             //alert(addrlist);
-            helperShowAddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng),addrlist);
+            helperListAddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng),addrlist);
           }
         });
     }
 
-    function helperShowAddress(address,point,addrlist) {
+    function helperListAddress(addrlist) {
         clearMarkers();
       //if (geocoder) {
       //  geocoder.getLatLng(
@@ -75,12 +125,8 @@
       //      } else {
         //fenwayPark = new GLatLng(42.345573,-71.098326);
         //alert(point);
-              myPano.setLocationAndPOV(point);
-              map.setCenter(point, 13);
-              var marker = new GMarker(point);
-              helpermarker(map,marker,address);
               for (var key in addrlist) {
-                markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
                 helpermarker(map,markertemp,addrlist[key].address);
               }
               //for (i=0;i<addrlist.length;i++) {
@@ -88,11 +134,17 @@
               //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
               //  helpermarker(map,markertemp,addrlist[i].address);
               //}
-              marker.openInfoWindowHtml(address);
             //}
           //}
         //);
       //}
+    }
+
+    function focusaddress(address,point){
+        map.setCenter(point, 13);
+        var marker = new GMarker(point);
+        helpermarker(map,marker,address);
+        marker.openInfoWindowHtml(address);
     }
 
     function helpermarker(map,marker,text){
@@ -120,17 +172,19 @@
     }
     </script>
 
-     <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value); return false">
+     <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value,this.within.value); return false">
       <p>
         <input type="text" size="60" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" />
         <input type="submit" value="Go!" />
-<%=select_tag("within", options_for_select([['within 5 miles',5],
+<%=select_tag("within", options_for_select([['all inside of the range',0],
+      ['within 5 miles',5],
     ['within 10 miles',10],
     ['within 20 miles',20],
     ['within 40 miles',40]],
   (params[:within] || 10)),
-  :onchange=>'showAddressByString($("addressfield").value)'
+  :onchange=>'showAddressByString($("addressfield").value,this.value)'
 ) %>
+
       </p>
       <div id="map_canvas" style="width: 500px; height: 300px"></div>
       <div id="pano" style="width: 500px; height: 300px; border-style:solid"></div>

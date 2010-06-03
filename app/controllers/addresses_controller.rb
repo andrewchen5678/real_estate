@@ -7,23 +7,31 @@ class AddressesController < ApplicationController
     #@addresses = Address.all
 
     if(params)
-      addrlist={}
+
+      searchparams={}
+
       if(params[:address_id])
         addr=Address.find(params[:address_id])
-        Address.find(:all, :origin =>addr, :within=>params[:within]).each { |a|
-            addrlist[a.id]={:address=>format_address(a),:lat=>a.lat,:lng=>a.lng}
-          }
-      elsif params[:lat] && params[:lng] && params[:within]
+        searchparams[:origin]=addr
+      elsif params[:lat] && params[:lng]
         #addr=Address.find(:lat=>params[:lat],:lng=>params[:lng])
-        Address.find(:all, :origin =>[params[:lat],params[:lng]], :within=>params[:within]).each { |a|
-            addrlist[a.id]={:address=>format_address(a),:lat=>a.lat,:lng=>a.lng}
-          }
-      elsif params[:sw_point] && params[:ne_point]
-        Address.find(:all, :bounds=>[params[:sw_point],params[:ne_point]]).each { |a|
-            addrlist[a.id]={:address=>format_address(a),:lat=>a.lat,:lng=>a.lng}
-          }
+        searchparams[:origin]=[params[:lat],params[:lng]]
       end
-      
+
+      if(params[:within])
+        searchparams[:within]=params[:within]
+      end
+
+      if params[:s] && params[:w] && params[:n] && params[:e]
+        sw_point=[params[:s],params[:w]]
+        ne_point=[params[:n],params[:e]]
+        searchparams[:bounds]=[sw_point,ne_point]
+      end
+
+      addrlist={}
+      Address.all(searchparams).each { |a|
+        addrlist[a.id]={:address=>format_address(a),:lat=>a.lat,:lng=>a.lng}
+      }
 
 #      @addresses=Address.find(:all,:conditions=>{:id.not=>params[:address_id]}, :origin =>[params[:lat],params[:lng]], :within=>15).map { |a|
 #          {:address=>format_address(a),:lat=>a.lat,:lng=>a.lng}
