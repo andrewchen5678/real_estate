@@ -1,178 +1,16 @@
 <% format_mapaddr=format_address(mapaddr) %>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=<%=GOOGLE_MAP_API_KEY%>" type="text/javascript"></script>
 
     <script type="text/javascript">
 
-  var geocoder;
-  var map;
-  var markersArray=[];
-  var moveListener;
-  function initialize() {
-    geocoder = new google.maps.Geocoder();
-    //var latlng = new google.maps.LatLng(-34.397, 150.644);
-    var myOptions = {
-      zoom: 16,
-      //center: latlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      streetViewControl: true,
-      navigationControlOptions: {
-        style: google.maps.NavigationControlStyle.DEFAULT
-      }
-    }
-    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-    codeAddressByString('<%= escape_javascript(format_mapaddr) %>');
-  }
-
-  function codeAddressByString(address) {
-    var within=$('within').value;
-    //var address = document.getElementById("address").value;
-    if (geocoder) {
-      geocoder.geocode( { 'address': address}, function(results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-          map.setCenter(results[0].geometry.location);
-          var m=addMarker(results[0].geometry.location,address);
-              if(within>0){
-                google.maps.event.removeListener(moveListener);
-                //GEvent.removeListener(moveListener);
-                new Ajax.Request('/addresses.js?lat='+results[0].geometry.location.lat()+'&lng='+results[0].geometry.location.lng()+'&within='+within, {
-                  method:'get',
-                  //requestHeaders: {Accept: 'application/json'},
-                  onSuccess: function(transport){
-                    //alert(point);
-                    //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
-                    addrlist = transport.responseText.evalJSON(true);
-                    //document.write(transport.responseText);
-                    alert(within);
-                    alert(address);
-                    deleteMarkers();
-                    helperListAddress(addrlist);
-                    //focusaddress(address,new GLatLng(point.y,point.x));
-                  }
-                });
-              }else{
-                updatemapbound(false);
-                moveListener=google.maps.event.addListener(map, 'center_changed', function() {
-                    //alert('bounds_changed')
-                    updatemapbound(true);
-                });
-              }
-          google.maps.event.trigger(m,'click');
-          //var marker = new google.maps.Marker({
-          //    map: map,
-          //    position: results[0].geometry.location
-          //});
-        } else {
-          alert("Geocode was not successful for the following reason: " + status);
-        }
-      });
-    }
-  }
-
-    function helperListAddress(addrlist) {
-
-      //if (geocoder) {
-      //  geocoder.getLatLng(
-      //    address,
-      //    function(point) {
-      //      if (!point) {
-      //        alert(address + " not found");
-      //      } else {
-        //fenwayPark = new GLatLng(42.345573,-71.098326);
-        //alert(point);
-              for (var key in addrlist) {
-                addMarker(new google.maps.LatLng(addrlist[key].lat,addrlist[key].lng),addrlist[key].address);
-              }
-              //for (i=0;i<addrlist.length;i++) {
-              //  //alert(addrlist[i].address);
-              //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
-              //  helpermarker(map,markertemp,addrlist[i].address);
-              //}
-            //}
-          //}
-        //);
-      //}
-    }
-
-    function focusaddress(address,point){
-        map.setCenter(point, 13);
-        var marker = new GMarker(point);
-        helpermarker(map,marker,address);
-        marker.openInfoWindowHtml(address);
-    }
-
-    //function helpermarker(map,marker,text){
-    //    map.addOverlay(marker);
-    //    markersArray.push(marker);
-    //    GEvent.addListener(marker, 'click', function() {
-    //      // When clicked, open an Info Window
-    //      marker.openInfoWindowHtml(text);
-    //    });
-    //
-    //}
-
-function addMarker(location,text) {
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-
-    var infowindow = new google.maps.InfoWindow({
-        content: text
-    });
-
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map,marker);
-    });
-
-    markersArray.push(marker);
-    return marker;
-}
-
-function deleteMarkers() {
-  if (markersArray) {
-    for (i in markersArray) {
-      markersArray[i].setMap(null);
-    }
-    markersArray.length = 0;
-  }
-}
-
-    function updatemapbound(asyn) {
-        var bounds = map.getBounds();
-        alert(bounds);
-        var sw = bounds.getSouthWest();
-        var ne = bounds.getNorthEast();
-
-        var sBound = sw.lat();
-        var wBound = sw.lng();
-        var nBound = ne.lat();
-        var eBound = ne.lng();
-
-        new Ajax.Request('/addresses.js?s='+sBound+'&w='+wBound+'&n='+nBound+'&e='+eBound, {
-          method:'get',
-          asynchronous:asyn,
-          //requestHeaders: {Accept: 'application/json'},
-          onSuccess: function(transport){
-            //alert(point);
-            //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
-            addrlist = transport.responseText.evalJSON(true);
-            //document.write(transport.responseText);
-            //alert(address);
-            deleteMarkers();
-            helperListAddress(addrlist);
-          }
-        });
-        if(!asyn) alert('should be sync');
-            // AJAX call to the database with the map bounds
-    }
-
-/*
     var map = null;
     var geocoder = null;
     var myPano;
     var mapControl;
-    var markersArray=[];
+    var gmarkers=[];
     var moveListener;
+    var dbmarkers=[];
+    var singlemarker;
 
     function initialize() {
       if (GBrowserIsCompatible()) {
@@ -185,7 +23,7 @@ function deleteMarkers() {
         map.addControl(mapControl);
         map.addControl(new GLargeMapControl());
 
-        showAddressByID(<%=mapaddr.id%>);
+        showAddressByID(<%=mapaddr.id%>,$('within').value);
 
         //moveListener = GEvent.addListener(map, "moveend", function(){updatemapbound(true)});
 
@@ -234,8 +72,8 @@ function deleteMarkers() {
             } else {
               //alert(point);
               if(within>0){
-                GEvent.removeListener(moveListener);
-                new Ajax.Request(ajaxstring='/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+$('within').value, {
+                if(moveListener) GEvent.removeListener(moveListener);
+                new Ajax.Request(ajaxstring='/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+within, {
                   method:'get',
                   //requestHeaders: {Accept: 'application/json'},
                   onSuccess: function(transport){
@@ -251,12 +89,17 @@ function deleteMarkers() {
                   }
                 });
               }else{
-
+                
                 updatemapbound(false);
                 focusaddress(address,new GLatLng(point.y,point.x));
-                moveListener = GEvent.addListener(map, "moveend", function(){
-                  updatemapbound(true);
+                alert(moveListener);
+                var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
+                  moveListener = GEvent.addListener(map, "moveend", function(){
+                    updatemapbound(true);
+                    GEvent.removeListener(loadlisten);
+                  });
                 });
+                
               }
 
 
@@ -267,15 +110,21 @@ function deleteMarkers() {
     }
 
     function showAddressByID(id,within){
+      if(within>0){
+        if(moveListener) GEvent.removeListener(moveListener);
         new Ajax.Request('/addresses.js?address_id='+id+'&within='+within, {
           method:'get',
           //requestHeaders: {Accept: 'application/json'},
           onSuccess: function(transport){
             addrlist = transport.responseText.evalJSON(true);
             //alert(addrlist);
-            helperListAddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng),addrlist);
+            helperListAddress(addrlist);
+            focusaddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng));
           }
         });
+      }else{
+        alert('show address by id inside of the range not implemented')
+      }
     }
 
     function helperListAddress(addrlist) {
@@ -305,15 +154,26 @@ function deleteMarkers() {
     }
 
     function focusaddress(address,point){
-        map.setCenter(point, 13);
+      var doListener=new Boolean(moveListener);
+        //if(doListener){
+        //  GEvent.removeListener(moveListener);
+        //}
+
         var marker = new GMarker(point);
         helpermarker(map,marker,address);
+        myPano.setLocationAndPOV(point);
+        map.setCenter(point, 13);
         marker.openInfoWindowHtml(address);
+        //if(doListener){
+        //        moveListener = GEvent.addListener(map, "moveend", function(){
+        //         updatemapbound(true);
+        //        });
+        //}
     }
 
     function helpermarker(map,marker,text){
         map.addOverlay(marker);
-        markersArray.push(marker);
+        gmarkers.push(marker);
         GEvent.addListener(marker, 'click', function() {
           // When clicked, open an Info Window
           marker.openInfoWindowHtml(text);
@@ -321,9 +181,9 @@ function deleteMarkers() {
     }
 
     function clearMarkers(){
-      for(i = 0; i < markersArray.length; i++)
+      for(i = 0; i < gmarkers.length; i++)
       {
-              map.removeOverlay(markersArray[i]);
+              map.removeOverlay(gmarkers[i]);
       }
 
     }
@@ -334,12 +194,12 @@ function deleteMarkers() {
         return;
       }
     }
-    */
     </script>
 
-     <form action="#" id="mapAddressForm" onsubmit="codeAddressByString(this.addressfield.value); return false">
+     <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value,this.within.value); return false">
       <p>
-        <input type="text" size="60" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" />
+      <div id="mapinput" style="width: 500px;">
+        <br/><input type="text" style="width: 500px;" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" /></div>
         <input type="submit" value="Go!" />
 <%=select_tag("within", options_for_select([['all inside of the range',0],
       ['within 5 miles',5],
@@ -347,7 +207,7 @@ function deleteMarkers() {
     ['within 20 miles',20],
     ['within 40 miles',40]],
   (params[:within] || 10)),
-  :onchange=>'codeAddressByString($("addressfield").value)'
+  :onchange=>'showAddressByString($("addressfield").value,this.value)'
 ) %>
 
       </p>
