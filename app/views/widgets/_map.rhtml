@@ -9,11 +9,20 @@
     var mapControl;
     var gmarkers=[];
     var moveListener;
-    var dbmarkers=[];
-    var singlemarker;
+    //var dbmarkers=[];
+    var singleMarker;
+    var dbAddrList;
+    var MyIcon;
 
     function initialize() {
       if (GBrowserIsCompatible()) {
+
+        MyIcon = new GIcon(); // create a new Google Icon object
+        MyIcon.image = "/images/thumbs_up.gif";// image file name
+        //MyIcon.iconSize = new GSize(10, 30);// width (px) and height (px)
+        MyIcon.iconAnchor = new GPoint(6, 20);// base of the icon
+        MyIcon.infoWindowAnchor = new GPoint(0, 0);// info window base
+
         geocoder = new GClientGeocoder();
         myPano = new GStreetviewPanorama(document.getElementById("pano"));
         GEvent.addListener(myPano, "error", handleNoFlash);
@@ -49,12 +58,14 @@
             //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
             addrlist = transport.responseText.evalJSON(true);
             //document.write(transport.responseText);
-            //alert(address);
-            clearMarkers();
-            for (var key in addrlist) {
-              markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
-              helpermarker(map,markertemp,addrlist[key].address);
-            }
+            //alert('updatemapbound');
+            helperListAddress(addrlist);
+            //clearDBMarkers();
+            //for (var key in addrlist) {
+            //  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+            //  helperMarker(map,markertemp,addrlist[key].address);
+            //  gmarkers.push(markertemp);
+            //}
           }
         });
 
@@ -81,25 +92,25 @@
                     //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
                     addrlist = transport.responseText.evalJSON(true);
                     //document.write(transport.responseText);
-                    alert(within);
-                    alert(address);
+                    //alert(within);
+                    //alert(address);
 
                     helperListAddress(addrlist);
-                    focusaddress(address,new GLatLng(point.y,point.x));
+                    focusaddressbypoint(address,new GLatLng(point.y,point.x));
                   }
                 });
               }else{
-                
+
                 updatemapbound(false);
-                focusaddress(address,new GLatLng(point.y,point.x));
-                alert(moveListener);
-                var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
+                focusaddressbypoint(address,new GLatLng(point.y,point.x));
+                //alert(moveListener);
+                //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
                   moveListener = GEvent.addListener(map, "moveend", function(){
                     updatemapbound(true);
-                    GEvent.removeListener(loadlisten);
+                    //GEvent.removeListener(loadlisten);
                   });
-                });
-                
+                //});
+
               }
 
 
@@ -119,16 +130,26 @@
             addrlist = transport.responseText.evalJSON(true);
             //alert(addrlist);
             helperListAddress(addrlist);
-            focusaddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng));
+            //focusaddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng));
+            focusaddress(id);
           }
         });
       }else{
-        alert('show address by id inside of the range not implemented')
+        //alert('show address by id inside of the range not implemented');
+                updatemapbound(false);
+                focusaddress(id);
+                alert(moveListener);
+                //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
+                  moveListener = GEvent.addListener(map, "moveend", function(){
+                    updatemapbound(true);
+                    //GEvent.removeListener(loadlisten);
+                  });
+                  alert(moveListener);
       }
     }
 
     function helperListAddress(addrlist) {
-        clearMarkers();
+        //clearDBMarkers();
       //if (geocoder) {
       //  geocoder.getLatLng(
       //    address,
@@ -138,14 +159,46 @@
       //      } else {
         //fenwayPark = new GLatLng(42.345573,-71.098326);
         //alert(point);
+        //alert(Object.inspect(addrlist));
+              var newMarkers=[];
               for (var key in addrlist) {
-                var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
-                helpermarker(map,markertemp,addrlist[key].address);
+                //alert(key);
+                
+                //var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                //helperMarker(map,markertemp,addrlist[key].address);
+                //if(gmarkers[key]) map.removeOverlay(gmarkers[key]);
+                //gmarkers[key]=markertemp;
+                ////gmarkers.push(markertemp);
+                if(gmarkers[key]){
+                  newMarkers[key]=gmarkers[key];
+                  gmarkers[key]=null;
+                }else{
+                  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                  helperMarker(map,markertemp,addrlist[key].address);
+                  newMarkers[key]=markertemp;
+                }
               }
+
+              for(var key2=0;key2<gmarkers.length;key2++){
+                //alert('gmarkers key '+key);
+                if(gmarkers[key2]){
+                  map.removeOverlay(gmarkers[key2]);
+                }
+              }
+
+              //for(var key=0;key<newMarkers.length;key++){
+              //  alert('new markers key '+key);
+              //}
+
+              gmarkers=newMarkers;
+
+              //alert('addr'+Object.inspect(gmarkers[117].address));
+
+              dbAddrList=addrlist;
               //for (i=0;i<addrlist.length;i++) {
               //  //alert(addrlist[i].address);
               //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
-              //  helpermarker(map,markertemp,addrlist[i].address);
+              //  helperMarker(map,markertemp,addrlist[i].address);
               //}
             //}
           //}
@@ -153,17 +206,17 @@
       //}
     }
 
-    function focusaddress(address,point){
-      var doListener=new Boolean(moveListener);
+    function focusaddressbypoint(address,point){
+      //var doListener=new Boolean(moveListener);
         //if(doListener){
         //  GEvent.removeListener(moveListener);
         //}
-
-        var marker = new GMarker(point);
-        helpermarker(map,marker,address);
+        clearSingleMarker();
+        singleMarker = new GMarker(point,MyIcon);
+        helperMarker(map,singleMarker,address);
         myPano.setLocationAndPOV(point);
         map.setCenter(point, 13);
-        marker.openInfoWindowHtml(address);
+        singleMarker.openInfoWindowHtml(address);
         //if(doListener){
         //        moveListener = GEvent.addListener(map, "moveend", function(){
         //         updatemapbound(true);
@@ -171,21 +224,46 @@
         //}
     }
 
-    function helpermarker(map,marker,text){
+    function focusaddress(id){
+      //var doListener=new Boolean(moveListener);
+        //if(doListener){
+        //  GEvent.removeListener(moveListener);
+        //}
+        //clearSingleMarker();
+        //singleMarker = new GMarker(point,MyIcon);
+        //helperMarker(map,singleMarker,address);
+        var point=new GLatLng(dbAddrList[id].lat,dbAddrList[id].lng);
+        myPano.setLocationAndPOV(point);
+        map.setCenter(point, 13);
+        //alert(gmarkers[id]);
+        gmarkers[id].openInfoWindowHtml(dbAddrList[id].address);
+        //if(doListener){
+        //        moveListener = GEvent.addListener(map, "moveend", function(){
+        //         updatemapbound(true);
+        //        });
+        //}
+    }
+
+    function helperMarker(map,marker,text){
         map.addOverlay(marker);
-        gmarkers.push(marker);
         GEvent.addListener(marker, 'click', function() {
           // When clicked, open an Info Window
           marker.openInfoWindowHtml(text);
         });
     }
 
-    function clearMarkers(){
-      for(i = 0; i < gmarkers.length; i++)
-      {
-              map.removeOverlay(gmarkers[i]);
-      }
+    //function clearDBMarkers(){
+    //  for(var i in gmarkers)
+    //  {
+    //          map.removeOverlay(gmarkers[i]);
+    //  }
+    //  gmarkers.length=0;
+    //
+    //}
 
+    function clearSingleMarker(){
+      if(singleMarker) map.removeOverlay(singleMarker);
+      singleMarker=null;
     }
 
     function handleNoFlash(errorCode) {
