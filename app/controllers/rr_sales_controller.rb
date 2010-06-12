@@ -6,7 +6,22 @@ class RrSalesController < ApplicationController
   # GET /rr_sales.xml
   def index
     if(params[:submit_search])
-      if(params[:address].blank? && (params[:address][:id].blank? || params[:address][:city_name].blank? || params[:address][:state_id].blank?))
+      recordtemp=params.dup
+      recordtemp[:address]=nil
+      recordtemp=recordtemp.merge(params[:address])
+      if(current_user_session)
+        recordtemp[:email]=current_user_session.user_auth.email
+      else
+        flash[:notice]='You have not logged in yet'
+      end
+      #logger.debug 'current user session email'+current_user_session.user_auth.email
+      #logger.debug recordsave.inspect
+      @record=RrSaleRecord.new
+      @record.attributes.keys
+      recordsave=recordtemp.reject { |key,value| !@record.attributes.keys.include? key }
+      
+      @record=RrSaleRecord.create(recordsave)
+      if(params[:address][:id].blank? && (params[:address][:city_name].blank? || params[:address][:state_id].blank?))
         flash.now[:warning]='a city and state is required for search'
       else
         if params[:address][:id]
@@ -69,6 +84,7 @@ class RrSalesController < ApplicationController
     @residential_realty=@rr_sale.residential_realty
 
     @recentads=RrSale.all(:include=>'residential_realty',:limit=>4,:order=>'created_at')
+    #@recentads=RrSale.all(:include=>{:residential_realty=>:address},:limit=>4,:order=>'rr_sales.created_at',:conditions=>{:addresses=>{:city_name=>@residential_realty.address.city_name,:state_id=>@residential_realty.address.state_id}})
 
     respond_to do |format|
       format.html # show.html.erb
