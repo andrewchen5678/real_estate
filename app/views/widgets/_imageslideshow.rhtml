@@ -4,47 +4,8 @@ imglist.each do |a|
   imgarray.push([a.url,'','',a.description || ''])
 end
 %>
-<link rel="stylesheet" type="text/css" href="/stylesheets/contentslider.css" />
-
-<script type="text/javascript" src="/javascripts/contentslider.js">
-
-/***********************************************
-* Featured Content Slider- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
-***********************************************/
-
-</script>
-
-<div id="slider1" class="sliderwrapper">
-
-<div class="contentdiv">
-Content 1 Here.
-</div>
-
-
-</div>
-
-<div id="paginate-slider1" class="pagination">
-
-</div>
-
-<script type="text/javascript">
-
-featuredcontentslider.init({
-id: "slider1", //id of main slider DIV
-contentsource: ["inline", ""], //Valid values: ["inline", ""] or ["ajax", "path_to_file"]
-toc: "#increment", //Valid values: "#increment", "markup", ["label1", "label2", etc]
-nextprev: ["Previous", "Next"], //labels for "prev" and "next" links. Set to "" to hide.
-enablefade: [true, 0.2], //[true/false, fadedegree]
-autorotate: [true, 3000], //[true/false, pausetime]
-onChange: function(previndex, curindex){ //event handler fired whenever script changes slide
-//previndex holds index of last slide viewed b4 current (1=1st slide, 2nd=2nd etc)
-//curindex holds index of currently shown slide (1=1st slide, 2nd=2nd etc)
-}
-})
-
-</script>
+<!--= javascript_include_tag 'jquery' %-->
+<%= javascript_include_tag 'fadeslideshow' %>
 
 <script type="text/javascript">
 
