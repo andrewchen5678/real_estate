@@ -276,8 +276,8 @@
 
      <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value,this.within.value); return false">
       <p>
-      <div id="mapinput" style="width: 500px;">
-        <br/><input type="text" style="width: 500px;" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" /></div>
+      <div id="mapinput" style="width: 600px;">
+        <br/><input type="text" style="width: 600px;" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" /></div>
         <input type="submit" value="Go!" />
 <%=select_tag("within", options_for_select([['all inside of the range',0],
       ['within 5 miles',5],
@@ -289,8 +289,8 @@
 ) %>
 
       </p>
-      <div id="map_canvas" style="width: 500px; height: 300px"></div>
-      <div id="pano" style="width: 500px; height: 300px; border-style:solid"></div>
+      <div id="map_canvas" style="width: 600px; height: 480px"></div>
+      <div id="pano" style="width: 600px; height: 480px; border-style:solid"></div>
     </form>
 
 <script type="text/javascript">
