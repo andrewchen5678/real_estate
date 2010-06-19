@@ -49,7 +49,7 @@
         var nBound = ne.lat();
         var eBound = ne.lng();
 
-        new Ajax.Request('/addresses.js?s='+sBound+'&w='+wBound+'&n='+nBound+'&e='+eBound, {
+        new Ajax.Request('/addresses.js?type=rr_sales&s='+sBound+'&w='+wBound+'&n='+nBound+'&e='+eBound, {
           method:'get',
           asynchronous:asyn,
           //requestHeaders: {Accept: 'application/json'},
@@ -84,7 +84,7 @@
               //alert(point);
               if(within>0){
                 if(moveListener) GEvent.removeListener(moveListener);
-                new Ajax.Request(ajaxstring='/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+within, {
+                new Ajax.Request(ajaxstring='/addresses.js?type=rr_sales&lat='+point.y+'&lng='+point.x+'&within='+within, {
                   method:'get',
                   //requestHeaders: {Accept: 'application/json'},
                   onSuccess: function(transport){
@@ -123,7 +123,7 @@
     function showAddressByID(id,within){
       if(within>0){
         if(moveListener) GEvent.removeListener(moveListener);
-        new Ajax.Request('/addresses.js?address_id='+id+'&within='+within, {
+        new Ajax.Request('/addresses.js?type=rr_sales&address_id='+id+'&within='+within, {
           method:'get',
           //requestHeaders: {Accept: 'application/json'},
           onSuccess: function(transport){
@@ -161,9 +161,10 @@
         //alert(point);
         //alert(Object.inspect(addrlist));
               var newMarkers=[];
-              for (var key in addrlist) {
+              for (var rr in addrlist) {
                 //alert(key);
-                
+                var addr=rr.residential_realty.address
+                var key=addr.id
                 //var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
                 //helperMarker(map,markertemp,addrlist[key].address);
                 //if(gmarkers[key]) map.removeOverlay(gmarkers[key]);
@@ -173,8 +174,8 @@
                   newMarkers[key]=gmarkers[key];
                   gmarkers[key]=null;
                 }else{
-                  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
-                  helperMarker(map,markertemp,addrlist[key].address);
+                  var markertemp=new GMarker(new GLatLng(addr.lat,addr.lng));
+                  helperMarker(map,markertemp,addr);
                   newMarkers[key]=markertemp;
                 }
               }
