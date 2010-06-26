@@ -7,7 +7,7 @@
     var geocoder = null;
     var myPano;
     var mapControl;
-    var gmarkers=[];
+    var gmarkers=new Array();
     var moveListener;
     //var dbmarkers=[];
     var singleMarker;
@@ -148,6 +148,10 @@
       }
     }
 
+    function hashLatLng(lat,lng){
+      return lat.toString()+lng.toString();
+    }
+
     function helperListAddress(addrlist) {
         //clearDBMarkers();
       //if (geocoder) {
@@ -160,30 +164,38 @@
         //fenwayPark = new GLatLng(42.345573,-71.098326);
         //alert(point);
         //alert(Object.inspect(addrlist));
-              var newMarkers=[];
-              for (var key in addrlist) {
-                //alert(key);
-
+              var newMarkers=new Array();
+              for (var ak in addrlist) {;
+                var hashkey=hashLatLng(addrlist[ak].lat,addrlist[ak].lng)
+                //alert(addrlist[ak].lat.constructor);
                 //var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
                 //helperMarker(map,markertemp,addrlist[key].address);
                 //if(gmarkers[key]) map.removeOverlay(gmarkers[key]);
                 //gmarkers[key]=markertemp;
                 ////gmarkers.push(markertemp);
-                if(gmarkers[key]){
-                  newMarkers[key]=gmarkers[key];
-                  gmarkers[key]=null;
+                if(gmarkers[hashkey]){
+                  newMarkers[hashkey]=gmarkers[hashkey];
+                  delete gmarkers[hashkey];
                 }else{
-                  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
-                  helperMarker(map,markertemp,key);
-                  newMarkers[key]=markertemp;
+                  var markertemp=new GMarker(new GLatLng(addrlist[ak].lat,addrlist[ak].lng));
+                  helperMarker(map,markertemp,ak);
+                  /*
+                  map.addOverlay(markertemp);
+                  GEvent.addListener(markertemp, 'click', function() {
+                    // When clicked, open an Info Window
+                    //marker.openInfoWindowHtml(text);
+                    helperOpenInfo(markertemp,dbAddrList[ak]);
+                  });
+                  */
+                  newMarkers[hashkey]=markertemp;
                 }
               }
-
-              for(var key2=0;key2<gmarkers.length;key2++){
-                //alert('gmarkers key '+key);
-                if(gmarkers[key2]){
-                  map.removeOverlay(gmarkers[key2]);
-                }
+              //alert(newMarkers[hashkey]);
+              for(var k in gmarkers){
+                  //alert('gmarkers key '+key);
+                  if(gmarkers[k]){
+                    map.removeOverlay(gmarkers[k]);
+                  }
               }
 
               //for(var key=0;key<newMarkers.length;key++){
@@ -236,7 +248,7 @@
         myPano.setLocationAndPOV(point);
         map.setCenter(point, 13);
         //alert(gmarkers[id]);
-        helperOpenInfo(gmarkers[id],dbAddrList[id]);
+        helperOpenInfo(gmarkers[hashLatLng(dbAddrList[id].lat,dbAddrList[id].lng)],dbAddrList[id]);
         //if(doListener){
         //        moveListener = GEvent.addListener(map, "moveend", function(){
         //         updatemapbound(true);
@@ -252,6 +264,7 @@
         });
     }
 
+
     function helperMarker(map,marker,addressID){
         map.addOverlay(marker);
         GEvent.addListener(marker, 'click', function() {
@@ -260,6 +273,7 @@
           helperOpenInfo(marker,dbAddrList[addressID]);
         });
     }
+
 
     function helperOpenInfo(marker,addressobj){
         var strVar="";
