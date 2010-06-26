@@ -1,0 +1,355 @@
+<% format_mapaddr=format_address(mapaddr) %>
+  <script src="http://maps.google.com/maps?file=api&amp;v=2.x&amp;key=<%=GOOGLE_MAP_API_KEY%>" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+    var map = null;
+    var geocoder = null;
+    var myPano;
+    var mapControl;
+    var gmarkers=[];
+    var moveListener;
+    //var dbmarkers=[];
+    var singleMarker;
+    var dbAddrList;
+    var MyIcon;
+
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+
+        MyIcon = new GIcon(); // create a new Google Icon object
+        MyIcon.image = "/images/thumbs_up.gif";// image file name
+        //MyIcon.iconSize = new GSize(10, 30);// width (px) and height (px)
+        MyIcon.iconAnchor = new GPoint(6, 20);// base of the icon
+        MyIcon.infoWindowAnchor = new GPoint(0, 0);// info window base
+
+        geocoder = new GClientGeocoder();
+        myPano = new GStreetviewPanorama(document.getElementById("pano"));
+        GEvent.addListener(myPano, "error", handleNoFlash);
+        mapControl = new GMapTypeControl();
+
+        map = new GMap2(document.getElementById("map_canvas"));
+        map.addControl(mapControl);
+        map.addControl(new GLargeMapControl());
+
+        showAddressByID(<%=mapaddr.id%>,$('within').value);
+
+        //moveListener = GEvent.addListener(map, "moveend", function(){updatemapbound(true)});
+
+      }
+    }
+
+    function updatemapbound(asyn) {
+        var bounds = map.getBounds();
+        var sw = bounds.getSouthWest();
+        var ne = bounds.getNorthEast();
+
+        var sBound = sw.lat();
+        var wBound = sw.lng();
+        var nBound = ne.lat();
+        var eBound = ne.lng();
+
+        new Ajax.Request('/addresses.js?s='+sBound+'&w='+wBound+'&n='+nBound+'&e='+eBound+'&type=residential_realties', {
+          method:'get',
+          asynchronous:asyn,
+          //requestHeaders: {Accept: 'application/json'},
+          onSuccess: function(transport){
+            //alert(point);
+            //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+            addrlist = transport.responseText.evalJSON(true);
+            //document.write(transport.responseText);
+            //alert('updatemapbound');
+            helperListAddress(addrlist);
+            //clearDBMarkers();
+            //for (var key in addrlist) {
+            //  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+            //  helperMarker(map,markertemp,addrlist[key].address);
+            //  gmarkers.push(markertemp);
+            //}
+          }
+        });
+
+            // AJAX call to the database with the map bounds
+    }
+
+    function showAddressByString(address,within){
+      //map.clearOverlays();
+      if (geocoder) {
+        geocoder.getLatLng(
+          address,
+          function(point) {
+            if (!point) {
+              alert(address + " not found");
+            } else {
+              //alert(point);
+              if(within>0){
+                if(moveListener) GEvent.removeListener(moveListener);
+                new Ajax.Request(ajaxstring='/addresses.js?lat='+point.y+'&lng='+point.x+'&within='+within+'&type=residential_realties', {
+                  method:'get',
+                  //requestHeaders: {Accept: 'application/json'},
+                  onSuccess: function(transport){
+                    //alert(point);
+                    //document.write('/addresses.js?lat='+point.x+'&lng='+point.y+'&within=15');
+                    addrlist = transport.responseText.evalJSON(true);
+                    //document.write(transport.responseText);
+                    //alert(within);
+                    //alert(address);
+
+                    helperListAddress(addrlist);
+                    focusaddressbypoint(address,new GLatLng(point.y,point.x));
+                  }
+                });
+              }else{
+
+                updatemapbound(false);
+                focusaddressbypoint(address,new GLatLng(point.y,point.x));
+                //alert(moveListener);
+                //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
+                  moveListener = GEvent.addListener(map, "moveend", function(){
+                    updatemapbound(true);
+                    //GEvent.removeListener(loadlisten);
+                  });
+                //});
+
+              }
+
+
+            }
+          }
+        );
+      }
+    }
+
+    function showAddressByID(id,within){
+      if(within>0){
+        if(moveListener) GEvent.removeListener(moveListener);
+        new Ajax.Request('/addresses.js?address_id='+id+'&within='+within+'&type=residential_realties', {
+          method:'get',
+          //requestHeaders: {Accept: 'application/json'},
+          onSuccess: function(transport){
+            addrlist = transport.responseText.evalJSON(true);
+            //alert(addrlist);
+            helperListAddress(addrlist);
+            //focusaddress(addrlist[id].address,new GLatLng(addrlist[id].lat,addrlist[id].lng));
+            focusaddress(id);
+          }
+        });
+      }else{
+        //alert('show address by id inside of the range not implemented');
+                updatemapbound(false);
+                focusaddress(id);
+                alert(moveListener);
+                //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
+                  moveListener = GEvent.addListener(map, "moveend", function(){
+                    updatemapbound(true);
+                    //GEvent.removeListener(loadlisten);
+                  });
+                  alert(moveListener);
+      }
+    }
+
+    function helperListAddress(addrlist) {
+        //clearDBMarkers();
+      //if (geocoder) {
+      //  geocoder.getLatLng(
+      //    address,
+      //    function(point) {
+      //      if (!point) {
+      //        alert(address + " not found");
+      //      } else {
+        //fenwayPark = new GLatLng(42.345573,-71.098326);
+        //alert(point);
+        //alert(Object.inspect(addrlist));
+              var newMarkers=[];
+              for (var key in addrlist) {
+                //alert(key);
+
+                //var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                //helperMarker(map,markertemp,addrlist[key].address);
+                //if(gmarkers[key]) map.removeOverlay(gmarkers[key]);
+                //gmarkers[key]=markertemp;
+                ////gmarkers.push(markertemp);
+                if(gmarkers[key]){
+                  newMarkers[key]=gmarkers[key];
+                  gmarkers[key]=null;
+                }else{
+                  var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
+                  helperMarker(map,markertemp,key);
+                  newMarkers[key]=markertemp;
+                }
+              }
+
+              for(var key2=0;key2<gmarkers.length;key2++){
+                //alert('gmarkers key '+key);
+                if(gmarkers[key2]){
+                  map.removeOverlay(gmarkers[key2]);
+                }
+              }
+
+              //for(var key=0;key<newMarkers.length;key++){
+              //  alert('new markers key '+key);
+              //}
+
+              gmarkers=newMarkers;
+
+              //alert('addr'+Object.inspect(gmarkers[117].address));
+
+              dbAddrList=addrlist;
+              //for (i=0;i<addrlist.length;i++) {
+              //  //alert(addrlist[i].address);
+              //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
+              //  helperMarker(map,markertemp,addrlist[i].address);
+              //}
+            //}
+          //}
+        //);
+      //}
+    }
+
+    function focusaddressbypoint(address,point){
+      //var doListener=new Boolean(moveListener);
+        //if(doListener){
+        //  GEvent.removeListener(moveListener);
+        //}
+        clearSingleMarker();
+        singleMarker = new GMarker(point,MyIcon);
+        helperMarkerByText(map,singleMarker,address);
+        myPano.setLocationAndPOV(point);
+        map.setCenter(point, 13);
+        singleMarker.openInfoWindowHtml(address);
+        //if(doListener){
+        //        moveListener = GEvent.addListener(map, "moveend", function(){
+        //         updatemapbound(true);
+        //        });
+        //}
+    }
+
+    function focusaddress(id){
+      //var doListener=new Boolean(moveListener);
+        //if(doListener){
+        //  GEvent.removeListener(moveListener);
+        //}
+        //clearSingleMarker();
+        //singleMarker = new GMarker(point,MyIcon);
+        //helperMarker(map,singleMarker,address);
+        var point=new GLatLng(dbAddrList[id].lat,dbAddrList[id].lng);
+        myPano.setLocationAndPOV(point);
+        map.setCenter(point, 13);
+        //alert(gmarkers[id]);
+        helperOpenInfo(gmarkers[id],dbAddrList[id]);
+        //if(doListener){
+        //        moveListener = GEvent.addListener(map, "moveend", function(){
+        //         updatemapbound(true);
+        //        });
+        //}
+    }
+
+    function helperMarkerByText(map,marker,text){
+        map.addOverlay(marker);
+        GEvent.addListener(marker, 'click', function() {
+          // When clicked, open an Info Window
+          marker.openInfoWindowHtml(text);
+        });
+    }
+
+    function helperMarker(map,marker,addressID){
+        map.addOverlay(marker);
+        GEvent.addListener(marker, 'click', function() {
+          // When clicked, open an Info Window
+          //marker.openInfoWindowHtml(text);
+          helperOpenInfo(marker,dbAddrList[addressID]);
+        });
+    }
+
+    function helperOpenInfo(marker,addressobj){
+        var strVar="";
+        strVar += "<table>";
+
+        strVar += "<tr>";
+        strVar += "<td>";
+        strVar += addressobj.address;
+        strVar += "<\/td>";
+        strVar += "<td>";
+        strVar += addressobj.residential_realty.realty_type;
+        strVar += "<\/td>";
+        strVar += "<\/tr>";
+
+        strVar += "<tr>";
+        strVar += "<td>";
+        strVar += "Bed/bath:";
+        strVar += "<\/td>";
+        strVar += "<td>";
+        strVar += addressobj.residential_realty.num_of_beds+'/'+addressobj.residential_realty.num_bath;
+        strVar += "<\/td>";
+        strVar += "<\/tr>";
+
+        strVar += "<tr>";
+        strVar += "<td>";
+        strVar += "<\/td>";
+        strVar += "<td>";
+        strVar += "<a href='/residential_realties/"+addressobj.residential_realty.id+"'>Detail</a>";
+        strVar += "<\/td>";
+        strVar += "<\/tr>";
+
+        strVar += "<\/table>";
+      marker.openInfoWindowHtml(strVar);
+    }
+
+    //function clearDBMarkers(){
+    //  for(var i in gmarkers)
+    //  {
+    //          map.removeOverlay(gmarkers[i]);
+    //  }
+    //  gmarkers.length=0;
+    //
+    //}
+
+    function clearSingleMarker(){
+      if(singleMarker) map.removeOverlay(singleMarker);
+      singleMarker=null;
+    }
+
+    function handleNoFlash(errorCode) {
+      if (errorCode == 603) {
+        alert("Error: Flash doesn't appear to be supported by your browser");
+        return;
+      }
+    }
+    </script>
+
+     <form action="#" id="mapAddressForm" onsubmit="showAddressByString(this.addressfield.value,this.within.value); return false">
+      <p>
+      <div id="mapinput" style="width: 600px;">
+        <br/><input type="text" style="width: 600px;" name="addressfield" id="addressfield" value="<%=h format_mapaddr %>" /></div>
+        <input type="submit" value="Go!" />
+<%=select_tag("within", options_for_select([['all inside of the range',0],
+      ['within 5 miles',5],
+    ['within 10 miles',10],
+    ['within 20 miles',20],
+    ['within 40 miles',40]],
+  (params[:within] || 10)),
+  :onchange=>'showAddressByString($("addressfield").value,this.value)'
+) %>
+
+      </p>
+      <div id="map_canvas" style="width: 600px; height: 480px"></div>
+      <div id="pano" style="width: 600px; height: 480px; border-style:solid"></div>
+    </form>
+
+<script type="text/javascript">
+document.observe("dom:loaded", function() {
+  initialize();
+});
+
+Event.observe(window, 'unload', function(){
+  //alert('calling window unload');
+  GUnload();
+});
+    //jQuery(document).ready(function(){
+    //    initialize();
+    // });
+//jQuery(window).unload(function() {
+//  GUnload();
+//});
+
+</script>
