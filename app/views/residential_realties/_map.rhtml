@@ -7,7 +7,7 @@
     var geocoder = null;
     var myPano;
     var mapControl;
-    var gmarkers=new Array();
+    var gmarkers=new Object();
     var moveListener;
     //var dbmarkers=[];
     var singleMarker;
@@ -135,12 +135,13 @@
           }
         });
       }else{
-        //alert('show address by id inside of the range not implemented');
+        alert('show address by id range');
                 updatemapbound(false);
                 focusaddress(id);
                 alert(moveListener);
                 //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
                   moveListener = GEvent.addListener(map, "moveend", function(){
+                    alert('updatemapbound inside moveListener');
                     updatemapbound(true);
                     //GEvent.removeListener(loadlisten);
                   });
@@ -164,7 +165,7 @@
         //fenwayPark = new GLatLng(42.345573,-71.098326);
         //alert(point);
         //alert(Object.inspect(addrlist));
-              var newMarkers=new Array();
+              var newMarkers=new Object();
               for (var ak in addrlist) {;
                 var hashkey=hashLatLng(addrlist[ak].lat,addrlist[ak].lng)
                 //alert(addrlist[ak].lat.constructor);
@@ -190,9 +191,9 @@
                   newMarkers[hashkey]=markertemp;
                 }
               }
-              //alert(newMarkers[hashkey]);
+              //alert(gmarkers.length);
               for(var k in gmarkers){
-                  //alert('gmarkers key '+key);
+                  //alert('gmarkers key '+k);
                   if(gmarkers[k]){
                     map.removeOverlay(gmarkers[k]);
                   }
