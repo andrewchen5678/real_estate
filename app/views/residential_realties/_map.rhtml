@@ -136,8 +136,13 @@
         });
       }else{
         alert('show address by id range');
+        var point=new GLatLng(<%=mapaddr.lat%>,<%=mapaddr.lng%>);
+        myPano.setLocationAndPOV(point);
+        map.setCenter(point, 13);
+        //helperOpenInfo(gmarkers[hashLatLng(<%=mapaddr.lat%>,<%=mapaddr.lng%>)]);
                 updatemapbound(false);
-                focusaddress(id);
+                helperOpenInfo(gmarkers[hashLatLng(<%=mapaddr.lat%>,<%=mapaddr.lng%>)]);
+                //focusaddress(id);
                 alert(moveListener);
                 //var loadlisten=GEvent.addListener(map, "tilesloaded", function(){
                   moveListener = GEvent.addListener(map, "moveend", function(){
@@ -154,69 +159,37 @@
     }
 
     function helperListAddress(addrlist) {
-        //clearDBMarkers();
-      //if (geocoder) {
-      //  geocoder.getLatLng(
-      //    address,
-      //    function(point) {
-      //      if (!point) {
-      //        alert(address + " not found");
-      //      } else {
-        //fenwayPark = new GLatLng(42.345573,-71.098326);
-        //alert(point);
-        //alert(Object.inspect(addrlist));
+
               var newMarkers=new Object();
-              for (var ak in addrlist) {;
+              for (var ak in addrlist) {
                 var hashkey=hashLatLng(addrlist[ak].lat,addrlist[ak].lng)
-                //alert(addrlist[ak].lat.constructor);
-                //var markertemp=new GMarker(new GLatLng(addrlist[key].lat,addrlist[key].lng));
-                //helperMarker(map,markertemp,addrlist[key].address);
-                //if(gmarkers[key]) map.removeOverlay(gmarkers[key]);
-                //gmarkers[key]=markertemp;
-                ////gmarkers.push(markertemp);
-                if(gmarkers[hashkey]){
-                  newMarkers[hashkey]=gmarkers[hashkey];
-                  delete gmarkers[hashkey];
+
+                if(newMarkers[hashkey] && !gmarkers[hashkey]){
+                  newMarkers[hashkey].address.push(ak);
                 }else{
-                  var markertemp=new GMarker(new GLatLng(addrlist[ak].lat,addrlist[ak].lng));
-                  helperMarker(map,markertemp,ak);
-                  /*
-                  map.addOverlay(markertemp);
-                  GEvent.addListener(markertemp, 'click', function() {
-                    // When clicked, open an Info Window
-                    //marker.openInfoWindowHtml(text);
-                    helperOpenInfo(markertemp,dbAddrList[ak]);
-                  });
-                  */
-                  newMarkers[hashkey]=markertemp;
+                  newMarkers[hashkey]=new Object();
+                  if(gmarkers[hashkey]){
+                    newMarkers[hashkey].marker=gmarkers[hashkey].marker;
+                    delete gmarkers[hashkey];
+                  }else{
+                    var markertemp=new GMarker(new GLatLng(addrlist[ak].lat,addrlist[ak].lng));
+                    newMarkers[hashkey].marker=markertemp;
+                  }
+                  newMarkers[hashkey].address=[];
+                  newMarkers[hashkey].address[0]=ak;
+                  helperMarker(map,newMarkers[hashkey]);
                 }
               }
               //alert(gmarkers.length);
               for(var k in gmarkers){
                   //alert('gmarkers key '+k);
                   if(gmarkers[k]){
-                    map.removeOverlay(gmarkers[k]);
+                    map.removeOverlay(gmarkers[k].marker);
                   }
               }
 
-              //for(var key=0;key<newMarkers.length;key++){
-              //  alert('new markers key '+key);
-              //}
-
               gmarkers=newMarkers;
-
-              //alert('addr'+Object.inspect(gmarkers[117].address));
-
               dbAddrList=addrlist;
-              //for (i=0;i<addrlist.length;i++) {
-              //  //alert(addrlist[i].address);
-              //  markertemp=new GMarker(new GLatLng(addrlist[i].lat,addrlist[i].lng));
-              //  helperMarker(map,markertemp,addrlist[i].address);
-              //}
-            //}
-          //}
-        //);
-      //}
     }
 
     function focusaddressbypoint(address,point){
@@ -249,7 +222,7 @@
         myPano.setLocationAndPOV(point);
         map.setCenter(point, 13);
         //alert(gmarkers[id]);
-        helperOpenInfo(gmarkers[hashLatLng(dbAddrList[id].lat,dbAddrList[id].lng)],dbAddrList[id]);
+        helperOpenInfo(gmarkers[hashLatLng(dbAddrList[id].lat,dbAddrList[id].lng)]);
         //if(doListener){
         //        moveListener = GEvent.addListener(map, "moveend", function(){
         //         updatemapbound(true);
@@ -266,20 +239,21 @@
     }
 
 
-    function helperMarker(map,marker,addressID){
-        map.addOverlay(marker);
-        GEvent.addListener(marker, 'click', function() {
+    function helperMarker(map,markerobj){
+        map.addOverlay(markerobj.marker);
+        GEvent.addListener(markerobj.marker, 'click', function() {
           // When clicked, open an Info Window
           //marker.openInfoWindowHtml(text);
-          helperOpenInfo(marker,dbAddrList[addressID]);
+          helperOpenInfo(markerobj);
         });
     }
 
 
-    function helperOpenInfo(marker,addressobj){
-        var strVar="";
-        strVar += "<table>";
-
+    function helperOpenInfo(marker){
+      var strVar="";
+      strVar += "<table>";
+      for(var i=0;i<marker.address.length;i++){
+        var addressobj=dbAddrList[marker.address[i]];
         strVar += "<tr>";
         strVar += "<td>";
         strVar += addressobj.address;
@@ -305,9 +279,9 @@
         strVar += "<a href='/residential_realties/"+addressobj.residential_realty.id+"'>Detail</a>";
         strVar += "<\/td>";
         strVar += "<\/tr>";
-
+      }
         strVar += "<\/table>";
-      marker.openInfoWindowHtml(strVar);
+      marker.marker.openInfoWindowHtml(strVar);
     }
 
     //function clearDBMarkers(){
