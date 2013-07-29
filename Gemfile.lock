@@ -15,7 +15,6 @@ GEM
       activesupport
     geokit (1.6.5)
       multi_json
-    magic_encoding (0.0.2)
     multi_json (1.7.7)
     mysql (2.9.1)
     rack (1.1.6)
@@ -34,6 +33,5 @@ PLATFORMS
 DEPENDENCIES
   authlogic (= 2.1.6)
   geokit
-  magic_encoding
   mysql
   rails (~> 2.3.5)
