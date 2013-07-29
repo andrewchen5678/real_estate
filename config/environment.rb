@@ -43,8 +43,8 @@ Rails::Initializer.run do |config|
 
     #config.gem "rspec", :lib => false, :version => ">= 1.2.9"
     #config.gem "rspec-rails", :lib => false, :version => ">= 1.2.9"
-    config.gem "mocha"
-    config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"  
+    #config.gem "mocha"
+    #config.gem "thoughtbot-shoulda", :lib => "shoulda", :source => "http://gems.github.com"  
     
     config.load_paths += %W[ #{RAILS_ROOT}/app/models/realties]
     

@@ -47,7 +47,7 @@ development:
   reconnect: false
   database: business_sale_ror
   pool: 5
-  username: business_sale
+  username: root
   password: qwertasdfg
   host: localhost
 
