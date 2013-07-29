@@ -1,7 +1,7 @@
 source :gemcutter
 gem 'rails', '~> 2.3.5'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
-gem "mysql2"
+gem "mysql"
 
 # bundler requires these gems in all environments
 # gem 'nokogiri', '1.4.2'
@@ -34,3 +34,4 @@ gem "geokit"
   #config.gem "mocha"
 
 ruby '1.8.7'
+#gem "magic_encoding"
