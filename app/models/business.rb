@@ -1,4 +1,4 @@
-
+#encoding: utf-8
 class Business < ActiveRecord::Base
   FRANCHISE_DESC={false=>'非加盟連鎖生意',true=>'加盟連鎖生意'}
 
