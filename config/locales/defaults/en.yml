@@ -2,15 +2,12 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  home: Home
+  login: Login
+  logout: Logout
+  register: Register
+  my_account: My Account
   activerecord:
     attributes:
       _all:
         square_feet: 'Square feet'
-
-
-zh_CN:
-  activerecord:
-    attributes:
-      _all:
-        phone: '电话'
-        square_feet: '平方尺'

@@ -1,0 +1,11 @@
+zh_CN:
+  home: 主页
+  login: 登录
+  logout: 注销
+  register: 注册
+  my_account: 我的帐户
+  activerecord:
+    attributes:
+      _all:
+        phone: '电话'
+        square_feet: '平方尺'

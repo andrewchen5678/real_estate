@@ -20,14 +20,14 @@
   </script>
 <div id="topnav">
 <ul>
-  <li><%= link_to "Home", root_url %>  </li>
+  <li><%= link_to t(:home), root_url %>  </li>
   
   <% if current_user_session %>
-    <li><%= link_to "登出", logout_url %></li>
-    <li><%= link_to "my account", account_url %></li>
+    <li><%= link_to t(:logout), logout_url %></li>
+    <li><%= link_to t(:my_account), account_url %></li>
   <% else %>
-    <li><%= link_to "登陸", login_url  %></li>
-    <li><%= link_to "註冊", new_user_auth_path %></li>
+    <li><%= link_to t(:login), login_url  %></li>
+    <li><%= link_to t(:register), new_user_auth_path %></li>
   <% end %>
   <li><%= link_to "English", root_url(:setlocale=>:en)  %></li>
   <li><%= link_to "简体中文", root_url(:setlocale=>:zh_CN)  %></li>
