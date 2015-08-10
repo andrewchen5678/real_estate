@@ -1,4 +1,4 @@
-
+#encoding: utf-8
 class RcSale < ActiveRecord::Base
   STATUS_DESC=ActiveSupport::OrderedHash[
     AdsCommon::STATUS_ACTIVE,'Active',

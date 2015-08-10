@@ -1,3 +1,4 @@
+#encoding: utf-8
 class RrRent < ActiveRecord::Base
   STATUS_DESC=ActiveSupport::OrderedHash[
     AdsCommon::STATUS_ACTIVE,'Active',

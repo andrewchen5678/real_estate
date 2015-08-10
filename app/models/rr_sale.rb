@@ -1,4 +1,4 @@
-
+#encoding: utf-8
 class RrSale < ActiveRecord::Base
   include AdsCommon
 
