@@ -34,5 +34,5 @@ gem "iconv"
   #config.gem "rspec-rails", :lib => false, :version => ">= 1.2.9"
   #config.gem "mocha"
 
-#ruby '2.1.6'
+ruby '1.9.3'
 #gem "magic_encoding"
