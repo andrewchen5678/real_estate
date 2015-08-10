@@ -1,4 +1,4 @@
-source :gemcutter
+source "https://rubygems.org"
 gem 'rails', '~> 2.3.5'
 #gem 'sqlite3-ruby', :require => 'sqlite3'
 gem "mysql"
@@ -26,6 +26,7 @@ gem "authlogic", "2.1.6"
 
 gem "geokit"
 
+gem "iconv"
 
 #config.gem "ajaxful_rating"
 
@@ -33,5 +34,5 @@ gem "geokit"
   #config.gem "rspec-rails", :lib => false, :version => ">= 1.2.9"
   #config.gem "mocha"
 
-ruby '2.1.6'
+#ruby '2.1.6'
 #gem "magic_encoding"
