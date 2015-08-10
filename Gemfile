@@ -33,5 +33,5 @@ gem "geokit"
   #config.gem "rspec-rails", :lib => false, :version => ">= 1.2.9"
   #config.gem "mocha"
 
-ruby '1.8.7'
+ruby '2.1.6'
 #gem "magic_encoding"
