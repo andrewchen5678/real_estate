@@ -1,3 +1,4 @@
+#encoding: utf-8
 class CommercialRealty < ActiveRecord::Base
     REALTY_TYPE_DESC=ActiveSupport::OrderedHash['CShop','商業店面/餐廳',
       'COffice','辦公大樓',
